@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "name": "PlayerControls2",
+    "maps": [
+        {
+            "name": "New action map",
+            "id": "52972621-746b-44ce-853a-7a1dcd0f6f2f",
+            "actions": [
+                {
+                    "name": "Trigger Cutscene",
+                    "type": "Button",
+                    "id": "50e88949-4b78-4060-a259-366c1ec6d66c",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "c4da97a2-175e-4157-8b22-7ea18d84a4e9",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Trigger Cutscene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
