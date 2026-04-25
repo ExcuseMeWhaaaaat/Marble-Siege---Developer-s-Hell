@@ -73,6 +73,9 @@ public class PlayerHeallth : MonoBehaviour
         
     }
 
+    
+
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         switch(collision.gameObject.tag)

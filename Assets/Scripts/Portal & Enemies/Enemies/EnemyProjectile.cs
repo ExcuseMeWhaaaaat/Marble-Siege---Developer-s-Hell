@@ -2,20 +2,35 @@ using UnityEngine;
 
 public class EnemyProjectile : MonoBehaviour
 {
-    private GameObject player;
+    [SerializeField] private GameObject player;
     private Vector2 direction;
+    
+    [SerializeField] float speed;
+    
+    //For later
+    public string statusEffect;
+    public string attackType;
+    
     void Start()
     {
-        player = GameObject.Find("Player");
-        direction = player.transform.position - transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
+        if(player != null)
+        {
+            direction = (player.transform.position - transform.position).normalized;
+        }
+        
+        
         Invoke(nameof(SelfDelete), 5);
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(direction.normalized * Time.deltaTime * 10);
-       
+        if (player == null) return;
+        
+        transform.Translate(direction * speed * Time.deltaTime );
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
