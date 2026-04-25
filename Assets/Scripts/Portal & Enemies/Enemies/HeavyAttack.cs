@@ -13,11 +13,7 @@ public class HeavyAttack : MonoBehaviour
         InvokeRepeating(nameof(ActivateAttack),delay,cooldown);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
 
     private void ActivateAttack()
@@ -28,8 +24,6 @@ public class HeavyAttack : MonoBehaviour
 
     IEnumerator UseBat()
     {
-        
-        
         yield return new WaitForSeconds(activeTime);
         gameObject.SetActive(false);
     }
