@@ -62,6 +62,9 @@ TagManager:
   - name: Ground
     uniqueID: 2923628237
     locked: 0
+  - name: Borders
+    uniqueID: 1107486893
+    locked: 0
   - name: PlainsForeground
     uniqueID: 617125455
     locked: 0

@@ -3,8 +3,8 @@ using UnityEngine;
 public class SpawnObstacle : MonoBehaviour
 {
     [SerializeField] GameObject grassPf;
-    [SerializeField] Vector2 bottomRight;
-    [SerializeField] Vector2 topLeft;
+    [SerializeField] Transform bottomRight;
+    [SerializeField] Transform topLeft;
     [SerializeField] float delay;
     [SerializeField] float interval;
     [SerializeField] int numtoSpawn;
@@ -27,8 +27,8 @@ public class SpawnObstacle : MonoBehaviour
 
     public Vector2 GenerateSpawnPos()
     {
-        float xPos = Random.Range(bottomRight.x, topLeft.x);
-        float yPos = Random.Range(bottomRight.y, topLeft.y);
+        float xPos = Random.Range(bottomRight.position.x, topLeft.position.x);
+        float yPos = Random.Range(bottomRight.position.y, topLeft.position.y);
         Vector2 spawnPos = new Vector2(xPos, yPos);
         return spawnPos;
     }

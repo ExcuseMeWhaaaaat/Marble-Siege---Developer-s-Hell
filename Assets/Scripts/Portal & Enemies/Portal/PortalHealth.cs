@@ -59,18 +59,21 @@ public class PortalHealth : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         
-        if(gameObject.tag != "Preboss" && collision.gameObject.CompareTag("Player") && EnemyCounting.instance.enemyCount < 1)
+        if(collision.gameObject.CompareTag("Player") && EnemyCounting.instance.enemyCount < 1)
         {
-            int dmg = (int)playerControls.hit;
-            portalHP -= dmg;
-
-            if (skillPoints != null)
+            ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.EnemyDamaged);
+            
+            if(gameObject.tag != "Preboss")
             {
-                skillPoints.addSkillPoints((int)dmg / 6);
-                skillPoints.FillMeter((int)dmg / 6);
+                int dmg = (int)playerControls.hit;
+                portalHP -= dmg;
+
+                if (skillPoints != null)
+                {
+                    skillPoints.addSkillPoints((int)dmg / 6);
+                    skillPoints.FillMeter((int)dmg / 6);
+                }
             }
-
-
             if (SoundManagement.instance != null)
             {
                 SoundManagement.PlaySound(SoundType.Damage, 0.75f);

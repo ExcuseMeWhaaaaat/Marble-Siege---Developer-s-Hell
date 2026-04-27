@@ -56,17 +56,21 @@ public class ScriptForYou : MonoBehaviour
         canJump = true;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Teleporter"))
+        {
+            transform.position = spawnPoint.transform.position;
+        }
+    }
 
     private void Update()
     {
-        if (transform.position.y < -outOfBoundsY || transform.position.y > outOfBoundsY || transform.position.x < -outOfBOundsX || transform.position.x > outOfBOundsX)
-        {
-            transform.position = spawnPoint.transform.position;
-            rb.linearVelocity = Vector2.zero;
-        }
+        
         hit = (int)rb.linearVelocity.magnitude;
         
     }
 
+    
     
 }

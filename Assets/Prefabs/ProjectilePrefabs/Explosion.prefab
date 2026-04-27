@@ -141,6 +141,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee30aad73854303448f50d85161786f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Boom
-  fadeSpeed: 0.5
+  fadeSpeed: 0.75
   boomSprite: {fileID: 1635842641085157366}
   t: 0
