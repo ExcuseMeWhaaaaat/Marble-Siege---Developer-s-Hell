@@ -61,7 +61,11 @@ public class PortalHealth : MonoBehaviour
         
         if(collision.gameObject.CompareTag("Player") && EnemyCounting.instance.enemyCount < 1)
         {
-            ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.EnemyDamaged);
+            if(ConditionManagement.instance != null)
+            {
+                ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.EnemyDamaged);
+            }
+            
             
             if(gameObject.tag != "Preboss")
             {

@@ -34,6 +34,7 @@ public class ConditionManagement : MonoBehaviour
     {
 
         //If the condition index is greater than the number of conditions
+        
         if ((int)condition >= instance.conditionMet.Length) return;
 
         instance.conditionMet[(int)condition] = true;
