@@ -61,11 +61,6 @@ public class PortalHealth : MonoBehaviour
         
         if(collision.gameObject.CompareTag("Player") && EnemyCounting.instance.enemyCount < 1)
         {
-            if(ConditionManagement.instance != null)
-            {
-                ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.EnemyDamaged);
-            }
-            
             
             if(gameObject.tag != "Preboss")
             {
@@ -78,6 +73,14 @@ public class PortalHealth : MonoBehaviour
                     skillPoints.FillMeter((int)dmg / 6);
                 }
             }
+            else
+            {
+                if (ConditionManagement.instance != null)
+                {
+                    ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.EnemyDamaged);
+                }
+            }
+            
             if (SoundManagement.instance != null)
             {
                 SoundManagement.PlaySound(SoundType.Damage, 0.75f);
