@@ -1574,6 +1574,11 @@ MonoBehaviour:
   speed: 10
   hit: 0
   canJump: 0
+  statusEffect: 
+  stunTime: 0
+  chillTime: 0
+  chillSpeedMultiplier: 0.95
+  stunnable: 0
 --- !u!212 &859406670
 SpriteRenderer:
   serializedVersion: 2
@@ -1671,6 +1676,8 @@ MonoBehaviour:
   defColor: {r: 1, g: 1, b: 1, a: 1}
   spriteColor: {fileID: 859406670}
   healingImage: {fileID: 6393259163426139187}
+  statusEffect: 
+  stunTime: 0
 --- !u!4 &983377808 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6607298061112093613, guid: 5b6e9e68485d40a49b7d255485c9d17e, type: 3}

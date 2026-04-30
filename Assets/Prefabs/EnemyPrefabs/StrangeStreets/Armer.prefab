@@ -172,7 +172,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTrack
   speed: 8
-  detectRange: 10
+  detectRange: 12
+  yAngle: 0
+  flippedAngle: 180
 --- !u!1 &984873857621724623
 GameObject:
   m_ObjectHideFlags: 0
@@ -293,7 +295,8 @@ Transform:
   m_LocalPosition: {x: 1.7750001, y: 2.3999999, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 7797719604056534414}
   m_Father: {fileID: 7816106748982796772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1163467270959155618
@@ -384,8 +387,7 @@ Transform:
   m_LocalPosition: {x: -1.8050001, y: 2.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 7797719604056534414}
+  m_Children: []
   m_Father: {fileID: 7816106748982796772}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3936494897821235903
@@ -746,12 +748,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7709107148519356252}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.97, y: 0.22, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.39000034, y: 0.039999485, z: 0}
   m_LocalScale: {x: 0.61008745, y: 0.61008745, z: 0.24415976}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7506877700834295198}
+  m_Father: {fileID: 4627357793162294605}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8761690616678178312
 SpriteRenderer:
@@ -824,8 +826,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f8891c5b8d84e4abdaa556ba15fb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileAttack
+  statusEffect: 
   bullet: {fileID: 3509702940240576532, guid: 97d01191e412d7d479a036235d39f65c, type: 3}
-  attackCooldown: 5
+  attackCooldown: 6
 --- !u!1 &7814170212142987830
 GameObject:
   m_ObjectHideFlags: 0

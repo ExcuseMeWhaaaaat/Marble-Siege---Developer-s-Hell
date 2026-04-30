@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -1977311795283282442}
   m_Layer: 0
   m_Name: Bullet_0 1
-  m_TagString: Untagged
+  m_TagString: NormalStun
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,8 +106,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyProjectile
   player: {fileID: 0}
-  speed: 10
-  statusEffect: Stun
+  speed: 15
   attackType: Projectile
 --- !u!60 &-1977311795283282442
 PolygonCollider2D:

@@ -27,9 +27,10 @@ public class PlayerHeallth : MonoBehaviour
     [SerializeField] Color defColor;
     [SerializeField] SpriteRenderer spriteColor;
     [SerializeField] GameObject healingImage;
+    [SerializeField] string statusEffect;
     
     private bool isElimated;
-    
+
     
 
     private void Start()
@@ -174,6 +175,5 @@ public class PlayerHeallth : MonoBehaviour
     }
 
     
-        
     
 }

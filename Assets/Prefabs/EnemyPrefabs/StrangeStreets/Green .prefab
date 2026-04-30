@@ -924,6 +924,7 @@ GameObject:
   - component: {fileID: 7353060765290209960}
   - component: {fileID: 6045128453273277720}
   - component: {fileID: 165619615497125290}
+  - component: {fileID: -7989519804126460466}
   m_Layer: 0
   m_Name: 'Green '
   m_TagString: Untagged
@@ -1083,7 +1084,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTrack
   speed: 5
-  detectRange: 5
+  detectRange: 3
+  yAngle: 180
+  flippedAngle: 0
+--- !u!114 &-7989519804126460466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4237632703614519797}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d25ee3d58177ca4cbbcd9163f3702d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HeavyEnemyOffset
+  yPos: -4.5
 --- !u!1 &4493799796094827933
 GameObject:
   m_ObjectHideFlags: 0
@@ -2811,7 +2827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f480018f375628149bec370ecf57ecc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeavyAttack
-  cooldown: 20
+  cooldown: 15
   activeTime: 5
   delay: 5
 --- !u!50 &194394671077228703
@@ -2857,7 +2873,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 1.7173513, y: -0.28051674}
-  m_ConnectedAnchor: {x: 9.319103, y: -0.69394046}
+  m_ConnectedAnchor: {x: -0.51935333, y: -0.32728916}
   m_UseConnectedAnchor: 1
   m_UseMotor: 0
   m_Motor:

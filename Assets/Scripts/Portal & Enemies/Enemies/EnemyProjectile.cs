@@ -3,17 +3,19 @@ using UnityEngine;
 public class EnemyProjectile : MonoBehaviour
 {
     [SerializeField] private GameObject player;
+    
     private Vector2 direction;
     
     [SerializeField] float speed;
     
     //For later
-    public string statusEffect;
+    
     public string attackType;
     
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+
         if(player != null)
         {
             direction = (player.transform.position - transform.position).normalized;
@@ -35,7 +37,12 @@ public class EnemyProjectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(gameObject);
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+        }
+        
+        
     }
 
     private void SelfDelete()
