@@ -8,6 +8,7 @@ public class HealingPool : AllyExecute
     [SerializeField] int interval;
     [SerializeField] int secondsLeft;
     [SerializeField] private PlayerHeallth playerHP;
+    
 
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -29,6 +30,7 @@ public class HealingPool : AllyExecute
             secondsLeft--;
             playerHP.playerHealth++;
         }
+        Destroy(gameObject);
     }
-
+    
 }

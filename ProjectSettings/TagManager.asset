@@ -20,6 +20,7 @@ TagManager:
   - Portal
   - PreBoss
   - NormalStun
+  - Cure
   layers:
   - Default
   - TransparentFX

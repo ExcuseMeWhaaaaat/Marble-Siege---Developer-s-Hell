@@ -89,6 +89,9 @@ public class PlayerHeallth : MonoBehaviour
                 break;
             case "PowerfuLAttack":
                 CheckForHealth(6);break;
+            case "Cure":
+                statusEffect = "";
+                break;
         }
     }
 

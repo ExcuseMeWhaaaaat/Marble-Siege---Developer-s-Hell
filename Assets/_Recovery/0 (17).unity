@@ -152,17 +152,58 @@ Transform:
   - {fileID: 1425300057}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &222403573 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5262982225041922923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-  m_PrefabInstance: {fileID: 1582687252651193919}
+--- !u!1 &222403571
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 222403572}
+  - component: {fileID: 222403573}
+  m_Layer: 0
+  m_Name: AllyObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &222403572
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222403571}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 929.26166, y: 437.61792, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &222403573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 222403571}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1dbfc32f7d7957b40871448465198b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAlly
+  ally: {fileID: 7095138773567062854, guid: 263cba2ac5a935d469f9f62d46067505, type: 3}
+  spawnPos: {x: 10, y: -5}
+  cooldownTime: 0
+  isOnCooldown: 0
+  ability:
+  - {fileID: 139457094172793875, guid: d92f4dc5779aa2847a8b5382666c08c9, type: 3}
+  - {fileID: 2061479800987533714, guid: 5a14d5f5b665610409b0493b61ce4c29, type: 3}
+  allyPos: {fileID: 8332303489815572628, guid: 263cba2ac5a935d469f9f62d46067505, type: 3}
 --- !u!1 &302025624
 GameObject:
   m_ObjectHideFlags: 0
@@ -2943,6 +2984,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 222403573}
         m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
+        m_MethodName: AllySummon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 222403573}
+        m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
         m_MethodName: Ability
         m_Mode: 1
         m_Arguments:
@@ -3423,63 +3476,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!1001 &1582687252651193919
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 1457336262568966939, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_Name
-      value: AllyObject
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 929.26166
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 437.61792
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3156790427383989923, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 5e7ea7ba90e2d9a45b07b267afe1da77, type: 3}
 --- !u!114 &1661574975386203125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5625,6 +5621,18 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 222403573}
         m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
+        m_MethodName: AllySummon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 222403573}
+        m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
         m_MethodName: Ability2
         m_Mode: 1
         m_Arguments:
@@ -7576,4 +7584,4 @@ SceneRoots:
   - {fileID: 1681503414}
   - {fileID: 302025627}
   - {fileID: 3853606882410510650}
-  - {fileID: 1582687252651193919}
+  - {fileID: 222403572}
