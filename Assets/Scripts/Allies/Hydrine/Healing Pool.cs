@@ -2,35 +2,53 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-public class HealingPool : AllyExecute
+public class HealingPool : MonoBehaviour
 {
     
     [SerializeField] int interval;
     [SerializeField] int secondsLeft;
     [SerializeField] private PlayerHeallth playerHP;
-    
 
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Start()
     {
-        if(gameObject.CompareTag("Player"))
-        ExecuteAbility();
+        playerHP = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHeallth>();
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            ExecuteAbility();
+        }
+        
     }
 
-    public override void ExecuteAbility()
+    public void ExecuteAbility()
     {
+        if (playerHP == null) return;
+        
         StartCoroutine(GenerateHealPool());
+        
     }
 
     IEnumerator GenerateHealPool()
     {
+
         secondsLeft = 5;
         while (secondsLeft > 0)
         {
             yield return new WaitForSeconds(interval);
+            Debug.Log("Before");
+            if(playerHP.playerHealth < playerHP.maxPlayerHealth)
+            {
+                playerHP.playerHealth++;
+            }
+            playerHP.UpdateHealthUI();
+            Debug.Log("After");
             secondsLeft--;
-            playerHP.playerHealth++;
+            
+           
         }
-        Destroy(gameObject);
+        
     }
     
 }

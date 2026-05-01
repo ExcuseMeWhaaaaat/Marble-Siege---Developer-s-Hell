@@ -15,10 +15,6 @@ public class SpawnAlly : MonoBehaviour
     
     
 
-    
-        
-    
-
     public void Ability()
     {
         if (!isOnCooldown)
@@ -28,7 +24,10 @@ public class SpawnAlly : MonoBehaviour
             StartCoroutine(AllyCooldown());
             isOnCooldown = true;
         }
-
+        else
+        {
+            Debug.Log("This character is on cooldown");
+        }
     }
     public void Ability2()
     {
@@ -39,13 +38,17 @@ public class SpawnAlly : MonoBehaviour
             StartCoroutine(AllyCooldown());
             isOnCooldown = true;
         }
+        else
+        {
+            Debug.Log("This character is on cooldown");
+        }
 
 
     }
 
     IEnumerator AllyCooldown()
     {
-        cooldownTime = 90;
+        cooldownTime = 5;
         while(cooldownTime > 0)
         {
             yield return new WaitForSeconds(1f);

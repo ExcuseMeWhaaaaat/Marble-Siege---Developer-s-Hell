@@ -21,17 +21,22 @@ public class ScriptForYou : MonoBehaviour
     
     [SerializeField] float stunTime;
     [SerializeField] float chillTime;
-    [SerializeField] float chillSpeedMultiplier;
-    [SerializeField] bool stunnable;
 
+    [SerializeField] bool isStunned = false;
+    [SerializeField] bool isChilled = false;
+
+
+    private Coroutine chillCoroutine;
     private Coroutine stunCoroutine;
     
+
+    public string statusEffect;
     
 
     private void Start()
     {
         transform.position = spawnPoint.transform.position;
-        stunnable = true;
+        
         
     }
 
@@ -59,18 +64,15 @@ public class ScriptForYou : MonoBehaviour
         
         if (canJump)
         {
-            canJump = false;
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, speed);
+            canJump = false;
         }
         
 
 
     }
 
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        canJump = true;
-    }
+    
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -79,62 +81,92 @@ public class ScriptForYou : MonoBehaviour
         {
             transform.position = spawnPoint.transform.position;
         }
+        
         switch (collision.gameObject.tag)
         {
+            case "Cure":
+                GetCured();
+                
+                Debug.Log("Cured!");
+                
+                break;
             case "NormalStun":
-                if(stunCoroutine == null)
+                isStunned = true;
+                if(stunCoroutine  == null)
                 {
                     stunCoroutine = StartCoroutine(Stun());
-                    stunnable = false;
-                }                
+                }
+                
                 break;
             case "NormalChill":
-                if(speed > 5)
+                isChilled = true;
+                if(chillCoroutine == null)
                 {
-                    StartCoroutine(Chill());
+                    chillCoroutine = StartCoroutine(Chill());
                 }
+                
                 break;
         }
-
         
+        if(stunCoroutine == null)
+        {
+            canJump = true;
+        }
+
     }
+
+    
 
     private void Update()
     {
         hit = (int)rb.linearVelocity.magnitude;
     }
-    
 
+    
    
 
     
     IEnumerator Stun()
     {
         stunTime = 3;
-        while (stunTime > 0)
+        while (stunTime > 0 && isStunned)
         {
-            
-            speed = 0;
+            speed *= 0f;
+            canJump = false;
             yield return new WaitForSeconds(1f);
             stunTime--;
-            
         }
         speed = 10;
         stunCoroutine = null;
-        stunnable = true;
-
+        canJump = true;
+        isStunned = false;
     }
 
     IEnumerator Chill()
     {
-        chillTime = 15;
-        while(chillTime > 0)
+        
+        chillTime = 10;
+        while(chillTime > 0 && isChilled)
         {
             speed--;
             yield return new WaitForSeconds(1f);
             chillTime--;
+            
         }
-        speed = 10;
+        speed++;
+        isChilled=false;
         
     }
+
+    public void GetCured()
+    {
+        speed = 10;
+        isStunned = false;
+        isChilled = false;
+        stunTime = 0;
+        chillTime = 0;
+        
+    }
+
+   
 }

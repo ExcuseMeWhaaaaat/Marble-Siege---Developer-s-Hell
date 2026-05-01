@@ -1084,8 +1084,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTrack
   speed: 5
-  detectRange: 3
-  yAngle: 180
+  detectRange: 5
+  yAngle: 0
   flippedAngle: 0
 --- !u!114 &-7989519804126460466
 MonoBehaviour:
