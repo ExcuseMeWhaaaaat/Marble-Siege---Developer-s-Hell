@@ -21,20 +21,25 @@ public class ScriptForYou : MonoBehaviour
     
     [SerializeField] float stunTime;
     [SerializeField] float chillTime;
+    [SerializeField] float curifyTime;
 
     [SerializeField] bool isStunned = false;
     [SerializeField] bool isChilled = false;
-
+    [SerializeField] bool curified = false;
 
     private Coroutine chillCoroutine;
     private Coroutine stunCoroutine;
-    
 
+    [SerializeField] Color curifiedColor;
+    [SerializeField] Color chilledColor;
+    [SerializeField] Color stunColor;
+    [SerializeField] SpriteRenderer spriteRenderer;
     public string statusEffect;
     
 
     private void Start()
     {
+        if(spawnPoint != null)
         transform.position = spawnPoint.transform.position;
         
         
@@ -91,20 +96,24 @@ public class ScriptForYou : MonoBehaviour
                 
                 break;
             case "NormalStun":
-                isStunned = true;
-                if(stunCoroutine  == null)
+                if (!curified)
                 {
-                    stunCoroutine = StartCoroutine(Stun());
+                    isStunned = true;
+                    if (stunCoroutine == null)
+                    {
+                        stunCoroutine = StartCoroutine(Stun());
+                    }
                 }
-                
                 break;
             case "NormalChill":
-                isChilled = true;
-                if(chillCoroutine == null)
+                if (!curified)
                 {
-                    chillCoroutine = StartCoroutine(Chill());
+                    isChilled = true;
+                    if (chillCoroutine == null)
+                    {
+                        chillCoroutine = StartCoroutine(Chill());
+                    }
                 }
-                
                 break;
         }
         
@@ -131,15 +140,18 @@ public class ScriptForYou : MonoBehaviour
         stunTime = 3;
         while (stunTime > 0 && isStunned)
         {
+            spriteRenderer.color = stunColor;
             speed *= 0f;
             canJump = false;
             yield return new WaitForSeconds(1f);
             stunTime--;
+            
         }
         speed = 10;
         stunCoroutine = null;
         canJump = true;
         isStunned = false;
+        spriteRenderer.color = Color.white;
     }
 
     IEnumerator Chill()
@@ -148,6 +160,7 @@ public class ScriptForYou : MonoBehaviour
         chillTime = 10;
         while(chillTime > 0 && isChilled)
         {
+            spriteRenderer.color = chilledColor;
             speed--;
             yield return new WaitForSeconds(1f);
             chillTime--;
@@ -155,7 +168,7 @@ public class ScriptForYou : MonoBehaviour
         }
         speed++;
         isChilled=false;
-        
+        spriteRenderer.color = Color.white;
     }
 
     public void GetCured()
@@ -163,10 +176,24 @@ public class ScriptForYou : MonoBehaviour
         speed = 10;
         isStunned = false;
         isChilled = false;
+        
         stunTime = 0;
         chillTime = 0;
+        StartCoroutine(Curify());
         
     }
 
-   
+   IEnumerator Curify()
+    {
+        curifyTime = 20;
+        while (curifyTime > 0)
+        {
+            spriteRenderer.color = curifiedColor;
+            curified = true;
+            yield return new WaitForSeconds(1f);
+            curifyTime--;
+        }
+        curified = false;
+        spriteRenderer.color = Color.white;
+    }
 }

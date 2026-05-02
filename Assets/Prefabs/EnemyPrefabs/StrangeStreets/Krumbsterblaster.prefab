@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 7486557799439690006}
   - component: {fileID: 438628123894106810}
   - component: {fileID: 4981616933026996274}
+  - component: {fileID: 1136402363806747733}
   m_Layer: 0
   m_Name: Krumbsterblaster
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,8 +189,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28f8891c5b8d84e4abdaa556ba15fb69, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileAttack
+  statusEffect: 
   bullet: {fileID: 7189940842791843884, guid: 719d7708121d5d94eba9568bfd75c62a, type: 3}
-  attackCooldown: 5
+  attackCooldown: 3
+--- !u!50 &1136402363806747733
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8127927453959000656}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1001 &1082161531229782462
 PrefabInstance:
   m_ObjectHideFlags: 0

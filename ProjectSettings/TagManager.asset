@@ -22,6 +22,9 @@ TagManager:
   - NormalStun
   - Cure
   - WindCharge
+  - WIndBurst
+  - AcydAttack
+  - Radiation
   layers:
   - Default
   - TransparentFX
@@ -29,8 +32,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - EnemyProjectile
+  - NoProjectiles
   - 
   - 
   - 
@@ -82,6 +85,9 @@ TagManager:
     locked: 0
   - name: Faces
     uniqueID: 3101831037
+    locked: 0
+  - name: EnemyProjectile
+    uniqueID: 4171135011
     locked: 0
   m_RenderingLayers:
   - Default

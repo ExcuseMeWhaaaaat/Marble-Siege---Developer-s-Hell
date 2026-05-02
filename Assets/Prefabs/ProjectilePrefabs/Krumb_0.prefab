@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3957399855142222250}
   - component: {fileID: 9124309555250369417}
   - component: {fileID: 6977127550124324170}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Krumb_0
   m_TagString: NormalAttack
   m_Icon: {fileID: 0}
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -123832285
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1574908251069435987, guid: 99bafc011481c8647aa0362a944590d0, type: 3}
@@ -199,7 +199,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyProjectile
   player: {fileID: 0}
   speed: 8
-  statusEffect: 
   attackType: Projectile
 --- !u!114 &6977127550124324170
 MonoBehaviour:

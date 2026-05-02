@@ -8,12 +8,13 @@ public class HealingPool : MonoBehaviour
     [SerializeField] int interval;
     [SerializeField] int secondsLeft;
     [SerializeField] private PlayerHeallth playerHP;
+    private Coroutine healingCoroutine;
 
     private void Start()
     {
         playerHP = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerHeallth>();
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
@@ -24,30 +25,27 @@ public class HealingPool : MonoBehaviour
 
     public void ExecuteAbility()
     {
-        if (playerHP == null) return;
-        
-        StartCoroutine(GenerateHealPool());
+        if(healingCoroutine == null)
+        {
+            healingCoroutine = StartCoroutine(GenerateHealPool());
+        }
+       
         
     }
 
     IEnumerator GenerateHealPool()
     {
 
-        secondsLeft = 5;
-        while (secondsLeft > 0)
+        secondsLeft = 3;
+        while (secondsLeft > 0 && playerHP.playerHealth < playerHP.maxPlayerHealth)
         {
             yield return new WaitForSeconds(interval);
-            Debug.Log("Before");
-            if(playerHP.playerHealth < playerHP.maxPlayerHealth)
-            {
-                playerHP.playerHealth++;
-            }
-            playerHP.UpdateHealthUI();
-            Debug.Log("After");
+            playerHP.playerHealth++;
             secondsLeft--;
-            
+            playerHP.UpdateHealthUI();
            
         }
+        healingCoroutine = null;
         
     }
     

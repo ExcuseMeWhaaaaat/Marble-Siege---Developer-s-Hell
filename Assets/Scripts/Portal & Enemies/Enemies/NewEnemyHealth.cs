@@ -118,18 +118,42 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        Rigidbody2D acidRb;
+        acidRb = collision.GetComponent<Rigidbody2D>();
+        switch (collision.gameObject.tag)
         {
-            enemyHealth -= Mathf.RoundToInt(scriptYou.hit);
-            UpdateUI();
-            if(enemyHealth < 1)
-            {
-                EnemyDefeat();
-            }
+            case "Player":
+                {
+                    enemyHealth -= Mathf.RoundToInt(scriptYou.hit);
+                    UpdateUI();
+                    SeeEnemyDefeat();
+                    break;
+                }
+            case "AcydAttack":
+                {
+                    if (acidRb == null) return;
+                    enemyHealth -= (int)acidRb.linearVelocity.magnitude;
+                    SeeEnemyDefeat();
+                    break;
+                }
+            case "Radiation":
+                enemyHealth -= Mathf.RoundToInt(scriptYou.hit);
+                SeeEnemyDefeat();
+                Debug.Log("Poison?");
+                break;
+            
         }
         
     }
 
     
+
+    public void SeeEnemyDefeat()
+    {
+        if (enemyHealth < 1)
+        {
+            EnemyDefeat();
+        }
+    }
 }
 

@@ -21,7 +21,7 @@ public class WindCharging : MonoBehaviour
         if (playerRb == null) return;
         if (collision.gameObject.CompareTag("Player"))
         {
-            playerRb.AddForce(direction * chargeSpeed, ForceMode2D.Force);
+            playerRb.AddForce(direction, ForceMode2D.Impulse);
         }
     }
 

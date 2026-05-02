@@ -22,6 +22,7 @@ public class AirborneEnemyTrack : MonoBehaviour
     
     void Update()
     {
+        if (player == null) return;
         float distance = Vector2.Distance(player.transform.position, transform.position);
 
         if (player != null && distance > detectRange)

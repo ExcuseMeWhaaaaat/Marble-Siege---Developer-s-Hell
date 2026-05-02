@@ -22,7 +22,7 @@ public class PlayerHeallth : MonoBehaviour
     
     
     private SkillPoints skillPoints;
-    
+    [SerializeField] GameObject portal;
     [SerializeField] Color invincColor;
     [SerializeField] Color defColor;
     [SerializeField] SpriteRenderer spriteColor;
@@ -58,7 +58,7 @@ public class PlayerHeallth : MonoBehaviour
     {
         if (!context.performed) return;
         
-        if (playerHealth < maxPlayerHealth)
+        if (playerHealth < maxPlayerHealth && portal !=null)
         {
             if (canHeal)
             {
@@ -163,7 +163,7 @@ public class PlayerHeallth : MonoBehaviour
 
     IEnumerator HealCooldown()
     {
-        healCooldownFrames = 60;
+        healCooldownFrames = 30;
         while (healCooldownFrames > 0)
         {
             yield return new WaitForSeconds(1);

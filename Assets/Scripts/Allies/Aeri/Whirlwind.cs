@@ -1,14 +1,14 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Whirlwind : MonoBehaviour
 {
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        EnemyProjectile enemyProjectile = collision.gameObject.GetComponent<EnemyProjectile>();
-        if (enemyProjectile != null)
+        if(collision.gameObject.layer == LayerMask.NameToLayer("EnemyProjectile"))
         {
-            Destroy(enemyProjectile.gameObject);
+            Destroy(collision.gameObject);
+            Debug.Log("Haha U mad?");
         }
     }
 }
