@@ -17,7 +17,7 @@ public class SpawnAlly : MonoBehaviour
     [SerializeField] Image allyHead;
     [SerializeField] TextMeshProUGUI allyCooldownText;
     [SerializeField] Color cooldownColor;
-
+    [SerializeField] GameObject portal;
 
     private void Start()
     {
@@ -26,7 +26,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability()
     {
-        if (!isOnCooldown)
+        if (!isOnCooldown && portal !=null)
         {
             Instantiate(ability[0], spawnPos, transform.rotation);
             Debug.Log("Spawned");
@@ -41,7 +41,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability2()
     {
-        if (!isOnCooldown)
+        if (!isOnCooldown && portal != null)
         {
             Instantiate(ability[1],spawnPos,transform.rotation);
             Debug.Log("Instantiated");
