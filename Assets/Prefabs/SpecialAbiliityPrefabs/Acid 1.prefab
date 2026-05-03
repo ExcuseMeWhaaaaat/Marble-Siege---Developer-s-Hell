@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcidDrop
   dropRb: {fileID: 9023842399355083804}
-  speed: 3
+  speed: 1
 --- !u!114 &2068179687899321884
 MonoBehaviour:
   m_ObjectHideFlags: 0

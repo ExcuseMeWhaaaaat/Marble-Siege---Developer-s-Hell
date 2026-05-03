@@ -35,8 +35,10 @@ public class ScriptForYou : MonoBehaviour
     [SerializeField] Color stunColor;
     [SerializeField] SpriteRenderer spriteRenderer;
     public string statusEffect;
+    [SerializeField] bool windCharged;
     
-
+    
+    
     private void Start()
     {
         if(spawnPoint != null)
@@ -49,12 +51,21 @@ public class ScriptForYou : MonoBehaviour
 
     private void FixedUpdate()
     {
+        
         if(stunCoroutine != null)
         {
             rb.linearVelocity = Vector2.zero;
         }
-        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
         
+        if (windCharged)
+        {
+            rb.linearVelocity = new Vector2(horizontal * speed * 3,rb.linearVelocity.y);
+        }
+        else
+        {
+            rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
+        }
+            
     }
 
     public void Movement(InputAction.CallbackContext context)
@@ -78,7 +89,23 @@ public class ScriptForYou : MonoBehaviour
     }
 
     
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("WindCharge"))
+        {
+            windCharged = true;
+            Debug.Log("Wind Charge Used!");
+        }
+    }
 
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("WindCharge"))
+        {
+            windCharged = false;
+            Debug.Log("Charge Exited");
+        }
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         

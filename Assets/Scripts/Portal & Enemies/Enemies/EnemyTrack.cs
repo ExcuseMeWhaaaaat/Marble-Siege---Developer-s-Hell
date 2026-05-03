@@ -17,7 +17,7 @@ public class EnemyTrack : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player");
         sr = GetComponent<SpriteRenderer>();
-        Debug.Log(sr.gameObject.name);
+        
 
     }
 

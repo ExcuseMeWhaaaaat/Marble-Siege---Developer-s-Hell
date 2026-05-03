@@ -9,7 +9,7 @@ public class AcidDrop : MonoBehaviour
 
     private void Start()
     {
-        direction = new Vector2(Random.Range(-3, 3), Random.Range(-10,0));
+        direction = new Vector2(Random.Range(-2, 2), Random.Range(-3,0));
     }
 
     private void FixedUpdate()

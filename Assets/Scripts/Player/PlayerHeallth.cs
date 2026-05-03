@@ -163,7 +163,7 @@ public class PlayerHeallth : MonoBehaviour
 
     IEnumerator HealCooldown()
     {
-        healCooldownFrames = 30;
+        healCooldownFrames = 45;
         while (healCooldownFrames > 0)
         {
             yield return new WaitForSeconds(1);

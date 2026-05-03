@@ -4,29 +4,17 @@ using UnityEngine;
 
 public class WindCharging : MonoBehaviour
 {
-    
-    [SerializeField] float chargeSpeed;
-    private Vector2 direction;
-    private float enemyDistance;
-    [SerializeField] Rigidbody2D playerRb;
+    [SerializeField] private Transform player;
 
     private void Start()
     {
-        playerRb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody2D>();
-
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
-    
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (playerRb == null) return;
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            playerRb.AddForce(direction, ForceMode2D.Impulse);
-        }
-    }
-
     private void Update()
     {
-        direction = playerRb.linearVelocity;
+        float yDirection = player.position.y - transform.position.y;
+        Vector2 direction = new Vector2(0, yDirection);
+        transform.Translate(5* Time.deltaTime* direction);
     }
+
 }

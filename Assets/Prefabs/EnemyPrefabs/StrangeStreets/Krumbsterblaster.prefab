@@ -175,8 +175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AirborneEnemyTrack
   speed: 6
   detectRange: 15
-  yLevel: -1
-  yRange: 3
+  yLevel: -2
+  yRange: 2
 --- !u!114 &4981616933026996274
 MonoBehaviour:
   m_ObjectHideFlags: 0

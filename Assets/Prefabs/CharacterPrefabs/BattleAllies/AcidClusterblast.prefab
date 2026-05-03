@@ -571,7 +571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a3cdd31c68bb5499aad126a92786fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GarboCollection
-  timeToLive: 15
+  timeToLive: 5
 --- !u!1 &3452335416314376494
 GameObject:
   m_ObjectHideFlags: 0
@@ -630,7 +630,7 @@ Transform:
   m_GameObject: {fileID: 3624816586122138859}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.0688448, y: 1.1815536, z: 0}
+  m_LocalPosition: {x: 1.58, y: 2.48, z: 0}
   m_LocalScale: {x: 0.7486, y: 0.7486, z: 0.7486}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -709,7 +709,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Clusterblast
   clusterSpew: {fileID: 1521555192614520383, guid: 41255e7f33b9ef84cb73065b1867f16f, type: 3}
   delay: 1
-  speed: 1
+  speed: 3
 --- !u!1 &3867767232362582056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1313,7 +1313,7 @@ Transform:
   m_GameObject: {fileID: 6525856303813327761}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.091155, y: 1.2515538, z: 0}
+  m_LocalPosition: {x: -1.53, y: 2.51, z: 0}
   m_LocalScale: {x: 0.7486, y: 0.7486, z: 0.7486}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1392,7 +1392,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Clusterblast
   clusterSpew: {fileID: 1521555192614520383, guid: 41255e7f33b9ef84cb73065b1867f16f, type: 3}
   delay: 1
-  speed: 1
+  speed: 3
 --- !u!1 &6750182849250348883
 GameObject:
   m_ObjectHideFlags: 0
