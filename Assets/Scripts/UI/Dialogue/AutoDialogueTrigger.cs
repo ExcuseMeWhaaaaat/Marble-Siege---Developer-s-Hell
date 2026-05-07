@@ -8,7 +8,7 @@ public class AutoDialogueTrigger : MonoBehaviour
     public void CallDialogue()
     {
         if (testChunk == null || hasTriggered) return;
-        DialogueManagement.instance.SetChunk(testChunk);
+        
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

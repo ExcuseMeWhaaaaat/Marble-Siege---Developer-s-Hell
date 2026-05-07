@@ -10,10 +10,12 @@ public class Speaking : ScriptableObject
     [TextArea] public string displayName;
     public Color dialogueColor;
     public TMP_FontAsset dialogueFont;
-    public Color dialogueOutlineColor;
     
     
-    //public float camShiftSpeed;
+    
+    
+    
+    
 }
 
 

@@ -7,8 +7,12 @@ public class CharacterAnimationController : MonoBehaviour
 {
     
     public Animator animator;
-    public float translationDuration;
     
-
-
+    public float translationDuration;
+    public int charID;
+    public void PlayAnimation(string state)
+    {
+        if (state == null || string.IsNullOrEmpty(state)) return; 
+        animator.CrossFade(state, translationDuration);
+    }
 }

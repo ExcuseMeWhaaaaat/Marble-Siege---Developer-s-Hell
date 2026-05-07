@@ -88,7 +88,7 @@ public class PortalHealth : MonoBehaviour
 
             TeleportPlayer();
             UpdateUI();
-            Debug.Log("Damaged!");
+            
             if (portalHP < 1)
 
                 DestroyPortal();

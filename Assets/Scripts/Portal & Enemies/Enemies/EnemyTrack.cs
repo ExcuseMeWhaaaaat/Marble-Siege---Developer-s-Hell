@@ -8,7 +8,8 @@ public class EnemyTrack : MonoBehaviour
     private GameObject player;
     
     [SerializeField] float detectRange;
-    private SpriteRenderer sr;
+    
+
     [SerializeField] float yAngle;
     [SerializeField] float flippedAngle;
     
@@ -16,7 +17,7 @@ public class EnemyTrack : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
-        sr = GetComponent<SpriteRenderer>();
+        
         
 
     }
