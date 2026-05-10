@@ -5,10 +5,9 @@ public class ConditionManagement : MonoBehaviour
 {
     public enum ConditionsToMeet
     {
-        AbilityUsed,
-        AllySummoned,
         EnemyDamaged,
-        ObstacleBroken,
+        AllySummoned,
+        
     }
 
     public static ConditionManagement instance;

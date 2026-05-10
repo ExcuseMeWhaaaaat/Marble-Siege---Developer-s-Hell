@@ -382,7 +382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 507, y: -46.113388}
+  m_AnchoredPosition: {x: 495, y: -46.113388}
   m_SizeDelta: {x: 87.595, y: 78.6577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &69045348
@@ -660,7 +660,10 @@ MonoBehaviour:
   messageIndex: 0
   isPlayng: 0
   delay: 0
-  dialoguePresent: {fileID: 0}
+  dialoguePresent: {fileID: 11400000, guid: 81cf5866d0b837a4fac0fc0ae0d0f349, type: 2}
+  nextButton: {fileID: 3030978256098751905, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
+  totalMessages: 0
+  setTextPosition: []
 --- !u!1 &479199533
 GameObject:
   m_ObjectHideFlags: 0
@@ -696,7 +699,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -506, y: -46.113388}
+  m_AnchoredPosition: {x: -462, y: -46.113388}
   m_SizeDelta: {x: 87.595, y: 78.6577}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &479199535
@@ -1504,7 +1507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -16, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1072223602
@@ -1723,7 +1726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -398.9237, y: -190.49722}
+  m_AnchoredPosition: {x: -23, y: 102}
   m_SizeDelta: {x: 301.3428, y: 101.0663}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1138552557
@@ -1752,8 +1755,8 @@ MonoBehaviour:
     Oh and Press
     Z to remove annoying things on ur screen'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+  m_sharedMaterial: {fileID: -6089114040639030846, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4161,6 +4164,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 706505119845363063, guid: e692205d11d130141879c0e24f222739, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2121484541665852665, guid: e692205d11d130141879c0e24f222739, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 2121484541665852665, guid: e692205d11d130141879c0e24f222739, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6089114040639030846, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 2121484541665852665, guid: e692205d11d130141879c0e24f222739, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8905633252991953280, guid: e692205d11d130141879c0e24f222739, type: 3}

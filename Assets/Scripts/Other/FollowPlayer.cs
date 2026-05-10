@@ -14,9 +14,10 @@ public class FollowPlayer : MonoBehaviour
 
     private void Update()
     {
-        Vector2 direction = player.transform.position - transform.position;
+        
         if (player != null)
         {
+            Vector2 direction = player.transform.position - transform.position;
             transform.Translate(speed * Time.deltaTime * direction);
         }
     }

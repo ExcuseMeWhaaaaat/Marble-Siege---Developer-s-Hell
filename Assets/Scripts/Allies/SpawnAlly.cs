@@ -26,6 +26,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability()
     {
+        Condition();
         if (!isOnCooldown && portal !=null)
         {
             Instantiate(ability[0], spawnPos, transform.rotation);
@@ -41,6 +42,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability2()
     {
+        Condition();
         if (!isOnCooldown && portal != null)
         {
             Instantiate(ability[1],spawnPos,transform.rotation);
@@ -58,7 +60,7 @@ public class SpawnAlly : MonoBehaviour
     }
     IEnumerator AllyCooldown()
     {
-        cooldownTime = 90;
+        cooldownTime = 75;
         
         while (cooldownTime > 0 && isOnCooldown)
         {
@@ -72,5 +74,11 @@ public class SpawnAlly : MonoBehaviour
         allyCooldownText.text = "Ready";
         isOnCooldown = false;
         
+    }
+
+    public void Condition()
+    {
+        if (ConditionManagement.instance == null) return;
+        ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.AllySummoned);
     }
 }

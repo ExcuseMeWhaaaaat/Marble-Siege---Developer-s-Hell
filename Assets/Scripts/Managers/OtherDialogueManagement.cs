@@ -16,23 +16,26 @@ public class DialogueManager : MonoBehaviour
 
     [Header("UI")]
     public TextMeshProUGUI textBox;
+    [SerializeField] private DialogueChunk currentChunk;
+
     
-
-    public Queue<DialogueLine> lines = new Queue<DialogueLine>();
+    
     private Coroutine typingRoutine;
-
+    private Coroutine anotherTypingRoutiune;
+    
     public bool isTyping;
     public bool autoAdvance;
     public int messageIndex = 0;
-    public bool isPlayng;
+    
 
 
     [SerializeField] float delay;
 
     [SerializeField] TypePresentation dialoguePresent;
     [SerializeField] Button nextButton;
-    
-    
+
+
+    [SerializeField] int totalMessages;
     [SerializeField] private List<SetTextPosition> setTextPosition;
     private void Awake()
     {
@@ -41,17 +44,19 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        nextButton.enabled = false;
+        nextButton.gameObject.SetActive(false);
+        
     }
     public void StartDialogue(DialogueChunk chunk)
     {
-        
-        lines.Clear();
-
-        foreach (var line in chunk.lines)
-            lines.Enqueue(line);
-
+        currentChunk = chunk;
+        var yetAnotherLine = currentChunk.lines[messageIndex];
         ShowNextLine();
+        typingRoutine = StartCoroutine(TypeLine(yetAnotherLine));
+        Debug.Log("Started Coroutine!");
+        
+        
+        
     }
     
     //Show Next Line
@@ -60,32 +65,52 @@ public class DialogueManager : MonoBehaviour
         if (isTyping)
         {
             SkipTyping();
-            return;
+            return ;
         }
-        if (lines.Count == 0)
+        if(messageIndex >= currentChunk.lines.Count)
         {
             EndDialogue();
+            return ;
+        }
+        Debug.Log("Returned True!");
+        return ;
+        
+    }
+
+    
+    public void ShowNextBattleLine(string lineToShow)
+    {
+        if (isTyping) return;
+        
+        var anotherline = new DialogueLine();
+         anotherline.text = lineToShow;
+         
+         anotherTypingRoutiune = StartCoroutine(TypeLine(anotherline));
+            
+    }
+    
+    public void SpeakStyle(Speaking speak)
+    {
+        
+        if (speak == null) 
+        {
+            Debug.Log("No speaker!");
             return;
         }
         
-        var line = lines.Dequeue();
-        typingRoutine = StartCoroutine(TypeLine(line));
-    }
-
-    public void SpeakStyle(Speaking speak)
-    {
-        if (speak == null) return;
         textBox.color = speak.dialogueColor;
         textBox.font = speak.dialogueFont;
+        
     }
     
 
     public IEnumerator TypeLine(DialogueLine line)
     {
-        isPlayng = true;
         isTyping = true;
-        textBox.text = "";
         SpeakStyle(line.speak);
+        textBox.text = "";
+        Debug.Log("On Coroutine!");
+        
         foreach(var stp in setTextPosition)
         {
             stp.SetTextPos(line);
@@ -101,25 +126,33 @@ public class DialogueManager : MonoBehaviour
         if (autoAdvance)
         {
             yield return new WaitForSeconds(dialoguePresent.typingDelay);
-            ShowNextLine();
+            
+            Debug.Log("Auto Advanced!");
+            
         }
-        
-        isPlayng = false;
+        ShowNextLine();
+
     }
     
-
+    
     public void SkipTyping()
     {
         if (typingRoutine != null)
+        {
             StopCoroutine(typingRoutine);
-
-        textBox.text = textBox.text; 
-        isTyping = false;
+            typingRoutine = null;
+            Debug.Log("Stopped");
+            textBox.text = textBox.text;
+            isTyping = false;
+        }
+            
     }
 
     void EndDialogue()
     {
         textBox.text = "";
-        nextButton.enabled = true;
+        nextButton.gameObject.SetActive(true);
     }
+
+    
 }

@@ -134,6 +134,10 @@ public class PlayerHeallth : MonoBehaviour
             {
                 SoundManagement.PlaySound(SoundType.Hurt, 0.75f);
             }
+            if (BattleDirector.instance != null)
+            {
+                BattleDirector.instance.DetermineMessage(BattleDirector.TutorialEvents.WasHit,4);
+            }
             
             playerHealth -= damageTaken;
             ActivateInvincibility();

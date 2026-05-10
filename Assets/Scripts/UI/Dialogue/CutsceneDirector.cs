@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -21,6 +22,7 @@ public class CutsceneDirector : MonoBehaviour
     private void Awake()
     {
         if (DialogueManager.Instance == null) return;
+        
         characters = new Dictionary<int,CharacterAnimationController>();
         foreach (var theCharacter in FindObjectsByType<CharacterAnimationController>(FindObjectsSortMode.None))
         {
@@ -35,11 +37,21 @@ public class CutsceneDirector : MonoBehaviour
     public IEnumerator PlayCoroutine()
     {
         var line = chunk.lines;
-        for(stepIndex = 0; stepIndex < cutscene.steps.Count; stepIndex++)
-        {
-            ExecuteAnimation(stepIndex);
+
+        
             
+        for (stepIndex = 0; stepIndex < cutscene.steps.Count; stepIndex++)
+        {
+            if (stepIndex >= line.Count)
+            {
+                
+                yield break;
+            }
+            ExecuteAnimation(stepIndex);
             yield return DialogueManager.Instance.TypeLine(line[stepIndex]);
+            
+            
+            
         }
         
     }

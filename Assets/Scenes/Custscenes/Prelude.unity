@@ -165,6 +165,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneTrigger
   chunk: {fileID: 11400000, guid: 7e92500533db821479d5a1fd4021b5c6, type: 2}
   cutscene: {fileID: 11400000, guid: 5dce158cc2e5ad34aae77be64624f2b7, type: 2}
+  stepIndex: 0
 --- !u!1 &265021992
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,6 +327,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneTrigger
   chunk: {fileID: 11400000, guid: 7e92500533db821479d5a1fd4021b5c6, type: 2}
   cutscene: {fileID: 11400000, guid: 5dce158cc2e5ad34aae77be64624f2b7, type: 2}
+  stepIndex: 0
 --- !u!1001 &745504895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -752,6 +754,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneTrigger
   chunk: {fileID: 11400000, guid: 7e92500533db821479d5a1fd4021b5c6, type: 2}
   cutscene: {fileID: 11400000, guid: 5dce158cc2e5ad34aae77be64624f2b7, type: 2}
+  stepIndex: 0
 --- !u!1 &1801969422
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,10 +1064,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   textBox: {fileID: 5711497010190614761}
+  isTyping: 0
   autoAdvance: 1
   messageIndex: 0
+  isPlayng: 0
   delay: 1
   dialoguePresent: {fileID: 11400000, guid: 81cf5866d0b837a4fac0fc0ae0d0f349, type: 2}
+  nextButton: {fileID: 5162683915596039619}
+  totalMessages: 15
+  setTextPosition: []
 --- !u!114 &2666108309994993751
 MonoBehaviour:
   m_ObjectHideFlags: 0

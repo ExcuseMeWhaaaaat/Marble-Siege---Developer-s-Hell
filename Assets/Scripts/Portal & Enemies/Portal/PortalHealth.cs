@@ -40,18 +40,23 @@ public class PortalHealth : MonoBehaviour
     }
     private void Update()
     {
-        float playerDist = Vector2.Distance(transform.position,player.transform.position);
-        if(spriteRenderer != null)
+        if(player != null)
         {
-            if (playerDist < attackRange)
+            float playerDist = Vector2.Distance(transform.position, player.transform.position);
+            if (spriteRenderer != null)
             {
-                spriteRenderer.color = activeColor;
-            }
-            else
-            {
-                spriteRenderer.color=inactiveColor;
+                if (playerDist < attackRange)
+                {
+                    spriteRenderer.color = activeColor;
+                }
+                else
+                {
+                    spriteRenderer.color = inactiveColor;
+                }
             }
         }
+        
+        
         
     }
 
@@ -62,7 +67,7 @@ public class PortalHealth : MonoBehaviour
         if(collision.gameObject.CompareTag("Player") && EnemyCounting.instance.enemyCount < 1)
         {
             
-            if(gameObject.tag != "Preboss")
+            if(gameObject.tag != "PreBoss")
             {
                 int dmg = (int)playerControls.hit;
                 portalHP -= dmg;
@@ -79,6 +84,7 @@ public class PortalHealth : MonoBehaviour
                 {
                     ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.EnemyDamaged);
                 }
+                
             }
             
             if (SoundManagement.instance != null)

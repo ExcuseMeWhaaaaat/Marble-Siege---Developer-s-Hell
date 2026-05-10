@@ -24,7 +24,7 @@ public class RainingAttack : BossAttack
     public void SpawnProjectile()
     {
             Instantiate(projectile, SpawnProjectilePos(), transform.rotation);
-            Debug.Log("Spawned");
+            
         
     }
     public Vector2 SpawnProjectilePos()

@@ -151,4 +151,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a3cdd31c68bb5499aad126a92786fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GarboCollection
-  timeToLive: 3
+  timeToLive: 5
