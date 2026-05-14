@@ -26,7 +26,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability()
     {
-        
+        ForBoth();
         if (!isOnCooldown && portal !=null)
         {
             Instantiate(ability[0], spawnPos, transform.rotation);
@@ -42,7 +42,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability2()
     {
-        
+        ForBoth();
         if (!isOnCooldown && portal != null)
         {
             Instantiate(ability[1],spawnPos,transform.rotation);
@@ -76,5 +76,14 @@ public class SpawnAlly : MonoBehaviour
         
     }
 
-    
+    public void ForBoth()
+    {
+        if(ScriptedTutorial.instance != null)
+        {
+            ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.Ally,1);
+        }
+        
+    }
+
+
 }

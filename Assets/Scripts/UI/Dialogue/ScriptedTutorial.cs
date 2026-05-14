@@ -1,16 +1,22 @@
 using NUnit.Framework;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 
 public class ScriptedTutorial : MonoBehaviour
 {
     public enum TutorialEvents
     {
         Heal,
+        Ally,
+        PointOut,
     }
 
+    public List<TutorialEvents> tutorialEvents;
     public Dictionary<TutorialEvents,bool> completeEv;
     public static ScriptedTutorial instance;
+    public DialogueChunk scriptedChunk;
+    
     private void Awake()
     {
         completeEv = new Dictionary<TutorialEvents, bool>();
@@ -25,16 +31,25 @@ public class ScriptedTutorial : MonoBehaviour
     private void Start()
     {
         completeEv.Add(TutorialEvents.Heal, false);
+        completeEv.Add(TutorialEvents.Ally, false);
+        completeEv.Add(TutorialEvents.PointOut, false);
+        
+
     }
 
-    public void CompleteEvent(TutorialEvents eventName)
+    public void CompleteEvent(TutorialEvents eventName, int lineIndex)
     {
         if (!completeEv[eventName])
         {
             completeEv[eventName] = true;
+            if (!DialogueManager.Instance.isTyping)
+            {
+                StartCoroutine(DialogueManager.Instance.TypeLine(scriptedChunk.lines[lineIndex]));
+            }
+            
         }
-        Debug.Log(completeEv[eventName]);
+        
+        
     }
 
-    
 }

@@ -73,10 +73,7 @@ public class PlayerHeallth : MonoBehaviour
                 {
                     SoundManagement.PlaySound(SoundType.Heal, 0.75f);
                 }
-                if(ScriptedTutorial.instance != null)
-                {
-                    ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.Heal);
-                }
+                
             }
             
         }
@@ -143,8 +140,11 @@ public class PlayerHeallth : MonoBehaviour
             {
                 SoundManagement.PlaySound(SoundType.Hurt, 0.75f);
             }
-            
-            
+            if (ScriptedTutorial.instance != null)
+            {
+                ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.Heal, 0);
+            }
+
             playerHealth -= damageTaken;
             ActivateInvincibility();
             if(skillPoints != null)

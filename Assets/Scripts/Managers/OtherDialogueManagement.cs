@@ -50,9 +50,11 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(DialogueChunk chunk)
     {
+        
         currentChunk = chunk;
-        var yetAnotherLine = currentChunk.lines[messageIndex];
-        ShowNextLine();
+        if (messageIndex >= currentChunk.lines.Count) return;
+            var yetAnotherLine = currentChunk.lines[messageIndex];
+        
         typingRoutine = StartCoroutine(TypeLine(yetAnotherLine));
         
          
@@ -64,15 +66,15 @@ public class DialogueManager : MonoBehaviour
         if (isTyping)
         {
             SkipTyping();
-            return ;
+            return;
         }
         if(messageIndex >= currentChunk.lines.Count)
         {
             EndDialogue();
-            return ;
+            return;
         }
         
-        return ;
+        return;
         
     }
 
@@ -129,6 +131,8 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(dialoguePresent.typingDelay);
             messageIndex++;
             ShowNextLine();
+            StartDialogue(currentChunk);
+            
         }
         
 
@@ -139,17 +143,17 @@ public class DialogueManager : MonoBehaviour
     {
         if (typingRoutine != null)
         {
-            StopCoroutine(typingRoutine);
+            
             typingRoutine = null;
             Debug.Log("Stopped");
             textBox.text = textBox.text;
-            isTyping = false;
+            
         }
             
     }
 
     void EndDialogue()
-    {
+    {        
         textBox.text = "";
         nextButton.gameObject.SetActive(true);
     }

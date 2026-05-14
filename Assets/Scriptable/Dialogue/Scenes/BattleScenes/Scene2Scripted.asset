@@ -10,15 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d1eb87bd1c28cd449acda7359981c29c, type: 3}
-  m_Name: Scene2EncounterIntro
+  m_Name: Scene2Scripted
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
   lines:
-  - text: 'Ok listen closely! '
-    correctID: 1
-    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: 'You CANNOT damage him right now... '
-    correctID: 1
-    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: 'But we''ll guide you through so you know how this works. '
+  - text: Oof! You were hit! Make sure to heal every once in a while (Press 1)
+    correctID: 2
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: 'Aeri, now would be a good time to use your "Whirlwind" thingy. '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}

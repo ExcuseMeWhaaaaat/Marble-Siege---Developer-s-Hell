@@ -82,6 +82,9 @@ public class PlayerStatusEffects : MonoBehaviour
             StartCoroutine(Cured());
         }
         
+
+
+        
     }
 
 
