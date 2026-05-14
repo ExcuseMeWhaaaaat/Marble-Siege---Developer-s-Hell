@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Text.RegularExpressions;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,43 +9,32 @@ using UnityEngine.UIElements;
 
 public class ScriptForYou : MonoBehaviour
 {
-    [SerializeField] Rigidbody2D rb;
+    public Rigidbody2D rb;
     [SerializeField] float outOfBoundsY;
     [SerializeField] float outOfBOundsX;
     [SerializeField] GameObject spawnPoint;
-    [SerializeField] float speed;
+    [SerializeField] bool canBoost = true;
+    [SerializeField] float boostTime;
+    [SerializeField] float boostCooldown;
+
+    public float speed;
     private Vector2 movement;
     public float hit;
     private float horizontal;
-    [SerializeField] bool canJump = false;
-
+    public bool canJump = false;
+    public float dmgMultiplier;
     
-    [SerializeField] float stunTime;
-    [SerializeField] float chillTime;
-    [SerializeField] float curifyTime;
-
-    [SerializeField] bool isStunned = false;
-    [SerializeField] bool isChilled = false;
-    [SerializeField] bool curified = false;
-
-    private Coroutine chillCoroutine;
-    private Coroutine stunCoroutine;
-
-    [SerializeField] Color curifiedColor;
-    [SerializeField] Color chilledColor;
-    [SerializeField] Color stunColor;
-    [SerializeField] SpriteRenderer spriteRenderer;
+    
     public string statusEffect;
     [SerializeField] bool windCharged;
-    
-    
+
+    [SerializeField] TextMeshProUGUI mbText;
+    [SerializeField] TextMeshProUGUI mbDMG;
     
     private void Start()
     {
         if(spawnPoint != null)
         transform.position = spawnPoint.transform.position;
-        
-        
     }
 
 
@@ -52,14 +42,11 @@ public class ScriptForYou : MonoBehaviour
     private void FixedUpdate()
     {
         
-        if(stunCoroutine != null)
-        {
-            rb.linearVelocity = Vector2.zero;
-        }
+        
         
         if (windCharged)
         {
-            rb.linearVelocity = new Vector2(horizontal * speed * 3,rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(horizontal * speed * 2,rb.linearVelocity.y);
         }
         else
         {
@@ -85,9 +72,22 @@ public class ScriptForYou : MonoBehaviour
         }
         
 
-
     }
 
+    public void Boost(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+
+        if (canBoost)
+        {
+            dmgMultiplier++;
+            canBoost = false;
+            StartCoroutine(MoraleBoost());
+            StartCoroutine(MBCooldown());
+            Debug.Log(canBoost);
+            
+        }
+    }
     
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -114,113 +114,54 @@ public class ScriptForYou : MonoBehaviour
             transform.position = spawnPoint.transform.position;
         }
         
-        switch (collision.gameObject.tag)
-        {
-            case "Cure":
-                GetCured();
-                
-                Debug.Log("Cured!");
-                
-                break;
-            case "NormalStun":
-                if (!curified)
-                {
-                    isStunned = true;
-                    if (stunCoroutine == null)
-                    {
-                        stunCoroutine = StartCoroutine(Stun());
-                    }
-                }
-                break;
-            case "NormalChill":
-                if (!curified)
-                {
-                    isChilled = true;
-                    if (chillCoroutine == null)
-                    {
-                        chillCoroutine = StartCoroutine(Chill());
-                    }
-                }
-                break;
-        }
-        
-        if(stunCoroutine == null)
-        {
-            canJump = true;
-        }
 
     }
 
-    
+    IEnumerator MoraleBoost()
+    {
+        boostTime = 15;
+        while(boostTime > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            boostTime--;
+            UpdateUI();
+        }
+        dmgMultiplier--;
+        
+    }
+
+    IEnumerator MBCooldown()
+    {
+        boostCooldown = 60;
+        while (boostCooldown > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            boostCooldown--;
+            UpdateUI();
+        }
+        canBoost = true;
+    }
 
     private void Update()
     {
-        hit = (int)rb.linearVelocity.magnitude;
+        hit = (int)rb.linearVelocity.magnitude * dmgMultiplier;
     }
 
-    
-   
 
-    
-    IEnumerator Stun()
-    {
-        stunTime = 3;
-        while (stunTime > 0 && isStunned)
-        {
-            spriteRenderer.color = stunColor;
-            speed *= 0f;
-            canJump = false;
-            yield return new WaitForSeconds(1f);
-            stunTime--;
-            
-        }
-        speed = 10;
-        stunCoroutine = null;
-        canJump = true;
-        isStunned = false;
-        spriteRenderer.color = Color.white;
-    }
-
-    IEnumerator Chill()
+    public void UpdateUI()
     {
         
-        chillTime = 10;
-        while(chillTime > 0 && isChilled)
+        if (!canBoost)
         {
-            spriteRenderer.color = chilledColor;
-            speed--;
-            yield return new WaitForSeconds(1f);
-            chillTime--;
-            
+            mbText.text = boostCooldown.ToString();
+            mbDMG.text = dmgMultiplier.ToString();
         }
-        speed++;
-        isChilled=false;
-        spriteRenderer.color = Color.white;
+        else
+        {
+            mbText.text = "Ready";
+        }
     }
 
-    public void GetCured()
-    {
-        speed = 10;
-        isStunned = false;
-        isChilled = false;
-        
-        stunTime = 0;
-        chillTime = 0;
-        StartCoroutine(Curify());
-        
-    }
 
-   IEnumerator Curify()
-    {
-        curifyTime = 20;
-        while (curifyTime > 0)
-        {
-            spriteRenderer.color = curifiedColor;
-            curified = true;
-            yield return new WaitForSeconds(1f);
-            curifyTime--;
-        }
-        curified = false;
-        spriteRenderer.color = Color.white;
-    }
+
 }

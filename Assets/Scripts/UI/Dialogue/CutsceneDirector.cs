@@ -63,7 +63,7 @@ public class CutsceneDirector : MonoBehaviour
         {
             if (characters.TryGetValue(animation.animID, out var character))
             {
-                character.PlayAnimation(animation.animationState);
+                character.PlayAnimation(animation.animationState.name);
             }
         }
     }

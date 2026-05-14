@@ -48,10 +48,13 @@ public class PlayerHeallth : MonoBehaviour
     public void Eliminate()
     {
         if (isElimated) return;
-        isElimated = true;
-        Destroy(gameObject);
-        skillPoints.skillPoints = 0;
-        SoundManagement.PlaySound(SoundType.Fail, 0.75f);
+        {
+            isElimated = true;
+            Destroy(gameObject);
+            skillPoints.skillPoints = 0;
+            SoundManagement.PlaySound(SoundType.Fail, 0.75f);
+        }
+        
     }
 
     public void Heal(InputAction.CallbackContext context)
@@ -67,7 +70,13 @@ public class PlayerHeallth : MonoBehaviour
                 UpdateHealthUI();
                 ActivateHealCooldown();
                 if(SoundManagement.instance != null)
-                SoundManagement.PlaySound(SoundType.Heal, 0.75f);
+                {
+                    SoundManagement.PlaySound(SoundType.Heal, 0.75f);
+                }
+                if(ScriptedTutorial.instance != null)
+                {
+                    ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.Heal);
+                }
             }
             
         }
@@ -134,10 +143,7 @@ public class PlayerHeallth : MonoBehaviour
             {
                 SoundManagement.PlaySound(SoundType.Hurt, 0.75f);
             }
-            if (BattleDirector.instance != null)
-            {
-                BattleDirector.instance.DetermineMessage(BattleDirector.TutorialEvents.WasHit,4);
-            }
+            
             
             playerHealth -= damageTaken;
             ActivateInvincibility();

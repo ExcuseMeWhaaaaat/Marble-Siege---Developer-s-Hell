@@ -26,7 +26,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability()
     {
-        Condition();
+        
         if (!isOnCooldown && portal !=null)
         {
             Instantiate(ability[0], spawnPos, transform.rotation);
@@ -42,7 +42,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability2()
     {
-        Condition();
+        
         if (!isOnCooldown && portal != null)
         {
             Instantiate(ability[1],spawnPos,transform.rotation);
@@ -76,9 +76,5 @@ public class SpawnAlly : MonoBehaviour
         
     }
 
-    public void Condition()
-    {
-        if (ConditionManagement.instance == null) return;
-        ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.AllySummoned);
-    }
+    
 }

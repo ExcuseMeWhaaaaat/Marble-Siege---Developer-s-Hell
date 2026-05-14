@@ -24,8 +24,9 @@ public class RainingAttack : BossAttack
     public void SpawnProjectile()
     {
             Instantiate(projectile, SpawnProjectilePos(), transform.rotation);
-            
         
+
+
     }
     public Vector2 SpawnProjectilePos()
     {

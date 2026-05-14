@@ -732,7 +732,6 @@ GameObject:
   - component: {fileID: 1735028996211609913}
   - component: {fileID: 3590680796203999627}
   - component: {fileID: 2414974714766683759}
-  - component: {fileID: 9001138650911045431}
   m_Layer: 0
   m_Name: WindCurrent
   m_TagString: WindCharge
@@ -860,18 +859,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &9001138650911045431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4521512135969653315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4849610426ed0c4880827593ae8969c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SpawnWindCharge
 --- !u!1 &4730937788321823403
 GameObject:
   m_ObjectHideFlags: 0

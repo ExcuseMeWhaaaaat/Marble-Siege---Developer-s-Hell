@@ -26,8 +26,12 @@ public class PortalHealth : MonoBehaviour
 
     private void Start()
     {
-        portalHPSldier.maxValue = maxValue;
-        portalHPSldier.value = portalHP;
+        if(portalHPSldier != null)
+        {
+            portalHPSldier.maxValue = maxValue;
+            portalHPSldier.value = portalHP;
+        }
+        
         if(!skillPoints || !playerControls)
         {
             playerControls = GameObject.FindGameObjectWithTag("Player").GetComponent<ScriptForYou>();
@@ -107,6 +111,7 @@ public class PortalHealth : MonoBehaviour
     public void TeleportPlayer()
     {
         player.transform.position = spawnPoint.transform.position;
+        Debug.Log("Teleported Player");
     }
     
     public void UpdateUI()

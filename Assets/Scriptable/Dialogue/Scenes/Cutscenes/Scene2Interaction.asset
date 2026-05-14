@@ -31,98 +31,73 @@ MonoBehaviour:
   - text: "seoN hO\u2026 "
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: Anything else?
+  - text: We should go see those 3.
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: 'The marble race tycoon event was just postponed until further notice. '
-    correctID: 6
-    speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
-  - text: 'Does everyone know what''s going on? '
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: Yes, everyone is aware.
-    correctID: 5
-    speak: {fileID: 11400000, guid: c2ae27be18ad00f48b1b34cedd44cf61, type: 2}
-  - text: Ok good...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: Now let's go see him...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: And them...
+  - text: They probably know what the deal is.
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: There they are!
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: Wait, that sounded like...
+  - text: Well, speak of Overlord!
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: Hey there!
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: Oh, hey, we were just talking about-
+  - text: Oh, hey, we were just talking about the information you gave us regarding
+      the raid.
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: Hold on...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: What happened?
-    correctID: 2
-    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-  - text: I feel like something is wrong...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: Like what?
-    correctID: 2
-    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-  - text: I think they're here...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: How many are there!?
+  - text: Yeah, thanks for letting us know as always!
+    correctID: 6
+    speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
+  - text: No problem!
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: There's................ only 1?
+  - text: Quick head count...
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: Huh, I thought there would be 12 total...
+  - text: 'Hydrine... Aeri... '
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+  - text: 'Wait, where''s the third one? '
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+  - text: 'Acyd? She''s probably off listening to her music again... '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: Nope, just me!
+  - text: 'I''ll go talk to her later... '
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: I mean....12 raiders shouldn't be too much for us to handle...
+    correctID: 2
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: Yeah, it should be managable...
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+  - text: Bet!
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
   - text: Wait is that...
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: How the heck are you even back!?
+  - text: 'CosmikReaper!?   '
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: Yeah, aren't you and your pals not allowed here?
+  - text: 'Its the ringmaster himself! '
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-  - text: Wow! Not even a hello or welcome back!?
+  - text: 'Yeah, its just me for now... '
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
-  - text: Also hi, traitor.
+  - text: You DO understand that you and your pals were banished for a reason...
+    correctID: 6
+    speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
+  - text: What, you're gonna have your "Postpone Squad" take on lil' ol' me?
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
-  - text: Anyways, we wanted to return the favor.
-    correctID: 7
-    speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
-  - text: Look, We don't know HOW you returned...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: But we NEED you to call this invasion off...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: "OR what, you\u2019ll have your \u201CPostpone Squad\u201D take on lil'
-      ol\u2019 me?\r\n\r\n"
-    correctID: 7
-    speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
-  - text: 'Alright then, let''s practice!
-
-
-
-'
+  - text: Let's do this then!
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}

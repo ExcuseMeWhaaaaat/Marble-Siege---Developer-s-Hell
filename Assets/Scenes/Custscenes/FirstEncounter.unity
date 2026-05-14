@@ -592,8 +592,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 404821461}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 52.67277, y: 49.7148, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 52.67276, y: 49.714798, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -619,7 +619,7 @@ MonoBehaviour:
   delay: 1
   dialoguePresent: {fileID: 11400000, guid: 81cf5866d0b837a4fac0fc0ae0d0f349, type: 2}
   nextButton: {fileID: 1654122611804293932}
-  totalMessages: 0
+  totalMessages: 29
   setTextPosition:
   - {fileID: 6022294584313173729}
   - {fileID: 6022294584377716856}
@@ -1643,37 +1643,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1367294273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1367294274}
-  m_Layer: 0
-  m_Name: Allies
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1367294274
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1367294273}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1815186663}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1372590545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1747,10 +1716,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: Narwhals
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
-  m_sharedMaterial: {fileID: -6089114040639030846, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2427,37 +2396,6 @@ Transform:
   - {fileID: 1075672127}
   m_Father: {fileID: 101582139}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1771288875
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1771288876}
-  m_Layer: 0
-  m_Name: Other
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1771288876
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1771288875}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1815186663}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1815186662
 GameObject:
   m_ObjectHideFlags: 0
@@ -2488,8 +2426,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1818793164}
-  - {fileID: 1367294274}
-  - {fileID: 1771288876}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1818793163
@@ -3284,7 +3220,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5133493870974828607, guid: ffb78f39d7005254987921efa871b6f7, type: 3}
       propertyPath: charID
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7731314589861331941, guid: ffb78f39d7005254987921efa871b6f7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4580,7 +4516,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1701670310823257623, guid: 1656e6ca093390340ac68daeeae1913a, type: 3}
       propertyPath: charID
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 9186774770206761220, guid: 1656e6ca093390340ac68daeeae1913a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5706,6 +5642,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 49572067}
     m_Modifications:
+    - target: {fileID: 426249748447281540, guid: 8758f475d71552547a81ab1ce55cd65f, type: 3}
+      propertyPath: m_Color.a
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 716607571625952913, guid: 8758f475d71552547a81ab1ce55cd65f, type: 3}
       propertyPath: m_LocalPosition.y
       value: -0.318
@@ -5874,8 +5814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
-  mainCam: {fileID: 0}
-  charPos: {fileID: 0}
+  mainCam: {fileID: 3343875917917213873}
+  charPos: {fileID: 132493200}
   offset: {x: 0, y: 0}
   speakID: 0
 --- !u!114 &6022294584377716856
@@ -7921,7 +7861,6 @@ SceneRoots:
   - {fileID: 8703567921550142027}
   - {fileID: 1374137037}
   - {fileID: 33107396}
-  - {fileID: 404821463}
   - {fileID: 718447960}
   - {fileID: 1815186663}
   - {fileID: 101582139}
@@ -7929,3 +7868,4 @@ SceneRoots:
   - {fileID: 11546745}
   - {fileID: 1016145238}
   - {fileID: 564937826}
+  - {fileID: 404821463}

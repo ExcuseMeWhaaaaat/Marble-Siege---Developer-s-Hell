@@ -15,4 +15,4 @@ MonoBehaviour:
   displayName: 
   dialogueColor: {r: 0.8, g: 0.9166667, b: 1, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
-  id: 5
+  outlineColor: {r: 0.71999997, g: 0.8258824, b: 0.9, a: 1}

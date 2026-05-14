@@ -88,9 +88,18 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Charge",
+                    "name": "Cure",
                     "type": "Button",
-                    "id": "02cd46f8-c427-4222-9684-aed7563f023b",
+                    "id": "5b71e1b9-6d86-479d-831f-6b1294025158",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Boost",
+                    "type": "Button",
+                    "id": "d6a6bb36-349f-43e2-9f56-19a5434ff198",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -189,7 +198,7 @@
                 {
                     "name": "",
                     "id": "2f4ddbb6-a30d-4f7e-bcf9-51381e61f2d7",
-                    "path": "<Keyboard>/e",
+                    "path": "<Keyboard>/1",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -243,12 +252,23 @@
                 },
                 {
                     "name": "",
-                    "id": "f80763d6-e702-4869-bd7d-d4b03dcc9f63",
-                    "path": "<Mouse>/middleButton",
+                    "id": "fe4e7b30-9351-4d0b-a18d-a890a3973f3c",
+                    "path": "<Keyboard>/2",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Charge",
+                    "action": "Cure",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "76b7e8b6-bdc9-4c9a-a8d7-5e8c7a697f11",
+                    "path": "<Keyboard>/3",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Boost",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -22,6 +22,7 @@ public class MeleeAttack : BossAttack
     public void Activate()
     {
         meleeWeapon.gameObject.SetActive(true);
+        
     }
 
     public void Deactivate()

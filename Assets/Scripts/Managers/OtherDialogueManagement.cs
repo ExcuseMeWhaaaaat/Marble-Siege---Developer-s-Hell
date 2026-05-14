@@ -21,7 +21,8 @@ public class DialogueManager : MonoBehaviour
     
     
     private Coroutine typingRoutine;
-    private Coroutine anotherTypingRoutiune;
+    public Coroutine anotherTypingRoutiune;
+    private Coroutine repeatCoroutine;
     
     public bool isTyping;
     public bool autoAdvance;
@@ -35,7 +36,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] Button nextButton;
 
 
-    [SerializeField] int totalMessages;
+    public int totalMessages;
     [SerializeField] private List<SetTextPosition> setTextPosition;
     private void Awake()
     {
@@ -53,10 +54,8 @@ public class DialogueManager : MonoBehaviour
         var yetAnotherLine = currentChunk.lines[messageIndex];
         ShowNextLine();
         typingRoutine = StartCoroutine(TypeLine(yetAnotherLine));
-        Debug.Log("Started Coroutine!");
         
-        
-        
+         
     }
     
     //Show Next Line
@@ -72,7 +71,7 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return ;
         }
-        Debug.Log("Returned True!");
+        
         return ;
         
     }
@@ -94,12 +93,13 @@ public class DialogueManager : MonoBehaviour
         
         if (speak == null) 
         {
-            Debug.Log("No speaker!");
+            
             return;
         }
         
         textBox.color = speak.dialogueColor;
         textBox.font = speak.dialogueFont;
+        
         
     }
     
@@ -109,7 +109,7 @@ public class DialogueManager : MonoBehaviour
         isTyping = true;
         SpeakStyle(line.speak);
         textBox.text = "";
-        Debug.Log("On Coroutine!");
+        
         
         foreach(var stp in setTextPosition)
         {
@@ -121,16 +121,16 @@ public class DialogueManager : MonoBehaviour
             textBox.text += c;
             yield return new WaitForSecondsRealtime(dialoguePresent.typingSpeed);
         }
-
+        
         isTyping = false;
+        
         if (autoAdvance)
         {
             yield return new WaitForSeconds(dialoguePresent.typingDelay);
-            
-            Debug.Log("Auto Advanced!");
-            
+            messageIndex++;
+            ShowNextLine();
         }
-        ShowNextLine();
+        
 
     }
     

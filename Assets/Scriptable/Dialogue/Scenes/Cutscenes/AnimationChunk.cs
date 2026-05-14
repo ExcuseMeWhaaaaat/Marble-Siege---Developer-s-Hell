@@ -10,7 +10,7 @@ public class AnimationChunk : ScriptableObject
     [System.Serializable]
     public class AnimationCommand
     {
-        public string animationState;
+        public AnimationClip animationState;
         public int animID;
     }
 }

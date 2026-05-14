@@ -8,7 +8,7 @@ public class Whirlwind : MonoBehaviour
         if(collision.gameObject.layer == LayerMask.NameToLayer("EnemyProjectile"))
         {
             Destroy(collision.gameObject);
-            Debug.Log("Haha U mad?");
+            
         }
     }
 }

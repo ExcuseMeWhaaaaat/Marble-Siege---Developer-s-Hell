@@ -15,5 +15,4 @@ MonoBehaviour:
   displayName: Acyd
   dialogueColor: {r: 0.5, g: 1, b: 0, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
-  animator: {fileID: 0}
-  id: 3
+  outlineColor: {r: 0.45176467, g: 0.9, b: 0, a: 1}

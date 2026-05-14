@@ -28,6 +28,8 @@ public class BossController : MonoBehaviour
         //If the boss is using a powerful attack, don't execute
         if (isAttacking) return;
 
+        
+        
         isAttacking = true;
         //Randomly choose an attack to execute
         int attackIndex = Random.Range(0, bossAttacks.Count);

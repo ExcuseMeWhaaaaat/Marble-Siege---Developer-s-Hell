@@ -13,52 +13,25 @@ MonoBehaviour:
   m_Name: Scene2EncounterIntro
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
   lines:
-  - text: Ok listen!
+  - text: 'Ok listen closely! '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: We'll tell you what you have to do!
+  - text: 'You CANNOT damage him yet! '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: You should be able to reach him!
-    correctID: 1
-    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: Cannot be hurt while on 1 HP? How original!
+  - text: 1 HP... 1 DMG... This should be the easiest enemy!
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-  - text: Oof! You were hit!
-    correctID: 2
-    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-  - text: Make sure to heal once in a while!
+  - text: Oof! You were hit! Make sure to heal once in a while!
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
   - text: 'I know we''re supposed to defeat this guy but his scythe looks really
       cool! '
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-  - text: Watch out for the stars!
-    correctID: 1
-    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: Aeri, this would be a good time to do your "Whirlwind" thing!
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: 'Of course this happens... '
-    correctID: 3
-    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-  - text: 'If y''all haven''t noticed by now... '
-    correctID: 3
-    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-  - text: 'He''s taunting us... '
-    correctID: 3
-    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-  - text: 'Say, what happened to our special ability files? '
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: 'The most likely conclusion is that Cos deleted them... '
-    correctID: 1
-    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: herB
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: 'I think I''ve seen enough for now... see you all soon! '
+  - text: 'I''ve seen enough for now... see you all soon! '
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
