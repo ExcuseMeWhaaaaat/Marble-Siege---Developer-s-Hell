@@ -16,6 +16,10 @@ MonoBehaviour:
   - text: Oof! You were hit! Make sure to heal every once in a while (Press 1)
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: There are also 2 more powerups you can use but we won't be needing them
+      right now.
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: 'Aeri, now would be a good time to use your "Whirlwind" thingy. '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}

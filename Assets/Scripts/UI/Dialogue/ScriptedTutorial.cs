@@ -44,7 +44,8 @@ public class ScriptedTutorial : MonoBehaviour
             completeEv[eventName] = true;
             if (!DialogueManager.Instance.isTyping)
             {
-                StartCoroutine(DialogueManager.Instance.TypeLine(scriptedChunk.lines[lineIndex]));
+                DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak); 
+                DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text);
             }
             
         }

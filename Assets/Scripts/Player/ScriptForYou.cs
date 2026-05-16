@@ -52,7 +52,12 @@ public class ScriptForYou : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
         }
-            
+
+        if(transform.position.x > outOfBOundsX || transform.position.x < -outOfBOundsX || transform.position.y > outOfBoundsY)
+        {
+            transform.position = spawnPoint.transform.position;
+        }
+        
     }
 
     public void Movement(InputAction.CallbackContext context)
@@ -106,16 +111,7 @@ public class ScriptForYou : MonoBehaviour
             Debug.Log("Charge Exited");
         }
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-        if (collision.gameObject.CompareTag("Teleporter"))
-        {
-            transform.position = spawnPoint.transform.position;
-        }
-        
-
-    }
+    
 
     IEnumerator MoraleBoost()
     {

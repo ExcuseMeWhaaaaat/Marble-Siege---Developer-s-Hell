@@ -5,7 +5,6 @@ public class MeleeAttack : BossAttack
 {
     public GameObject meleeWeapon;
     
-      
     
 
     
@@ -23,10 +22,13 @@ public class MeleeAttack : BossAttack
     {
         meleeWeapon.gameObject.SetActive(true);
         
+        
     }
 
     public void Deactivate()
     {
         meleeWeapon.gameObject.SetActive(false);
     }
+
+    
 }

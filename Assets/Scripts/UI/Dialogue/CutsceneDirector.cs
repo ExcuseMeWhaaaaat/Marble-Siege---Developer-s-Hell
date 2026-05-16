@@ -48,7 +48,9 @@ public class CutsceneDirector : MonoBehaviour
                 yield break;
             }
             ExecuteAnimation(stepIndex);
+            
             yield return DialogueManager.Instance.TypeLine(line[stepIndex]);
+            
             
             
             

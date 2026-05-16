@@ -15,6 +15,6 @@ MonoBehaviour:
   attackSelection: []
   hpTriggers: 
   animations:
-  - {fileID: 7400000, guid: 0fa121d1edd38c64591fa4e9f1f04dc6, type: 2}
-  - {fileID: 7400000, guid: f8eb38612fa773c49803042118ce3573, type: 2}
-  idleAnim: {fileID: 7400000, guid: c2bbed7404a2f5c498413e263a94ce87, type: 2}
+  - {fileID: 7400000, guid: b50c0c9228547094c83fd5e946dd3d7f, type: 2}
+  - {fileID: 7400000, guid: 0bf65ae238a179848b75cbd5b06d209d, type: 2}
+  idleAnim: {fileID: 7400000, guid: c37a7045f969e9c418e9993008b8017a, type: 2}

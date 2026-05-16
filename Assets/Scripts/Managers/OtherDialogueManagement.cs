@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private Coroutine repeatCoroutine;
     
     public bool isTyping;
-    public bool autoAdvance;
+    public bool autoAdvance = true;
     public int messageIndex = 0;
     
 
@@ -92,16 +92,12 @@ public class DialogueManager : MonoBehaviour
     
     public void SpeakStyle(Speaking speak)
     {
-        
         if (speak == null) 
         {
-            
             return;
         }
-        
         textBox.color = speak.dialogueColor;
         textBox.font = speak.dialogueFont;
-        
         
     }
     
@@ -131,7 +127,7 @@ public class DialogueManager : MonoBehaviour
             yield return new WaitForSeconds(dialoguePresent.typingDelay);
             messageIndex++;
             ShowNextLine();
-            StartDialogue(currentChunk);
+            
             
         }
         

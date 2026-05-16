@@ -36,7 +36,11 @@ public class BossController : MonoBehaviour
         
         BossAttack attack = bossAttacks[attackIndex];
         attack.Execute();
-        charAnim.animator.CrossFade(attack.animClip.name,charAnim.translationDuration);
+        if(charAnim != null)
+        {
+            charAnim.animator.CrossFade(attack.animClip.name, charAnim.translationDuration);
+        }
+        
        
     }
 
