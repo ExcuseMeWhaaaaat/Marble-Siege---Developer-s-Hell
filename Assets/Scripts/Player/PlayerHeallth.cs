@@ -143,6 +143,7 @@ public class PlayerHeallth : MonoBehaviour
             if (ScriptedTutorial.instance != null)
             {
                 ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.Heal, 0);
+                
             }
 
             playerHealth -= damageTaken;

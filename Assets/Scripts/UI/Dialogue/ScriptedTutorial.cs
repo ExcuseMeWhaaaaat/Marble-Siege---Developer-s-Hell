@@ -10,6 +10,8 @@ public class ScriptedTutorial : MonoBehaviour
         Heal,
         Ally,
         PointOut,
+        UseMe,
+        Acyd,
     }
 
     public List<TutorialEvents> tutorialEvents;
@@ -33,12 +35,15 @@ public class ScriptedTutorial : MonoBehaviour
         completeEv.Add(TutorialEvents.Heal, false);
         completeEv.Add(TutorialEvents.Ally, false);
         completeEv.Add(TutorialEvents.PointOut, false);
+        completeEv.Add(TutorialEvents.UseMe, false);
+        completeEv.Add(TutorialEvents.Acyd, false);
         
 
     }
 
     public void CompleteEvent(TutorialEvents eventName, int lineIndex)
     {
+        if (DialogueManager.Instance == null) return;
         if (!completeEv[eventName])
         {
             completeEv[eventName] = true;

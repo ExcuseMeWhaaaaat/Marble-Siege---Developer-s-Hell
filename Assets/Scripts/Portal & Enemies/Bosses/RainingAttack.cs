@@ -20,6 +20,7 @@ public class RainingAttack : BossAttack
         
         isActive = true;
         StartCoroutine(ExecutionCoroutine());
+        PromptDialogue();
     }
     public void SpawnProjectile()
     {
@@ -45,5 +46,11 @@ public class RainingAttack : BossAttack
         }
         isActive = false;
         
+    }
+
+    public void PromptDialogue()
+    {
+        if (ScriptedTutorial.instance == null) return;
+        ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.UseMe, 2);
     }
 }

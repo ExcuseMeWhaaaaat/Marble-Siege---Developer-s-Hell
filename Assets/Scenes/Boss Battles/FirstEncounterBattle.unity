@@ -203,6 +203,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &61250789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 61250791}
+  - component: {fileID: 61250790}
+  m_Layer: 0
+  m_Name: WheresAcyd
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &61250790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61250789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb342f4ba6f4b794c8f3cfbf1a96bc2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::WheresAcyd
+--- !u!4 &61250791
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 61250789}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.43499, y: -5.26184, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &268705290
 GameObject:
   m_ObjectHideFlags: 0
@@ -2318,6 +2362,37 @@ MonoBehaviour:
   direction: {x: 0, y: 0}
   thisPos: {fileID: 1694270671}
   speed: 8
+--- !u!1 &1697333440
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1697333441}
+  m_Layer: 0
+  m_Name: AcydFinder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1697333441
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1697333440}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.43499, y: -5.26184, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1735901740
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3295,6 +3370,18 @@ MonoBehaviour:
       - m_Target: {fileID: 723170520}
         m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
         m_MethodName: Ability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 61250790}
+        m_TargetAssemblyTypeName: WheresAcyd, Assembly-CSharp
+        m_MethodName: AcydIsntHere
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6020,7 +6107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8b5913392bba74bad6659a72775b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleTrigger
-  tutorialEvents: 000000000100000002000000
+  tutorialEvents: 00000000010000000200000003000000
   scriptedChunk: {fileID: 11400000, guid: 03876c48a5e23c9469f7ea311db2c334, type: 2}
 --- !u!224 &5459498896250895572
 RectTransform:
@@ -6088,6 +6175,18 @@ MonoBehaviour:
       - m_Target: {fileID: 723170520}
         m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
         m_MethodName: Ability2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 61250790}
+        m_TargetAssemblyTypeName: WheresAcyd, Assembly-CSharp
+        m_MethodName: AcydIsntHere
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8172,3 +8271,5 @@ SceneRoots:
   - {fileID: 1500353300}
   - {fileID: 3100661607016356438}
   - {fileID: 5406738648134986812}
+  - {fileID: 1697333441}
+  - {fileID: 61250791}

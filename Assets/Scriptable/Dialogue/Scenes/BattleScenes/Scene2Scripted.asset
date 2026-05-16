@@ -23,3 +23,7 @@ MonoBehaviour:
   - text: 'Aeri, now would be a good time to use your "Whirlwind" thingy. '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: 'Honestly I''d love to but as Hy said, you can''t hurt him right now...
+      which I find completely unfair.  '
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
