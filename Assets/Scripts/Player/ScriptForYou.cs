@@ -90,7 +90,10 @@ public class ScriptForYou : MonoBehaviour
             StartCoroutine(MoraleBoost());
             StartCoroutine(MBCooldown());
             Debug.Log(canBoost);
-            
+            if(ScriptedTutorial.instance != null)
+            {
+                ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.PointOut, 2);
+            }
         }
     }
     

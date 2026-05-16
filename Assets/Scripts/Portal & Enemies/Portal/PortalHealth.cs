@@ -84,9 +84,9 @@ public class PortalHealth : MonoBehaviour
             }
             else
             {
-                if (ConditionManagement.instance != null)
+                if(ScriptedTutorial.instance != null && !DialogueManager.Instance.isTyping)
                 {
-                    ConditionManagement.CheckConditions(ConditionManagement.ConditionsToMeet.EnemyDamaged);
+                    ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.TryHitBoss, 5);
                 }
                 
             }

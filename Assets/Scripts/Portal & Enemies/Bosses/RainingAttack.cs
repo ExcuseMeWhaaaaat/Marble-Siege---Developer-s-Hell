@@ -51,6 +51,6 @@ public class RainingAttack : BossAttack
     public void PromptDialogue()
     {
         if (ScriptedTutorial.instance == null) return;
-        ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.UseMe, 2);
+        ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.UseMe, 3);
     }
 }

@@ -80,6 +80,10 @@ public class PlayerStatusEffects : MonoBehaviour
             InstantCure();
             canCure = false;
             StartCoroutine(Cured());
+            if (ScriptedTutorial.instance != null)
+            {
+                ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.PointOut, 2);
+            }
         }
         
 

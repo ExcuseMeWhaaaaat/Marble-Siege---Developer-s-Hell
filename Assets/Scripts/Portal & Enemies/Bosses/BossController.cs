@@ -10,14 +10,16 @@ public class BossController : MonoBehaviour
     [SerializeField] private CharacterAnimationController charAnim;
     public bool isAttacking;
     
+    
 
     private void Start()
     {
+        
         InvokeRepeating(nameof(UseIntervalAttack), interval, interval); 
     }
     public void UseIntervalAttack()
     {
-        
+
         ChooseAttack();
     }
 
@@ -49,5 +51,7 @@ public class BossController : MonoBehaviour
         isAttacking = false;
         charAnim.animator.CrossFade(bossAttackSelection.idleAnim.name, charAnim.translationDuration);
     }
+
     
+
 }

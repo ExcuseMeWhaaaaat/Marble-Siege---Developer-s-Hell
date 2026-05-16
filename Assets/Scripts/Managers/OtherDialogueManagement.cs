@@ -25,7 +25,7 @@ public class DialogueManager : MonoBehaviour
     private Coroutine repeatCoroutine;
     
     public bool isTyping;
-    public bool autoAdvance = true;
+    public bool autoAdvance;
     public int messageIndex = 0;
     
 

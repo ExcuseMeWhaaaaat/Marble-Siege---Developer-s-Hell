@@ -7,6 +7,9 @@ public class ScriptedTutorial : MonoBehaviour
 {
     public enum TutorialEvents
     {
+        Intro1,
+        TryHitBoss,
+        Intro3,
         Heal,
         Ally,
         PointOut,
@@ -14,10 +17,12 @@ public class ScriptedTutorial : MonoBehaviour
         Acyd,
     }
 
+
     public List<TutorialEvents> tutorialEvents;
     public Dictionary<TutorialEvents,bool> completeEv;
     public static ScriptedTutorial instance;
     public DialogueChunk scriptedChunk;
+    public float timer;
     
     private void Awake()
     {
@@ -37,8 +42,16 @@ public class ScriptedTutorial : MonoBehaviour
         completeEv.Add(TutorialEvents.PointOut, false);
         completeEv.Add(TutorialEvents.UseMe, false);
         completeEv.Add(TutorialEvents.Acyd, false);
+        completeEv.Add(TutorialEvents.Intro1, false);
+        completeEv.Add(TutorialEvents.TryHitBoss,false);
+        CompleteEvent(TutorialEvents.Intro1, 0);
         
+    }
 
+    private void Update()
+    {
+        timer += Time.deltaTime;
+        
     }
 
     public void CompleteEvent(TutorialEvents eventName, int lineIndex)
@@ -57,5 +70,7 @@ public class ScriptedTutorial : MonoBehaviour
         
         
     }
+
+    
 
 }
