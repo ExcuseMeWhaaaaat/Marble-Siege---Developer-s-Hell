@@ -15,7 +15,8 @@ public class BossController : MonoBehaviour
     private void Start()
     {
         
-        InvokeRepeating(nameof(UseIntervalAttack), interval, interval); 
+        InvokeRepeating(nameof(UseIntervalAttack), interval, interval);
+        
     }
     public void UseIntervalAttack()
     {
@@ -53,5 +54,5 @@ public class BossController : MonoBehaviour
     }
 
     
-
+    
 }

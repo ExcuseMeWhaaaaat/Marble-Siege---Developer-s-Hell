@@ -484,6 +484,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 402279950429186104, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 534601269787968378, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -564,6 +568,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2712326287079494503, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4174217690862240668, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
       propertyPath: m_Name
       value: CommonBattleCanvasRevamped
@@ -575,6 +583,26 @@ PrefabInstance:
     - target: {fileID: 4333296996572490939, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 127.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841576914162664046, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5053888309558992648, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5155946380132133035, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5708745208868921037, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8551195009736581239, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -853,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1470080633055767975, guid: 5b6e9e68485d40a49b7d255485c9d17e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.03
+      value: -19.3
       objectReference: {fileID: 0}
     - target: {fileID: 3253538550082301945, guid: 5b6e9e68485d40a49b7d255485c9d17e, type: 3}
       propertyPath: m_Name
@@ -2415,9 +2443,6 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 6022294584013740056, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1822057359423280982}
     - targetCorrespondingSourceObject: {fileID: 1396117885646063953, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1999861475}
@@ -2694,7 +2719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1528808923
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2831,7 +2856,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1656599422
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2981,6 +3006,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1430390762}
+  - {fileID: 1822057359423280982}
   m_Father: {fileID: 1815186663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1735901740
@@ -3631,7 +3657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::RainingAttack
   animClip: {fileID: 7400000, guid: 0bf65ae238a179848b75cbd5b06d209d, type: 2}
   startPos: {x: 0, y: 10}
-  spawnRange: 20
+  spawnRange: 15
   projectile: {fileID: 5331139039072182109, guid: 8f5bf475bf84ae2478b6ce948aac6c72, type: 3}
   attackPeriod: 15
   attackPeriodSeconds: 0
@@ -3957,6 +3983,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 3506117001339331405}
+        m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
+        m_MethodName: Ability
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7897232614966133566}
         m_TargetAssemblyTypeName: WheresAcyd, Assembly-CSharp
         m_MethodName: AcydIsntHere
@@ -4915,11 +4953,11 @@ Transform:
   m_GameObject: {fileID: 4883977135478370942}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 2.16, z: 0}
-  m_LocalScale: {x: 1.8844, y: 4.8213, z: 1}
+  m_LocalPosition: {x: -7.67, y: -2.4999995, z: 0}
+  m_LocalScale: {x: 3.8844903, y: 6.8213263, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1430390762}
+  m_Father: {fileID: 1694270671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1862551314930620770
 SpriteRenderer:
@@ -5404,7 +5442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbfc32f7d7957b40871448465198b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAlly
-  spawnPos: {x: 10, y: -5}
+  spawnPos: {x: 0, y: -2}
   cooldownTime: 0
   isOnCooldown: 0
   ability:
@@ -5972,7 +6010,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.050980393}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -6101,7 +6139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbfc32f7d7957b40871448465198b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAlly
-  spawnPos: {x: 10, y: -5}
+  spawnPos: {x: 0, y: -2}
   cooldownTime: 0
   isOnCooldown: 0
   ability:
@@ -6658,7 +6696,7 @@ GameObject:
   - component: {fileID: 8129564271143452211}
   m_Layer: 0
   m_Name: Hitbox
-  m_TagString: PreBoss
+  m_TagString: Portal
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6945,9 +6983,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea8b5913392bba74bad6659a72775b47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleTrigger
-  tutorialEvents: 000000000100000002000000030000000400000005000000
   scriptedChunk: {fileID: 11400000, guid: 03876c48a5e23c9469f7ea311db2c334, type: 2}
   timer: 0
+  fightEnded: 0
 --- !u!224 &5459498896250895572
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7011,6 +7049,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 3506117001339331405}
+        m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
+        m_MethodName: Ability2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 7897232614966133566}
         m_TargetAssemblyTypeName: WheresAcyd, Assembly-CSharp
         m_MethodName: AcydIsntHere
@@ -8251,7 +8301,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb342f4ba6f4b794c8f3cfbf1a96bc2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WheresAcyd
-  spawnAlly: {fileID: 3506117001339331405}
 --- !u!114 &7938105959246129482
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8402,18 +8451,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd4cedeee47a6f4ebb1500d61e396ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PortalHealth
-  portalHP: 1
+  portalHP: 240
   portalHPText: {fileID: 1661574974613436315}
   spawnPoint: {fileID: 3329325132381704234}
   pointVal: 0
   player: {fileID: 10266938}
   attackRange: 0
   portalHPSldier: {fileID: 667422712}
-  maxValue: 1
+  maxValue: 240
   spriteRenderer: {fileID: 0}
-  activeColor: {r: 0, g: 0, b: 0, a: 0}
+  activeColor: {r: 1, g: 1, b: 1, a: 0.050980393}
   inactiveColor: {r: 0, g: 0, b: 0, a: 0}
-  wasDamaged: 0
   battleTarget: CosmikReaper
 --- !u!212 &8147864025361401058
 SpriteRenderer:
@@ -8894,7 +8942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbfc32f7d7957b40871448465198b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAlly
-  spawnPos: {x: 10, y: -5}
+  spawnPos: {x: 0, y: -2}
   cooldownTime: 0
   isOnCooldown: 0
   ability:

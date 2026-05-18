@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 3965285063566855218}
   - component: {fileID: 7441643151172478125}
   - component: {fileID: 3600653992575790251}
-  - component: {fileID: 9023842399355083804}
   - component: {fileID: 7178628079719371736}
   - component: {fileID: 2068179687899321884}
+  - component: {fileID: -8283673919197380149}
   m_Layer: 0
   m_Name: Acid 1
   m_TagString: AcydAttack
@@ -131,7 +131,35 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!50 &9023842399355083804
+--- !u!114 &7178628079719371736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521555192614520383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cabe2255f28db14ba47c5198dae3089, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AcidDrop
+  dropRb: {fileID: -8283673919197380149}
+  speed: 5
+  portal: {fileID: 0}
+--- !u!114 &2068179687899321884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521555192614520383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45a3cdd31c68bb5499aad126a92786fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GarboCollection
+  timeToLive: 5
+--- !u!50 &-8283673919197380149
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -158,30 +186,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7178628079719371736
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521555192614520383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cabe2255f28db14ba47c5198dae3089, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AcidDrop
-  dropRb: {fileID: 9023842399355083804}
-  speed: 3
---- !u!114 &2068179687899321884
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1521555192614520383}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45a3cdd31c68bb5499aad126a92786fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GarboCollection
-  timeToLive: 3

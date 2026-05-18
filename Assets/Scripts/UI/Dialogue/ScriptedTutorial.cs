@@ -8,25 +8,26 @@ public class ScriptedTutorial : MonoBehaviour
     public enum TutorialEvents
     {
         Intro1,
-        TryHitBoss,
-        Intro3,
+        BossDone,
         Heal,
         Ally,
-        PointOut,
-        UseMe,
         Acyd,
+        NotRecommended,
     }
 
 
-    public List<TutorialEvents> tutorialEvents;
+    
     public Dictionary<TutorialEvents,bool> completeEv;
+    
     public static ScriptedTutorial instance;
     public DialogueChunk scriptedChunk;
     public float timer;
+    public bool fightEnded;
     
     private void Awake()
     {
         completeEv = new Dictionary<TutorialEvents, bool>();
+        
         if(instance != null && instance != this )
         {
             Destroy(gameObject);
@@ -37,13 +38,11 @@ public class ScriptedTutorial : MonoBehaviour
 
     private void Start()
     {
-        completeEv.Add(TutorialEvents.Heal, false);
-        completeEv.Add(TutorialEvents.Ally, false);
-        completeEv.Add(TutorialEvents.PointOut, false);
-        completeEv.Add(TutorialEvents.UseMe, false);
-        completeEv.Add(TutorialEvents.Acyd, false);
-        completeEv.Add(TutorialEvents.Intro1, false);
-        completeEv.Add(TutorialEvents.TryHitBoss,false);
+        
+        foreach(TutorialEvents ev in System.Enum.GetValues(typeof(TutorialEvents)))
+        {
+            completeEv[ev] = false;
+        }
         CompleteEvent(TutorialEvents.Intro1, 0);
         
     }
@@ -52,25 +51,36 @@ public class ScriptedTutorial : MonoBehaviour
     {
         timer += Time.deltaTime;
         
+        
     }
 
     public void CompleteEvent(TutorialEvents eventName, int lineIndex)
     {
+        
+        
         if (DialogueManager.Instance == null) return;
-        if (!completeEv[eventName])
+        
+        if (completeEv[eventName]) return;
+        completeEv[eventName] = true;
+        if (!DialogueManager.Instance.isTyping)
         {
-            completeEv[eventName] = true;
-            if (!DialogueManager.Instance.isTyping)
-            {
-                DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak); 
-                DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text);
-            }
-            
+            DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak); 
+            DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text);
         }
         
-        
+
+
+
     }
 
     
 
+    public void EndFight()
+    {
+        
+        if(fightEnded) return;
+        fightEnded = true;
+        Debug.Log(fightEnded);
+        CompleteEvent(TutorialEvents.BossDone, 4);
+    }
 }

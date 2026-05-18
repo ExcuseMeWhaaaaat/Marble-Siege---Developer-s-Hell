@@ -7,6 +7,7 @@ using Unity.VisualScripting;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using static ScriptedTutorial;
 
 public class PlayerHeallth : MonoBehaviour
 {
@@ -136,15 +137,16 @@ public class PlayerHeallth : MonoBehaviour
         
         if (!isInvincible)
         {
-            if(SoundManagement.instance != null)
+            if (ScriptedTutorial.instance != null)
+            {
+                instance.CompleteEvent(TutorialEvents.Heal, 1);
+                
+            }
+            if (SoundManagement.instance != null)
             {
                 SoundManagement.PlaySound(SoundType.Hurt, 0.75f);
             }
-            if (ScriptedTutorial.instance != null)
-            {
-                ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.Heal, 1);
-                
-            }
+            
 
             playerHealth -= damageTaken;
             ActivateInvincibility();

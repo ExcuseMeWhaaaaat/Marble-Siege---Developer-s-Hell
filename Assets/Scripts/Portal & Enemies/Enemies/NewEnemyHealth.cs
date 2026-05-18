@@ -139,7 +139,7 @@ public class EnemyHealth : MonoBehaviour
             case "Radiation":
                 enemyHealth -= Mathf.RoundToInt(scriptYou.hit);
                 SeeEnemyDefeat();
-                Debug.Log("Poison?");
+                
                 break;
             
         }

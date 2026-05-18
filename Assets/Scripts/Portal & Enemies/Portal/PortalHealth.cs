@@ -21,7 +21,7 @@ public class PortalHealth : MonoBehaviour
     [SerializeField] SpriteRenderer spriteRenderer;
     [SerializeField] Color activeColor;
     [SerializeField] Color inactiveColor;
-    public bool wasDamaged;
+    
     [SerializeField] string battleTarget;
 
     private void Start()
@@ -39,7 +39,7 @@ public class PortalHealth : MonoBehaviour
         }
 
         portalHPText.text = battleTarget + ": " + portalHP.ToString();
-        wasDamaged = false;
+        
         
     }
     private void Update()
@@ -67,12 +67,16 @@ public class PortalHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       
+        Rigidbody2D acidRb;
+        acidRb = collision.GetComponent<Rigidbody2D>();
         
-        if(collision.gameObject.CompareTag("Player") && EnemyCounting.instance.enemyCount < 1)
+        
+        
+        switch (collision.gameObject.tag)
         {
-            
-            if(gameObject.tag != "PreBoss")
-            {
+
+            case "Player":
                 int dmg = (int)playerControls.hit;
                 portalHP -= dmg;
 
@@ -81,37 +85,53 @@ public class PortalHealth : MonoBehaviour
                     skillPoints.addSkillPoints((int)dmg / 6);
                     skillPoints.FillMeter((int)dmg / 6);
                 }
-            }
-            else
-            {
-                if(ScriptedTutorial.instance != null && !DialogueManager.Instance.isTyping)
+
+
+                if (SoundManagement.instance != null)
                 {
-                    ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.TryHitBoss, 5);
+                    SoundManagement.PlaySound(SoundType.Damage, 0.75f);
+                }
+
+                TeleportPlayer();
+
+
+
+                UpdateUI();
+                break;
+            case "Radiation":
+                {
+                    portalHP -= Mathf.RoundToInt(playerControls.hit) / 2;
+                    UpdateUI();
+                    break;
+                    
+                }
+            case "AcydAttack":
+                {
+                    
+                    if (acidRb == null) return;
+                    portalHP -= (int)acidRb.linearVelocity.magnitude / 2;
+                    Debug.Log((int)acidRb.linearVelocity.magnitude);
+                    UpdateUI();
+                    break;
                 }
                 
-            }
-            
-            if (SoundManagement.instance != null)
-            {
-                SoundManagement.PlaySound(SoundType.Damage, 0.75f);
-            }
 
-            TeleportPlayer();
-            UpdateUI();
-            
-            if (portalHP < 1)
-
-                DestroyPortal();
-            wasDamaged = true;
         }
+        if (portalHP < 1)
+
+            DestroyPortal();
+       
     }
 
-    
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        
+    }
     public void TeleportPlayer()
     {
         player.transform.position = spawnPoint.transform.position;
-        Debug.Log("Teleported Player");
+        
     }
     
     public void UpdateUI()
@@ -131,6 +151,10 @@ public class PortalHealth : MonoBehaviour
         {
             skillPoints.addSkillPoints(portalHP / 3);
             SoundManagement.PlaySound(SoundType.Success, 0.75f);
+        }
+        if(ScriptedTutorial.instance != null)
+        {
+            ScriptedTutorial.instance.EndFight();
         }
         
     }
