@@ -369,7 +369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 645869340}
-  targetScene: StrangeStreetsZone1
+  targetScene: StrangeStreetsCutscene
   currentScene: {}
 --- !u!1 &720548792
 GameObject:

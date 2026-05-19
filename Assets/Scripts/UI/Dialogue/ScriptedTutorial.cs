@@ -80,7 +80,9 @@ public class ScriptedTutorial : MonoBehaviour
         
         if(fightEnded) return;
         fightEnded = true;
-        Debug.Log(fightEnded);
+        
         CompleteEvent(TutorialEvents.BossDone, 4);
+        DialogueManager.Instance.nextButton.gameObject.SetActive(true);
+
     }
 }

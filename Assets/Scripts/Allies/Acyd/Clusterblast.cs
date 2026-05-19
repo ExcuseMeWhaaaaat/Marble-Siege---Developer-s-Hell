@@ -23,7 +23,7 @@ public class Clusterblast : MonoBehaviour
 
     private void Update()
     {
-        transform.Translate(speed * Time.deltaTime * Vector2.down);
+        transform.Translate(Vector2.zero);
     }
 
     public void Poof()

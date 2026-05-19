@@ -617,8 +617,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clusterblast
   clusterSpew: {fileID: 1521555192614520383, guid: 41255e7f33b9ef84cb73065b1867f16f, type: 3}
-  delay: 1
-  speed: 3
+  delay: 3
+  speed: 5
 --- !u!1 &3867767232362582056
 GameObject:
   m_ObjectHideFlags: 0
@@ -1299,8 +1299,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Clusterblast
   clusterSpew: {fileID: 1521555192614520383, guid: 41255e7f33b9ef84cb73065b1867f16f, type: 3}
-  delay: 1
-  speed: 3
+  delay: 3
+  speed: 5
 --- !u!1 &6750182849250348883
 GameObject:
   m_ObjectHideFlags: 0

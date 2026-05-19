@@ -877,7 +877,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1470080633055767975, guid: 5b6e9e68485d40a49b7d255485c9d17e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 35.33
+      value: 29.5
       objectReference: {fileID: 0}
     - target: {fileID: 1470080633055767975, guid: 5b6e9e68485d40a49b7d255485c9d17e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2170,7 +2170,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1694270671}
+    m_TransformParent: {fileID: 1822057359423280982}
     m_Modifications:
     - target: {fileID: 476929577292408126, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
       propertyPath: m_Color.b
@@ -2337,12 +2337,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: -8750927762804886611, guid: f33883bcf01e5a949800989531e9bb57, type: 3}
     - target: {fileID: 6022294584013740056, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.25743404
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022294584013740056, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.14659905
+      objectReference: {fileID: 0}
+    - target: {fileID: 6022294584013740056, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.600006
+      value: 0.01801883
       objectReference: {fileID: 0}
     - target: {fileID: 6022294584013740056, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.83
+      value: -0.34157586
       objectReference: {fileID: 0}
     - target: {fileID: 6022294584013740056, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3005,7 +3013,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1430390762}
   - {fileID: 1822057359423280982}
   m_Father: {fileID: 1815186663}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3983,18 +3990,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3506117001339331405}
-        m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
-        m_MethodName: Ability
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7897232614966133566}
         m_TargetAssemblyTypeName: WheresAcyd, Assembly-CSharp
         m_MethodName: AcydIsntHere
@@ -4426,24 +4421,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8628903181870480371}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &847563486156789033
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3100661607016356438}
-  - component: {fileID: 1444583342889066531}
-  - component: {fileID: 3100661607016356439}
-  m_Layer: 0
-  m_Name: HydrineSpeak
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!1 &900875602822841091
 GameObject:
   m_ObjectHideFlags: 0
@@ -4617,22 +4594,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7220302883000130837}
   m_CullTransparentMesh: 1
---- !u!114 &1444583342889066531
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847563486156789033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
-  mainCam: {fileID: 1882332086}
-  charPos: {fileID: 1856227064}
-  offset: {x: 0, y: 3}
-  speakID: 1
 --- !u!222 &1472613718642131562
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4956,7 +4917,8 @@ Transform:
   m_LocalPosition: {x: -7.67, y: -2.4999995, z: 0}
   m_LocalScale: {x: 3.8844903, y: 6.8213263, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1430390762}
   m_Father: {fileID: 1694270671}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1862551314930620770
@@ -5366,7 +5328,7 @@ GameObject:
   - component: {fileID: 5406738648134986812}
   - component: {fileID: 5406738648134986813}
   m_Layer: 0
-  m_Name: FIghtConditioners
+  m_Name: TutorialSpeak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5815,36 +5777,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 7208808813765171485}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &3100661607016356438
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847563486156789033}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 82.56737, y: 3.31919, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3100661607016356439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 847563486156789033}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1abccc0d01232864596f465e5ba2414d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CutsceneDirector
-  chunk: {fileID: 11400000, guid: 03876c48a5e23c9469f7ea311db2c334, type: 2}
-  cutscene: {fileID: 11400000, guid: 5dce158cc2e5ad34aae77be64624f2b7, type: 2}
-  stepIndex: 0
 --- !u!4 &3237562277298184235
 Transform:
   m_ObjectHideFlags: 0
@@ -6139,7 +6071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbfc32f7d7957b40871448465198b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAlly
-  spawnPos: {x: 0, y: -2}
+  spawnPos: {x: 11, y: 5}
   cooldownTime: 0
   isOnCooldown: 0
   ability:
@@ -6414,8 +6346,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000022888184, y: -0.5}
-  m_SizeDelta: {x: -35.395508, y: -23.112}
+  m_AnchoredPosition: {x: 0.00009918213, y: -0.000015258789}
+  m_SizeDelta: {x: 0.000030518, y: -0.0000095367}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4219228524727460650
 GameObject:
@@ -7049,18 +6981,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3506117001339331405}
-        m_TargetAssemblyTypeName: SpawnAlly, Assembly-CSharp
-        m_MethodName: Ability2
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 7897232614966133566}
         m_TargetAssemblyTypeName: WheresAcyd, Assembly-CSharp
         m_MethodName: AcydIsntHere
@@ -7880,7 +7800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 1654122611804293932}
-  targetScene: PlayOpening
+  targetScene: LevelMenu
   currentScene: {}
 --- !u!4 &7208808813765171485
 Transform:
@@ -8078,8 +7998,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294950028
-  m_fontColor: {r: 0.54901963, g: 0.73692816, b: 1, a: 1}
+    rgba: 4294937759
+  m_fontColor: {r: 0.62418294, g: 0.54901963, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8330,8 +8250,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294950028
-  m_fontColor: {r: 0.54901963, g: 0.73692816, b: 1, a: 1}
+    rgba: 4294937759
+  m_fontColor: {r: 0.62418294, g: 0.54901963, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9267,7 +9187,6 @@ SceneRoots:
   - {fileID: 1382577413289254219}
   - {fileID: 1713850726773534917}
   - {fileID: 312358668}
-  - {fileID: 3100661607016356438}
   - {fileID: 5406738648134986812}
   - {fileID: 8638737745964590727}
   - {fileID: 67085762}

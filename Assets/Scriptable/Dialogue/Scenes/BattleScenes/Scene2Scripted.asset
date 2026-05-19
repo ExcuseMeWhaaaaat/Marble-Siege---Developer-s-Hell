@@ -24,9 +24,9 @@ MonoBehaviour:
       block the projectiles! '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: 'You still trust me even though... nevermind... '
-    correctID: 3
-    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+  - text: 'She still isn''t here... don''t worry, I''ll talk to her after this. '
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: 'I learned what I need to know for now. Thank you guys and see you all
       later! '
     correctID: 7

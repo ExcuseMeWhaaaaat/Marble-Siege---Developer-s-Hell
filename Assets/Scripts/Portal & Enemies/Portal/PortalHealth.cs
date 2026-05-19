@@ -77,9 +77,14 @@ public class PortalHealth : MonoBehaviour
         {
 
             case "Player":
+                
                 int dmg = (int)playerControls.hit;
-                portalHP -= dmg;
 
+                if (EnemyCounting.instance.enemyCount < 1)
+                {
+                    portalHP -= dmg;
+                    TeleportPlayer();
+                }
                 if (skillPoints != null)
                 {
                     skillPoints.addSkillPoints((int)dmg / 6);
@@ -92,7 +97,7 @@ public class PortalHealth : MonoBehaviour
                     SoundManagement.PlaySound(SoundType.Damage, 0.75f);
                 }
 
-                TeleportPlayer();
+                
 
 
 
@@ -118,8 +123,15 @@ public class PortalHealth : MonoBehaviour
 
         }
         if (portalHP < 1)
-
+        {
+            if (ScriptedTutorial.instance != null)
+            {
+                ScriptedTutorial.instance.EndFight();
+            }
             DestroyPortal();
+        }
+
+            
        
     }
 
@@ -152,10 +164,7 @@ public class PortalHealth : MonoBehaviour
             skillPoints.addSkillPoints(portalHP / 3);
             SoundManagement.PlaySound(SoundType.Success, 0.75f);
         }
-        if(ScriptedTutorial.instance != null)
-        {
-            ScriptedTutorial.instance.EndFight();
-        }
+        
         
     }
 
