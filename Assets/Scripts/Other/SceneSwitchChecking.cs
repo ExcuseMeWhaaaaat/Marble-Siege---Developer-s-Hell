@@ -1,7 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using static UnityEditor.Rendering.MaterialUpgrader;
+
 
 public class SceneSwitchChecking : MonoBehaviour
 {

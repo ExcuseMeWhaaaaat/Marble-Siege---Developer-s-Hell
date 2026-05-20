@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
+    path: Assets/Scenes/Menus/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Misc/Prototype.unity
+    path: Assets/Scenes/Junk/Misc/Prototype.unity
     guid: b8a275277d6352549bfb371df9187f65
   - enabled: 1
     path: Assets/Scenes/Custscenes/PlayableCutscenes/PlayOpening.unity
@@ -24,17 +24,16 @@ EditorBuildSettings:
     path: Assets/Scenes/Boss Battles/FirstEncounterBattle.unity
     guid: 9e917214a10e7204081a55e5edcdd752
   - enabled: 1
-    path: Assets/Scenes/Scrapped/FirstMeeting.unity
+    path: Assets/Scenes/Junk/Scrapped/FirstMeeting.unity
     guid: 15ed1c142db500b44aed11933e410bde
   - enabled: 1
     path: Assets/Scenes/Zone1Battles/StrangeStreetsZone1.unity
     guid: 158587cb9b9516648b8bebf3a94967ec
   - enabled: 1
-    path: Assets/Scenes/LevelMenu.unity
+    path: Assets/Scenes/Menus/LevelMenu.unity
     guid: 2216cfbfce03dde45884ecf468f1fe3a
   - enabled: 1
     path: Assets/Scenes/Custscenes/PlayableCutscenes/StrangeStreetsCutscene.unity
     guid: 78163b27192d9cf4bac7ccb7656643d2
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ba0a6b6ee19553e4a9a96893d08a1ec6, type: 3}
-  m_UseUCBPForAssetBundles: 0

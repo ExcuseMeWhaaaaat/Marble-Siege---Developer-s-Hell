@@ -2,7 +2,7 @@ using NUnit.Framework;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-using static UnityEditor.Rendering.MaterialUpgrader;
+
 
 public class SetTextPosition : MonoBehaviour
 {
