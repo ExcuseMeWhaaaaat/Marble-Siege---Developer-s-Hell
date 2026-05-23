@@ -11,7 +11,8 @@ public class Speaking : ScriptableObject
     [TextArea] public string displayName;
     public Color dialogueColor;
     public TMP_FontAsset dialogueFont;
-    public Color outlineColor; 
+    public Color outlineColor;
+    public AudioClip speakerVoice;
     
     
     

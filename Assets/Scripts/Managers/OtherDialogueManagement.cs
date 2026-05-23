@@ -56,8 +56,6 @@ public class DialogueManager : MonoBehaviour
             var yetAnotherLine = currentChunk.lines[messageIndex];
         
         typingRoutine = StartCoroutine(TypeLine(yetAnotherLine));
-        
-         
     }
     
     //Show Next Line
@@ -74,25 +72,23 @@ public class DialogueManager : MonoBehaviour
             EndDialogue();
             return;
         }
-        
         return;
         
     }
-
-    
-    public void ShowNextBattleLine(string lineToShow)
+    public void ShowNextBattleLine(string lineToShow, Speaking speak3)
     {
         if (isTyping) return;
         
         var anotherline = new DialogueLine();
-         anotherline.text = lineToShow;
-         
-         anotherTypingRoutiune = StartCoroutine(TypeLine(anotherline));
+        anotherline.text = lineToShow;
+         anotherline.speak = speak3;
+        anotherTypingRoutiune = StartCoroutine(TypeLine(anotherline));
             
     }
     
     public void SpeakStyle(Speaking speak)
     {
+        Debug.Log(speak);
         if (speak == null) 
         {
             return;
@@ -102,11 +98,18 @@ public class DialogueManager : MonoBehaviour
         
     }
     
+   
+        
+    
 
     public IEnumerator TypeLine(DialogueLine line)
     {
+        
+        
         isTyping = true;
         SpeakStyle(line.speak);
+        
+        
         textBox.text = "";
         
         
@@ -117,7 +120,12 @@ public class DialogueManager : MonoBehaviour
         
         foreach (char c in line.text)
         {
+           
             textBox.text += c;
+            if (SoundManagement.instance != null)
+            {
+                SoundManagement.instance.audioSource.PlayOneShot(line.speak.speakerVoice, 0.75f);
+            }
             yield return new WaitForSecondsRealtime(dialoguePresent.typingSpeed);
         }
         
@@ -129,11 +137,7 @@ public class DialogueManager : MonoBehaviour
             messageIndex++;
             ShowNextLine();
         }
-        
-        
-
     }
-    
     
     public void SkipTyping()
     {
@@ -144,15 +148,15 @@ public class DialogueManager : MonoBehaviour
             Debug.Log("Stopped");
             textBox.text = textBox.text;
             
-        }
-            
+        } 
     }
-
     public void EndDialogue()
     {        
         textBox.text = "";
         nextButton.gameObject.SetActive(true);
     }
 
+    
+   
     
 }

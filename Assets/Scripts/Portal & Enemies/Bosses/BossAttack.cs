@@ -7,4 +7,5 @@ public abstract  class BossAttack : MonoBehaviour
     public abstract void Execute();
 
     public AnimationClip animClip;
+    
 }

@@ -86,18 +86,22 @@ MonoBehaviour:
   - text: 'CosmikReaper!?   '
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: 'Its the ringmaster himself! '
+  - text: 'Gasp! Its the ringmaster himself! '
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
   - text: 'Yeah, its just me for now... '
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
   - text: You DO understand that you and your pals were banished for a reason...
+      right?
     correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
-  - text: What, you're gonna have your "Postpone Squad" take on lil' ol' me?
+  - text: Wow! Not even a "hello" or "welcome back"
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
-  - text: Let's do this then!
+  - text: Are you gonna have your "Postpone Squad" take on lil' ol' me?
+    correctID: 7
+    speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
+  - text: Alright... let's practice
     correctID: 7
     speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}

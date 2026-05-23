@@ -20,6 +20,10 @@ public class TakeToScene : MonoBehaviour
     {
         
         SceneManager.LoadScene(targetScene);
+        if(SoundManagement.instance != null)
+        {
+            SoundManagement.PlaySound(SoundType.Click,0.5f);
+        }
         CheckForScene();
     }
 
@@ -35,7 +39,9 @@ public class TakeToScene : MonoBehaviour
         {
             SceneSwitchChecking.instance.CheckOnScene();
             if (targetScene == "MainMenu")
-                QuitGame();
+            QuitGame();
+            
+                
         }
         
     
