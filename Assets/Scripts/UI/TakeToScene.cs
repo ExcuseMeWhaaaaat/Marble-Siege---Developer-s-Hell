@@ -15,16 +15,12 @@ public class TakeToScene : MonoBehaviour
         
         currentScene = SceneManager.GetActiveScene();
         
+        
     }
     public void SceneChange()
     {
-        
         SceneManager.LoadScene(targetScene);
-        if(SoundManagement.instance != null)
-        {
-            SoundManagement.PlaySound(SoundType.Click,0.5f);
-        }
-        CheckForScene();
+        Conditions(); 
     }
 
     public void QuitGame()
@@ -39,11 +35,22 @@ public class TakeToScene : MonoBehaviour
         {
             SceneSwitchChecking.instance.CheckOnScene();
             if (targetScene == "MainMenu")
-            QuitGame();
-            
-                
+            QuitGame();  
         }
         
     
+    }
+
+    
+
+    
+
+    public void Conditions()
+    {
+        if (SoundManagement.instance != null)
+        {
+            SoundManagement.PlaySound(SoundType.Click, 0.5f);
+        }
+        CheckForScene();
     }
 }

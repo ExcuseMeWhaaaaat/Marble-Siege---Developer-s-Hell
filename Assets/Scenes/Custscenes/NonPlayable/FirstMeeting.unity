@@ -308,7 +308,7 @@ MonoBehaviour:
   inBattle: 0
   currentChunk: {fileID: 11400000, guid: e13994f3641c9234fab927c4a63a879f, type: 2}
   messageIndex: 0
-  imageRect: {fileID: 313989083}
+  imageRect: {fileID: 0}
   rectTransform: {fileID: 422428001}
   onScreen: 0
   cam: {fileID: 4238850101522841600}
@@ -412,7 +412,7 @@ Transform:
   m_GameObject: {fileID: 125896248}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.12854996, w: 0.99170303}
-  m_LocalPosition: {x: 3.98, y: 1.26, z: 0}
+  m_LocalPosition: {x: 3.545, y: 1.316, z: 0}
   m_LocalScale: {x: 1.3876537, y: 1.5300721, z: 2.0289826}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -704,108 +704,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 245630026}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -14.772}
---- !u!1001 &313989082
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 422428001}
-    m_Modifications:
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 513.3143
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 70.4485
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -217.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8538550399912763398, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-      propertyPath: m_Name
-      value: DialogueImage2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
---- !u!224 &313989083 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 4815326717686178014, guid: 76ec66875576c9c47ba2bc4197f897cb, type: 3}
-  m_PrefabInstance: {fileID: 313989082}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &349512863
 GameObject:
   m_ObjectHideFlags: 0
@@ -948,7 +846,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1237063959
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -1053,6 +951,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1070,7 +969,6 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 313989083}
   - {fileID: 1220107235}
   - {fileID: 1569937376}
   - {fileID: 1811732172}
@@ -1338,10 +1236,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
-  dialogueText: {fileID: 1811732171}
-  charID: 8
+  mainCam: {fileID: 0}
   charPos: {fileID: 690830863}
   offset: {x: 0, y: -3}
+  speakID: 0
 --- !u!1 &757869314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,17 +2845,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95de11fc2fc631d469ed5adcc3e9b43e, type: 3}
---- !u!114 &1811732171 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 112381221317063477, guid: 95de11fc2fc631d469ed5adcc3e9b43e, type: 3}
-  m_PrefabInstance: {fileID: 1811732170}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &1811732172 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6595408355858563268, guid: 95de11fc2fc631d469ed5adcc3e9b43e, type: 3}
@@ -3447,6 +3334,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ES
       objectReference: {fileID: 0}
+    - target: {fileID: 4853583870360977531, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5335456274113183140, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
       propertyPath: m_Color.b
       value: 0.5
@@ -3624,6 +3515,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAnimationController
   animator: {fileID: 2121482217}
   translationDuration: 0.5
+  charID: 0
 --- !u!95 &2121482217
 Animator:
   serializedVersion: 7
@@ -3658,10 +3550,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
-  dialogueText: {fileID: 1569937377}
-  charID: 7
+  mainCam: {fileID: 0}
   charPos: {fileID: 2121482214}
   offset: {x: 0, y: 5}
+  speakID: 0
 --- !u!1001 &2143355671
 PrefabInstance:
   m_ObjectHideFlags: 0

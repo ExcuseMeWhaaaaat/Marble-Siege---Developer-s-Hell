@@ -36,7 +36,7 @@ public class DialogueManager : MonoBehaviour
     public Button nextButton;
 
 
-    public int totalMessages;
+    
     [SerializeField] private List<SetTextPosition> setTextPosition;
     private void Awake()
     {
@@ -50,11 +50,9 @@ public class DialogueManager : MonoBehaviour
     }
     public void StartDialogue(DialogueChunk chunk)
     {
-        
         currentChunk = chunk;
-        if (messageIndex >= currentChunk.lines.Count) return;
-            var yetAnotherLine = currentChunk.lines[messageIndex];
-        
+        var yetAnotherLine = currentChunk.lines[messageIndex];
+
         typingRoutine = StartCoroutine(TypeLine(yetAnotherLine));
     }
     
@@ -68,12 +66,14 @@ public class DialogueManager : MonoBehaviour
         }
         if(messageIndex >= currentChunk.lines.Count)
         {
-            
-            EndDialogue();
+            nextButton.gameObject.SetActive(true);
             return;
         }
-        return;
+        Debug.Log(messageIndex);
         
+        
+        
+
     }
     public void ShowNextBattleLine(string lineToShow, Speaking speak3)
     {
@@ -97,11 +97,6 @@ public class DialogueManager : MonoBehaviour
         textBox.font = speak.dialogueFont;
         
     }
-    
-   
-        
-    
-
     public IEnumerator TypeLine(DialogueLine line)
     {
         
@@ -130,13 +125,14 @@ public class DialogueManager : MonoBehaviour
         }
         
         isTyping = false;
-        
-        if (autoAdvance)
+        messageIndex++;
+        if (!autoAdvance)
         {
-            yield return new WaitForSeconds(dialoguePresent.typingDelay);
-            messageIndex++;
-            ShowNextLine();
+            yield break;
         }
+        yield return new WaitForSecondsRealtime(dialoguePresent.typingDelay);
+        ShowNextLine();
+
     }
     
     public void SkipTyping()
@@ -150,13 +146,7 @@ public class DialogueManager : MonoBehaviour
             
         } 
     }
-    public void EndDialogue()
-    {        
-        textBox.text = "";
-        nextButton.gameObject.SetActive(true);
-    }
-
     
-   
+        
     
 }

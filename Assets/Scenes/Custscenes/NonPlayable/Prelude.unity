@@ -1122,6 +1122,23 @@ RectTransform:
   m_AnchoredPosition: {x: 4.4865, y: -2.3484154}
   m_SizeDelta: {x: 1132.973, y: 534.6968}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &707991481838942437
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1644577268469295544}
+  - component: {fileID: 1644577268469295545}
+  m_Layer: 0
+  m_Name: LoadHere
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!224 &898198459620279822
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1327,6 +1344,34 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &1644577268469295544
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707991481838942437}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.81006, y: 7.51349, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1644577268469295545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 707991481838942437}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d86f52e34d1c4040a71658dd5423ddf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LoadThisScene
+  sceneName: Prelude
 --- !u!114 &1897975630102745125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1480,7 +1525,6 @@ MonoBehaviour:
   delay: 1
   dialoguePresent: {fileID: 11400000, guid: 81cf5866d0b837a4fac0fc0ae0d0f349, type: 2}
   nextButton: {fileID: 5162683915596039619}
-  totalMessages: 15
   setTextPosition: []
 --- !u!114 &2666108309994993751
 MonoBehaviour:
@@ -1598,7 +1642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 5162683915596039619}
-  targetScene: PlayOpening
+  targetScene: PlayOpening2
   currentScene: {}
 --- !u!4 &3925497754323168410
 Transform:
@@ -2376,6 +2420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59071639c8480ff4ca5024e241bfb556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManagement
+  audioSource: {fileID: 0}
   soundList:
   - {fileID: 8300000, guid: a3ea7e98b69af8146bf2ad5cafb1b1c2, type: 3}
   - {fileID: 8300000, guid: fd9aa60a11e82f14da64853782901d84, type: 3}
@@ -2644,3 +2689,4 @@ SceneRoots:
   - {fileID: 1801969424}
   - {fileID: 442479549006572164}
   - {fileID: 3061175209807268760}
+  - {fileID: 1644577268469295544}
