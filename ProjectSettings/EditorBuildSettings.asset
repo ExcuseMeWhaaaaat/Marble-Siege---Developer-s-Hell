@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Menus/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
-    path: Assets/Scenes/Junk/Misc/Prototype.unity
+    path: Assets/Scenes/Misc/Junk/Misc/Prototype.unity
     guid: b8a275277d6352549bfb371df9187f65
-  - enabled: 0
-    path: Assets/Scenes/Junk/Scrapped/PlayOpening.unity
+  - enabled: 1
+    path: Assets/Scenes/Misc/Junk/Scrapped/PlayOpening.unity
     guid: bf34586ec1660a44abd9597238b675b1
   - enabled: 1
     path: Assets/Scenes/Custscenes/NonPlayable/Prelude.unity
