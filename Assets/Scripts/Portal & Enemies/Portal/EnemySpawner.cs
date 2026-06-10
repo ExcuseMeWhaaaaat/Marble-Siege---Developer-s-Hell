@@ -88,7 +88,11 @@ public class EnemySpawner : MonoBehaviour
     private void ChangeColor()
     {
         spriteRenderer.color = warnColor;
-        SoundManagement.PlaySound(SoundType.Warn, 0.75f);
+        if(SoundManagement.instance != null)
+        {
+            SoundManagement.PlaySound(SoundType.Warn, 0.75f);
+        }
+        
     }
 
 

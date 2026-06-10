@@ -9,12 +9,20 @@ public enum SoundType
     Success,
     Fail,
     Heal,
+    Click,
+    
+    Whirlwind,
+    WindCharge,
+    HealPool,
+    Splash,
+    
+    FallingStar,
     
 }
 public class SoundManagement : MonoBehaviour
 {
     public static SoundManagement instance;
-    private AudioSource audioSource;
+    public AudioSource audioSource;
     [SerializeField] AudioClip[] soundList;
     private void Awake()
     {

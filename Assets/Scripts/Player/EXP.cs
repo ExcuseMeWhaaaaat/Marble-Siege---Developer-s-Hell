@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class EXP : MonoBehaviour
 {
     public int experiencePoints;
-    private MarbleSpawning marbleSpawnerScript;
+    
     [SerializeField] private GameObject marbleSpawner;
     [SerializeField] float delay;
     [SerializeField] float repeatRate;
@@ -16,8 +16,8 @@ public class EXP : MonoBehaviour
     
     void Start()
     {
-        marbleSpawnerScript = marbleSpawner.GetComponent<MarbleSpawning>();
-        InvokeRepeating(nameof(RetentionXP),delay,repeatRate);
+        
+        
         expBar.maxValue = maxXP;
         expBar.value = experiencePoints;
         experienceInd.text = "Experience Points: " + experiencePoints.ToString();
@@ -39,13 +39,5 @@ public class EXP : MonoBehaviour
         }
     }
 
-    public void RetentionXP()
-    {
-        
-        if (marbleSpawnerScript.marbles > 0)
-        {
-            AddTotalExperience(marbleSpawnerScript.marbles/2);
-            
-        }
-    }
+    
 }

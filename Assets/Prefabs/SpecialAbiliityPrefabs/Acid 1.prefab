@@ -144,8 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::AcidDrop
   dropRb: {fileID: -8283673919197380149}
-  speed: 5
-  portal: {fileID: 0}
+  speed: 3
 --- !u!114 &2068179687899321884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -158,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45a3cdd31c68bb5499aad126a92786fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GarboCollection
-  timeToLive: 5
+  timeToLive: 3
 --- !u!50 &-8283673919197380149
 Rigidbody2D:
   serializedVersion: 5

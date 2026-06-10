@@ -16,3 +16,4 @@ MonoBehaviour:
   dialogueColor: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
   outlineColor: {r: 0.585, g: 0.7425, b: 0.9, a: 1}
+  speakerVoice: {fileID: 8300000, guid: b18e9b910e373a1489b70c3f82505ffa, type: 3}

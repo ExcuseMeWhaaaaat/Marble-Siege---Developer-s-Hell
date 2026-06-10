@@ -10,7 +10,7 @@ public class RainingAttack : BossAttack
     [SerializeField] GameObject projectile;
     [SerializeField] float attackPeriod;
     [SerializeField] float attackPeriodSeconds;
-    
+    [SerializeField] private BossAudio bossAudio;
     
 
     
@@ -24,10 +24,12 @@ public class RainingAttack : BossAttack
     }
     public void SpawnProjectile()
     {
-            Instantiate(projectile, SpawnProjectilePos(), transform.rotation);
+        Instantiate(projectile, SpawnProjectilePos(), transform.rotation);
+        if(SoundManagement.instance != null)
+        {
+            SoundManagement.instance.audioSource.PlayOneShot(bossAudio.audClip);
+        }
         
-
-
     }
     public Vector2 SpawnProjectilePos()
     {
@@ -42,6 +44,7 @@ public class RainingAttack : BossAttack
         {
             yield return new WaitForSeconds(0.5f);
             SpawnProjectile();
+            
             attackPeriodSeconds--;
         }
         isActive = false;

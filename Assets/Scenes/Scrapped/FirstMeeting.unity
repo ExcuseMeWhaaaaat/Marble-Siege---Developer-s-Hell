@@ -948,7 +948,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -1237063959
-  m_SortingLayer: -3
+  m_SortingLayer: -4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
@@ -1053,6 +1053,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
+  m_UseReflectionProbes: 0
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
@@ -1338,10 +1339,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
-  dialogueText: {fileID: 1811732171}
-  charID: 8
+  mainCam: {fileID: 0}
   charPos: {fileID: 690830863}
   offset: {x: 0, y: -3}
+  speakID: 0
 --- !u!1 &757869314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2947,17 +2948,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95de11fc2fc631d469ed5adcc3e9b43e, type: 3}
---- !u!114 &1811732171 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 112381221317063477, guid: 95de11fc2fc631d469ed5adcc3e9b43e, type: 3}
-  m_PrefabInstance: {fileID: 1811732170}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!224 &1811732172 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6595408355858563268, guid: 95de11fc2fc631d469ed5adcc3e9b43e, type: 3}
@@ -3624,6 +3614,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CharacterAnimationController
   animator: {fileID: 2121482217}
   translationDuration: 0.5
+  charID: 0
 --- !u!95 &2121482217
 Animator:
   serializedVersion: 7
@@ -3658,10 +3649,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
-  dialogueText: {fileID: 1569937377}
-  charID: 7
+  mainCam: {fileID: 0}
   charPos: {fileID: 2121482214}
   offset: {x: 0, y: 5}
+  speakID: 0
 --- !u!1001 &2143355671
 PrefabInstance:
   m_ObjectHideFlags: 0

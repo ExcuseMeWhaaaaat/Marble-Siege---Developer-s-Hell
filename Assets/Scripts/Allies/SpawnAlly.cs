@@ -29,14 +29,12 @@ public class SpawnAlly : MonoBehaviour
         
         if (!isOnCooldown && portal !=null)
         {
-            Instantiate(ability[0], spawnPos, transform.rotation);
-            Debug.Log("Spawned");
-            isOnCooldown = true;
-            StartCoroutine(AllyCooldown());
+            Conditions(0);
             
         }
         else
         {
+            
             Debug.Log("This character is on cooldown");
         }
     }
@@ -45,11 +43,8 @@ public class SpawnAlly : MonoBehaviour
         
         if (!isOnCooldown && portal != null)
         {
-            Instantiate(ability[1],spawnPos,transform.rotation);
-            Debug.Log("Instantiated");
-            isOnCooldown = true;
-            StartCoroutine(AllyCooldown());
-            
+
+            Conditions(1);
         }
         else
         {
@@ -76,7 +71,13 @@ public class SpawnAlly : MonoBehaviour
         
     }
 
-    
+    public void Conditions(int indexAbility)
+    {
+        
+        Instantiate(ability[indexAbility], spawnPos, transform.rotation);
+        isOnCooldown = true;
+        StartCoroutine (AllyCooldown());
+    }
 
 
 }

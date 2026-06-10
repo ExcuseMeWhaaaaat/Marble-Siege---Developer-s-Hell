@@ -68,7 +68,11 @@ public class EnemySpawnController : MonoBehaviour
     private void ChangeColor()
     {
         spriteRenderer.color = warnColor;
-        SoundManagement.PlaySound(SoundType.Warn, 0.75f);
+        if(SoundManagement.instance != null)
+        {
+            SoundManagement.PlaySound(SoundType.Warn, 0.75f);
+        }
+        
     }
 
     public Vector2 GenerateSpawnPos()

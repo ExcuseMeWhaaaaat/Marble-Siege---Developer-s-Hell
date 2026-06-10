@@ -6,13 +6,17 @@ public class PlsSpare : MonoBehaviour
     public static PlsSpare instance;
     private void Awake()
     {
-        if(instance != this && instance != null)
+        if(instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(this.gameObject);
+            
+        }
+        else
         {
             Destroy(gameObject);
-            return;
         }
-        instance = this;
-        DontDestroyOnLoad(this.gameObject);
+        
         
     }
 

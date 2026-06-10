@@ -45,6 +45,7 @@ public class ScriptedTutorial : MonoBehaviour
         }
         CompleteEvent(TutorialEvents.Intro1, 0);
         
+        
     }
 
     private void Update()
@@ -64,8 +65,11 @@ public class ScriptedTutorial : MonoBehaviour
         completeEv[eventName] = true;
         if (!DialogueManager.Instance.isTyping)
         {
+            
             DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak); 
-            DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text);
+            DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text, scriptedChunk.lines[lineIndex].speak);
+            
+            
         }
         
 
@@ -80,7 +84,9 @@ public class ScriptedTutorial : MonoBehaviour
         
         if(fightEnded) return;
         fightEnded = true;
-        Debug.Log(fightEnded);
+        
         CompleteEvent(TutorialEvents.BossDone, 4);
+        DialogueManager.Instance.nextButton.gameObject.SetActive(true);
+
     }
 }

@@ -4066,7 +4066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbfc32f7d7957b40871448465198b13, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SpawnAlly
-  spawnPos: {x: -4, y: -5}
+  spawnPos: {x: -6, y: -5}
   cooldownTime: 0
   isOnCooldown: 0
   ability:
@@ -4299,7 +4299,7 @@ PrefabInstance:
       objectReference: {fileID: 6506969513370712214, guid: ceeb267668710074098370b561ecf373, type: 3}
     - target: {fileID: 6847536958504860735, guid: 124e20a5419a43b4292e0998c2afab60, type: 3}
       propertyPath: repeatRate
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6847536958504860735, guid: 124e20a5419a43b4292e0998c2afab60, type: 3}
       propertyPath: bottomRight

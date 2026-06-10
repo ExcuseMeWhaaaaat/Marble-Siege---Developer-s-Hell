@@ -28,10 +28,10 @@ MonoBehaviour:
   - text: We already talked about this...
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: We understand... better regarding what they're dealing with.
+  - text: We understand... things they don't
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: I can't do this all by myself...
+  - text: I can't do this all by myself, you know...
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: 'You really understand freedom of choice, don''t you... '
