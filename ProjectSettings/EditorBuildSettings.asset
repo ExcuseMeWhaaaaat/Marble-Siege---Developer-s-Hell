@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 0
-    path: Assets/Scenes/Misc/Prototype.unity
+    path: Assets/Scenes/Junk/Misc/Prototype.unity
     guid: b8a275277d6352549bfb371df9187f65
   - enabled: 1
     path: Assets/Scenes/Misc/Junk/PlayOpening.unity
@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Boss Battles/FirstEncounterBattle.unity
     guid: 9e917214a10e7204081a55e5edcdd752
   - enabled: 1
-    path: Assets/Scenes/Scrapped/FirstMeeting.unity
+    path: Assets/Scenes/NonPlayable/FirstMeeting.unity
     guid: 15ed1c142db500b44aed11933e410bde
   - enabled: 1
     path: Assets/Scenes/Zone1Battles/StrangeStreetsZone1.unity
@@ -36,7 +36,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Custscenes/PlayableCutscenes/StrangeStreetsCutscene.unity
     guid: 78163b27192d9cf4bac7ccb7656643d2
   - enabled: 1
-    path: Assets/Scenes/Scrapped/PlayOpening2.unity
+    path: Assets/Scenes/PlayableCutscenes/PlayOpening2.unity
     guid: 71880021b2cd32149838157971055e2d
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ba0a6b6ee19553e4a9a96893d08a1ec6, type: 3}

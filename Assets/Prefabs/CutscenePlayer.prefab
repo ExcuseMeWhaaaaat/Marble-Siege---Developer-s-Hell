@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4267043280646862721}
   - component: {fileID: 7048997953352025543}
   - component: {fileID: 2241339180122716678}
+  - component: {fileID: 961843435053638931}
   m_Layer: 0
   m_Name: CutscenePlayer
   m_TagString: Player
@@ -283,3 +284,19 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &961843435053638931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6987493926578354708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
+  mainCam: {fileID: 0}
+  charPos: {fileID: 3989380576559505594}
+  offset: {x: 0, y: 0}
+  speakID: 0
