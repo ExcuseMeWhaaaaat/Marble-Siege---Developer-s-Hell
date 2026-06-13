@@ -16,7 +16,7 @@ MonoBehaviour:
   - text: Alright, here we are!
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: Yippeeeeeee
+  - text: Yippeeeeeee!!!!!!!!!
     correctID: 0
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
   - text: But first, are we ready?
@@ -37,7 +37,7 @@ MonoBehaviour:
   - text: 'You really understand freedom of choice, don''t you... '
     correctID: 0
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-  - text: Are you sure your thinking cap didn't float up while reading underwater?
+  - text: Are you sure your thinking cap doesn't float up while reading underwater?
     correctID: 0
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
   - text: Cmon! Be nice...

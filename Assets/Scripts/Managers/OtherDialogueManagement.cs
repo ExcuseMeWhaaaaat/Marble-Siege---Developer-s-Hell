@@ -121,7 +121,7 @@ public class DialogueManager : MonoBehaviour
             {
                 SoundManagement.instance.audioSource.PlayOneShot(line.speak.speakerVoice, 0.75f);
             }
-            yield return new WaitForSecondsRealtime(dialoguePresent.typingSpeed);
+            yield return new WaitForSeconds(dialoguePresent.typingSpeed);
         }
         
         isTyping = false;
@@ -130,7 +130,7 @@ public class DialogueManager : MonoBehaviour
         {
             yield break;
         }
-        yield return new WaitForSecondsRealtime(dialoguePresent.typingDelay);
+        yield return new WaitForSeconds(dialoguePresent.typingDelay);
         ShowNextLine();
 
     }

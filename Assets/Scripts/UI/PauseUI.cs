@@ -9,7 +9,7 @@ public class PauseUI : MonoBehaviour
 {
     [SerializeField] List<Button> buttonList;
     [SerializeField] Image backgroundImage;
-    
+    [SerializeField] bool isPaused;
 
     private void Start()
     {
@@ -26,15 +26,18 @@ public class PauseUI : MonoBehaviour
     public void Pause(InputAction.CallbackContext context)
     {
         
-        if (!context.performed) return;
+        if (!context.performed || isPaused) return;
         if (GameManagement.instance.currentScene.ToString() == GameManagement.instance.exception) return;
         DetermineGameState(GameStates.Paused);
+        isPaused = true;
     }
 
     public void Resume()
     {
-        
+        SoundManagement.PlaySound(SoundType.Click,0.75f);
+        if(!isPaused) return;   
         DetermineGameState(GameStates.Playing);
+        isPaused = false;
     }
 
     public void TakeToMainMenu()
