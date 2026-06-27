@@ -302,7 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManagement
   textBox: {fileID: 1569937377}
-  currentChunk: {fileID: 11400000, guid: e13994f3641c9234fab927c4a63a879f, type: 2}
+  currentChunk: {fileID: 11400000, guid: 886bc67d2c293ed4f91cf5f8b6b6b378, type: 2}
   isTyping: 0
   autoAdvance: 1
   messageIndex: 0
@@ -885,7 +885,7 @@ GameObject:
   - component: {fileID: 422427999}
   - component: {fileID: 422427998}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: DialogueCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4099,6 +4099,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3435319287384404917, guid: 12cf876f9dbce904ab926610aa4478d2, type: 3}
+      propertyPath: chunk
+      value: 
+      objectReference: {fileID: 11400000, guid: 886bc67d2c293ed4f91cf5f8b6b6b378, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

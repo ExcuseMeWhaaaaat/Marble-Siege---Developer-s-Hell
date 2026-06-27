@@ -81,7 +81,7 @@ public class DialogueManager : MonoBehaviour
         
         var anotherline = new DialogueLine();
         anotherline.text = lineToShow;
-         anotherline.speak = speak3;
+        anotherline.speak = speak3;
         anotherTypingRoutiune = StartCoroutine(TypeLine(anotherline));
             
     }

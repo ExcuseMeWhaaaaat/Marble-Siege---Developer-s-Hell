@@ -29,4 +29,4 @@ MonoBehaviour:
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: 'Thanks for the info I needed! See you all later! '
     correctID: 7
-    speak: {fileID: 11400000, guid: a700304b2b567094e9506d5f83fc8ed5, type: 2}
+    speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}

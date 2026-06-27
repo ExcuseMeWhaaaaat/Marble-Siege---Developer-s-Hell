@@ -135,11 +135,6 @@ public class PortalHealth : MonoBehaviour
        
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        
-    }
     public void TeleportPlayer()
     {
         player.transform.position = spawnPoint.transform.position;
