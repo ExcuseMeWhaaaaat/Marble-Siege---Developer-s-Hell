@@ -14,45 +14,45 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
   lines:
   - text: Hey, did you get the news?
-    correctID: 0
+    correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: 'Yes, I did.
 
 '
-    correctID: 0
+    correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: "Alright, so here\u2019s what we know so far and what we told everyone-"
-    correctID: 0
+    correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: 12 former members will be involved.
-    correctID: 0
+    correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: And the raid is said to occur in under an hour.
-    correctID: 0
+    correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-  - text: "Wait\u2026 how would they even come back!? We banished them to the shadow
-      realm! "
-    correctID: 0
+  - text: "Wait\u2026 how would they even come back when we banished them to the
+      shadow realm! "
+    correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
   - text: "Metaphorically speaking\u2026 "
-    correctID: 0
+    correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
   - text: "They must be members of Anarchon; So removing them again won\u2019t be
       that simple\u2026 its members seem to have some sort of \u201Cremoval immunity\u201D
-      meaning\u2026\u2026.."
-    correctID: 0
+      which prevents them from being removed under convential circumstances"
+    correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: "Oh\u2026 well then how do we stop them?"
-    correctID: 0
+    correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: '*Knock*'
     correctID: 0
     speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
   - text: "Maybe they know\u2026"
-    correctID: 0
+    correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: Wait, who's they?
-    correctID: 0
+    correctID: 9
     speak: {fileID: 11400000, guid: b26e30c4c21e91343a9f0aa3f78d8773, type: 2}
   - text: Oh, Hey!
     correctID: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
     correctID: 0
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
   - text: "Anyways, I heard you 3 know some things on how to stop this raid\u2026 "
-    correctID: 0
+    correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: "We do but\u2026..  "
     correctID: 0
@@ -80,7 +80,7 @@ MonoBehaviour:
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: 'Wait what? '
-    correctID: 0
+    correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: "It's\u2026 a lot to explain\u2026 so I think we should get moving. "
     correctID: 0

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 91db594f24798354384ccbe00c04d45c
+guid: 01471b932282ac242a8b90093b13b1c9
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -83154128492166069
-    second: TFL_0
+      213: -1785357414251982577
+    second: T_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TFL_0
+      name: T_0
       rect:
         serializedVersion: 2
-        x: 256
-        y: 66
-        width: 185
-        height: 480
+        x: 771
+        y: 723
+        width: 206
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b440e9db2c398def0800000000000000
-      internalID: -83154128492166069
+      spriteID: f01966614e22937e0800000000000000
+      internalID: -1785357414251982577
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TFL_0: -83154128492166069
+      T_0: -1785357414251982577
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
