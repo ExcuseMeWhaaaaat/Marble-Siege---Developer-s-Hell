@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dbc7433eeb0631c4880d37973c5c4323
+guid: 009ebf29a663b3042b23db07aee4f0b0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8189343902587823181
-    second: Cosmir_0
+      213: -4984676404396129082
+    second: Cos_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cosmir_0
+      name: Cos_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 308
-        height: 308
+        x: 760
+        y: 716
+        width: 206
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 3bbddbe0c1b995e80800000000000000
-      internalID: -8189343902587823181
+      spriteID: 6c482bb583fd2dab0800000000000000
+      internalID: -4984676404396129082
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cosmir_0: -8189343902587823181
+      Cos_0: -4984676404396129082
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
