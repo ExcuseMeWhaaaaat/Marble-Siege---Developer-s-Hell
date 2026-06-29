@@ -22,31 +22,28 @@ MonoBehaviour:
   - text: "Alright, I guess we\u2019ll just wait here\u2026"
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: "Hey, so\u2026 we just wanted to say that we\u2019re sorry that we had
-      to meet again under these circumstances\u2026\r\n "
+  - text: "Hey, so\u2026 we just wanted to say that sorry we had to meet again under
+      these circumstances\u2026\r\n "
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: "Eh\u2026 it's not your fault\u2026"
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: And its not yours eith-
-    correctID: 2
-    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
   - text: Wait... I just realized...
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: "Wait\u2026 you\u2019re both floating?"
+  - text: You 3 are... flying?
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: "E is the only one who can do that, besides me, of course\u2026"
+  - text: "E is the only one who can do that! Besides me, of course\u2026"
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: "Well you see\u2026 me and the other 2 are members of Anarchon's good counterpart
+  - text: "Well you see\u2026 me and the other 2 are members of Anarchon's good counterpart:
       Protagon."
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: "Really? That\u2019s slightly reasurring\u2026"
-    correctID: 9
+  - text: "Really? That\u2019s nice..."
+    correctID: 11
     speak: {fileID: 11400000, guid: 8e483e21e4fe87f43bee9eaa667e41de, type: 2}
   - text: Oh yeah... we heard about that...
     correctID: 4

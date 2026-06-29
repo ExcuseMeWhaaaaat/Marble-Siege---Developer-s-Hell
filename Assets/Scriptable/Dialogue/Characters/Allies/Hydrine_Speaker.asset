@@ -17,5 +17,5 @@ MonoBehaviour:
 '
   dialogueColor: {r: 0.225, g: 0.225, b: 0.9, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
-  outlineColor: {r: 0.2, g: 0.2, b: 0.8, a: 0}
+  outlineColor: {r: 0.19826095, g: 0.19826089, b: 0.8, a: 1}
   speakerVoice: {fileID: 8300000, guid: 89bc3a440047c964dbe29a0aa3ef5a01, type: 3}

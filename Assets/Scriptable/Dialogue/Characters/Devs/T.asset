@@ -13,5 +13,7 @@ MonoBehaviour:
   m_Name: T
   m_EditorClassIdentifier: Assembly-CSharp::Speaking
   displayName: 
-  dialogueColor: {r: 0.8325, g: 0.9, b: 0.765, a: 1}
+  dialogueColor: {r: 0.7607843, g: 0.9843137, b: 0.6431373, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+  outlineColor: {r: 0.6956175, g: 0.9, b: 0.5880478, a: 1}
+  speakerVoice: {fileID: 0}

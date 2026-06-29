@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Aeri_Speaking
   m_EditorClassIdentifier: Assembly-CSharp::Speaking
   displayName: Aeri
-  dialogueColor: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  dialogueColor: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
-  outlineColor: {r: 0.585, g: 0.7425, b: 0.9, a: 1}
+  outlineColor: {r: 0.6336, g: 0.7884, b: 0.9, a: 1}
   speakerVoice: {fileID: 8300000, guid: b18e9b910e373a1489b70c3f82505ffa, type: 3}

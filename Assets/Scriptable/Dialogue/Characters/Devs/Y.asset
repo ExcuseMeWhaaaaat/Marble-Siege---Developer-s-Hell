@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Y
   m_EditorClassIdentifier: Assembly-CSharp::Speaking
   displayName: 
-  dialogueColor: {r: 0.65, g: 0.48664922, b: 0.45602092, a: 1}
+  dialogueColor: {r: 1, g: 1, b: 0.74509805, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
-  outlineColor: {r: 0.65, g: 0.48664922, b: 0.45602092, a: 1}
+  outlineColor: {r: 0.9, g: 0.9, b: 0.67058825, a: 1}
+  speakerVoice: {fileID: 0}

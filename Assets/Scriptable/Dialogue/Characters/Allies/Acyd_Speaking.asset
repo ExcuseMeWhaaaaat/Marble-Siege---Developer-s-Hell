@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Acyd_Speaking
   m_EditorClassIdentifier: Assembly-CSharp::Speaking
   displayName: Acyd
-  dialogueColor: {r: 0.5, g: 1, b: 0, a: 1}
+  dialogueColor: {r: 0.58431375, g: 0.9843137, b: 0, a: 1}
   dialogueFont: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
-  outlineColor: {r: 0.45176467, g: 0.9, b: 0, a: 1}
+  outlineColor: {r: 0.53426296, g: 0.9, b: 0, a: 1}
   speakerVoice: {fileID: 8300000, guid: 93a928f50f3369b4cbde845f28534c3c, type: 3}
