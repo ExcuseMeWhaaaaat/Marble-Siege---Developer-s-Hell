@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eb87bd1c28cd449acda7359981c29c, type: 3}
+  m_Name: Scene1
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
+  lines:
+  - text: Alright, here we are!
+    correctID: 0
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: Yippeeeeeee!!!!!!!!!
+    correctID: 0
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: But first, are we ready?
+    correctID: 0
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: 'Are YOU ready to let me leave? '
+    correctID: 0
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+  - text: We already talked about this...
+    correctID: 0
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: We understand... things they don't
+    correctID: 0
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: I can't do this all by myself, you know...
+    correctID: 0
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: 'You really understand freedom of choice, don''t you... '
+    correctID: 0
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+  - text: Are you sure your thinking cap doesn't float up while reading underwater?
+    correctID: 0
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+  - text: Cmon! Be nice...
+    correctID: 0
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: 'And cheer up! '
+    correctID: 0
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: Try viewing this as a... different experience this time!
+    correctID: 0
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: I do, its just not a good one.
+    correctID: 0
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+  - text: Regardless, this will be one long siege...
+    correctID: 0
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+  - text: Anyways, they're waiting for us...
+    correctID: 0
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
