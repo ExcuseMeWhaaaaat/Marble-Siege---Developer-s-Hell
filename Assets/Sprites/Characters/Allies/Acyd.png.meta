@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: dbe0b031c4323aa49bf906b69d2ce3da
+guid: dfa4d8fb9f4e1cc4ebe7b6544095dd46
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 150
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,10 +116,10 @@ TextureImporter:
       name: Acyd_0
       rect:
         serializedVersion: 2
-        x: 287
-        y: 425
-        width: 121
-        height: 121
+        x: 771
+        y: 723
+        width: 206
+        height: 205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

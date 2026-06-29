@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0c3568053312b4446a59c55e53b1a15b
+guid: 926a9324fc0ce224eb31a4633529d7ac
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6747565766798716600
-    second: Aeri_0
+      213: 4818833056530280578
+    second: Hydrine_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aeri_0
+      name: Hydrine_0
       rect:
         serializedVersion: 2
-        x: 760
-        y: 716
-        width: 206
-        height: 205
+        x: 287
+        y: 425
+        width: 121
+        height: 121
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 841506b6fa4db52a0800000000000000
-      internalID: -6747565766798716600
+      spriteID: 280b566322fefd240800000000000000
+      internalID: 4818833056530280578
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Aeri_0: -6747565766798716600
+      Hydrine_0: 4818833056530280578
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

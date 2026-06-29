@@ -32,21 +32,25 @@ MonoBehaviour:
   - text: And its not yours eith-
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+  - text: Wait... I just realized...
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: "Wait\u2026 you\u2019re both floating?"
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: "E is the only one who can do that, besides me, of course\u2026"
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-  - text: "Well you see\u2026 me and the other 2 are members of Protagon."
-    correctID: 1
-    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: "Anarchon\u2019s good counterpart."
+  - text: "Well you see\u2026 me and the other 2 are members of Anarchon's good counterpart
+      Protagon."
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
   - text: "Really? That\u2019s slightly reasurring\u2026"
     correctID: 9
     speak: {fileID: 11400000, guid: 8e483e21e4fe87f43bee9eaa667e41de, type: 2}
+  - text: Oh yeah... we heard about that...
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
   - text: "Yeah\u2026 I\u2019ll try not to let my floating-related PTSD get the better
       of me."
     correctID: 4

@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 0c3568053312b4446a59c55e53b1a15b
+guid: 56dbbc360aa422248bd9a3fd77ddf83f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6747565766798716600
-    second: Aeri_0
+      213: 5573261753855468922
+    second: AirTaffy_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Aeri_0
+      name: AirTaffy_0
       rect:
         serializedVersion: 2
-        x: 760
-        y: 716
-        width: 206
-        height: 205
+        x: 0
+        y: 0
+        width: 207
+        height: 147
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 841506b6fa4db52a0800000000000000
-      internalID: -6747565766798716600
+      spriteID: a7563d66904385d40800000000000000
+      internalID: 5573261753855468922
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Aeri_0: -6747565766798716600
+      AirTaffy_0: 5573261753855468922
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
