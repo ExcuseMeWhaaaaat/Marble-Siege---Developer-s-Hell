@@ -119,7 +119,7 @@ public class DialogueManager : MonoBehaviour
             textBox.text += c;
             if (SoundManagement.instance != null)
             {
-                SoundManagement.instance.audioSource.PlayOneShot(line.speak.speakerVoice, 0.75f);
+                SoundManagement.instance.audioSource.PlayOneShot(line.speak.speakerVoice, SoundManagement.instance.masterVol);
             }
             yield return new WaitForSeconds(dialoguePresent.typingSpeed);
         }

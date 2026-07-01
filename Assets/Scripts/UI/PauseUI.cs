@@ -10,7 +10,7 @@ public class PauseUI : MonoBehaviour
     [SerializeField] List<Button> buttonList;
     [SerializeField] Image backgroundImage;
     [SerializeField] bool isPaused;
-
+    [SerializeField] private ToggleSettingsMenu toggleSettingsMenu;
     private void Start()
     {
         if (backgroundImage != null)
@@ -26,17 +26,20 @@ public class PauseUI : MonoBehaviour
     public void Pause(InputAction.CallbackContext context)
     {
         
-        if (!context.performed || isPaused) return;
+        if (!context.performed || isPaused || toggleSettingsMenu.isVisible) return;
         if (GameManagement.instance.currentScene.ToString() == GameManagement.instance.exception) return;
+        
         DetermineGameState(GameStates.Paused);
         isPaused = true;
     }
 
     public void Resume()
     {
-        SoundManagement.PlaySound(SoundType.Click,0.75f);
+        
+        SoundManagement.PlaySound(SoundType.Click,SoundManagement.instance.masterVol);
         if(!isPaused) return;   
         DetermineGameState(GameStates.Playing);
+        
         isPaused = false;
     }
 
@@ -56,6 +59,8 @@ public class PauseUI : MonoBehaviour
                 {
                     Debug.Log("Played");
                     Conditions(1,false);
+                    
+                    
                     break;
                 }
             case GameStates.Paused:
@@ -84,7 +89,7 @@ public class PauseUI : MonoBehaviour
         backgroundImage.gameObject.SetActive(setActiveObjects);
         GameManagement.instance.isPaused = setActiveObjects;
         Time.timeScale = timedScale;
+        
     }
 
-    
 }

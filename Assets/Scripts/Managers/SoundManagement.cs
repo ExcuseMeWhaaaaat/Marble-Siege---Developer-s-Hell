@@ -24,6 +24,8 @@ public class SoundManagement : MonoBehaviour
     public static SoundManagement instance;
     public AudioSource audioSource;
     [SerializeField] AudioClip[] soundList;
+    public float masterVol;
+    
     private void Awake()
     {
         if (instance != null && instance != this)
@@ -42,10 +44,10 @@ public class SoundManagement : MonoBehaviour
     
     
 
-    public static void PlaySound(SoundType soundType, float volume)
+    public static void PlaySound(SoundType soundType,float volume)
     {
         if ((int)soundType >= instance.soundList.Length) return;
-        instance.audioSource.PlayOneShot(instance.soundList[(int)soundType],volume);
+        instance.audioSource.PlayOneShot(instance.soundList[(int)soundType],instance.masterVol * volume);
     }
 
     

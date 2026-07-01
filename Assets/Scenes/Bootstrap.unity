@@ -171,6 +171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 2708859883616874731, guid: a89555b6ff671bd42b7e6d5a756baea1, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: ca9ac433ba51aef488f87f03325d892d, type: 2}
     - target: {fileID: 5166543668182323490, guid: a89555b6ff671bd42b7e6d5a756baea1, type: 3}
       propertyPath: audioSource
       value: 
