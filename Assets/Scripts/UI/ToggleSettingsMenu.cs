@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class ToggleSettingsMenu : MonoBehaviour
 {
-    [SerializeField] private Canvas settingsCanvas;
-    [SerializeField] Button settingsButton;
+    public Canvas settingsCanvas;
+    public Button settingsButton;
     public bool isVisible;
     [SerializeField] Slider volumeSlider;
 

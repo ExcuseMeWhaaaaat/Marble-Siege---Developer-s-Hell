@@ -13,20 +13,21 @@ MonoBehaviour:
   m_Name: Scene2Scripted
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
   lines:
-  - text: 'Ok... We''ll get you through this! Just listen closely! We need to break
-      his shield!  '
+  - text: Ok... stay focused... We'll get you through this. We need to break his
+      shield!
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: Its a good thing CR didn't take away our healthcare!
+  - text: Its a good thing Cos didn't take away our healthcare!
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
   - text: 'Aeri, now would be a good time to use your "Whirlwind" ability! It should
       block the projectiles! '
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: 'She still isn''t here... don''t worry, I''ll talk to her after this. '
+  - text: She probably wants to be left alone for now... don't worry, I'll talk to
+      her after this.
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-  - text: 'Thanks for the info I needed! See you all later! '
+  - text: 'Thanks for what I needed to know! See you all later! '
     correctID: 7
     speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}

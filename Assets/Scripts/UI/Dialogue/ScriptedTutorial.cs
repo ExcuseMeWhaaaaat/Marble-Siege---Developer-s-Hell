@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
@@ -22,7 +23,9 @@ public class ScriptedTutorial : MonoBehaviour
     public static ScriptedTutorial instance;
     public DialogueChunk scriptedChunk;
     public float timer;
-    public bool fightEnded;
+    public bool fightEnded = false;
+    public float delay;
+    
     
     private void Awake()
     {
@@ -57,36 +60,46 @@ public class ScriptedTutorial : MonoBehaviour
 
     public void CompleteEvent(TutorialEvents eventName, int lineIndex)
     {
-        
+
         
         if (DialogueManager.Instance == null) return;
         
         if (completeEv[eventName]) return;
         completeEv[eventName] = true;
+        
         if (!DialogueManager.Instance.isTyping)
         {
-            
-            DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak); 
+            DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak);
             DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text, scriptedChunk.lines[lineIndex].speak);
+            
             
             
         }
         
 
-
-
     }
 
-    
-
-    public void EndFight()
+    IEnumerator WaitForDialogue()
     {
-        
-        if(fightEnded) return;
-        fightEnded = true;
-        
+        while (delay > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            delay--;
+        }
         CompleteEvent(TutorialEvents.BossDone, 4);
         DialogueManager.Instance.nextButton.gameObject.SetActive(true);
-
+        
+        
     }
+
+    public void SetDelay()
+    {
+        if (fightEnded)
+        {
+            delay = 3;
+            StartCoroutine(WaitForDialogue());
+        }
+           
+    }
+
 }

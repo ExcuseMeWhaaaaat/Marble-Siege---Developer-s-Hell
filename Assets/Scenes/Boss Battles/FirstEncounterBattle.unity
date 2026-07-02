@@ -1924,7 +1924,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   activeColor: {r: 0, g: 0, b: 0, a: 0}
   inactiveColor: {r: 0, g: 0, b: 0, a: 0}
-  battleTarget: Cosidian (Shield)
+  battleTarget: Cos (Shield)
 --- !u!4 &560898961 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1396117885646063953, guid: a7adfe2a420ea4f45b13120261b64a1a, type: 3}
@@ -5696,7 +5696,7 @@ MonoBehaviour:
   - {fileID: 1897975629820351127}
   backgroundImage: {fileID: 2759243007317596615}
   isPaused: 0
-  toggleSettingsMenu: {fileID: 0}
+  toggleSettingsMenu: {fileID: 1873644180}
 --- !u!1 &1542024800637487545
 GameObject:
   m_ObjectHideFlags: 0
@@ -8047,6 +8047,7 @@ MonoBehaviour:
   scriptedChunk: {fileID: 11400000, guid: 03876c48a5e23c9469f7ea311db2c334, type: 2}
   timer: 0
   fightEnded: 0
+  delay: 0
 --- !u!224 &5459498896250895572
 RectTransform:
   m_ObjectHideFlags: 0

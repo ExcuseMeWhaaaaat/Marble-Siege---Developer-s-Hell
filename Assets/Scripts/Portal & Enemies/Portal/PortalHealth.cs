@@ -1,3 +1,4 @@
+using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -126,7 +127,8 @@ public class PortalHealth : MonoBehaviour
         {
             if (ScriptedTutorial.instance != null)
             {
-                ScriptedTutorial.instance.EndFight();
+                ScriptedTutorial.instance.fightEnded = true;
+                ScriptedTutorial.instance.SetDelay();
             }
             DestroyPortal();
         }

@@ -24,7 +24,7 @@ MonoBehaviour:
   - text: "Alright, so here\u2019s what we know so far and what we told everyone-"
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-  - text: 12 former members will be involved.
+  - text: 12 former members are confirmed to be involved.
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: And the raid is said to occur in under an hour.
@@ -54,7 +54,7 @@ MonoBehaviour:
   - text: Wait, who's they?
     correctID: 9
     speak: {fileID: 11400000, guid: b26e30c4c21e91343a9f0aa3f78d8773, type: 2}
-  - text: Oh, Hey!
+  - text: Ah, there you 3 are!
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
   - text: "Hey, sorry for being late\u2026 "

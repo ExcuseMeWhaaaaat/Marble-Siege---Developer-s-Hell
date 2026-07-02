@@ -35,7 +35,7 @@ public class PauseUI : MonoBehaviour
 
     public void Resume()
     {
-        
+        toggleSettingsMenu.settingsCanvas.gameObject.SetActive(false);
         SoundManagement.PlaySound(SoundType.Click,SoundManagement.instance.masterVol);
         if(!isPaused) return;   
         DetermineGameState(GameStates.Playing);
@@ -45,6 +45,7 @@ public class PauseUI : MonoBehaviour
 
     public void TakeToMainMenu()
     {
+        toggleSettingsMenu.settingsCanvas.gameObject.SetActive(false);
         DetermineGameState(GameStates.MainMenu);
     }
 
