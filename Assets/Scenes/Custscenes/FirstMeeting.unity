@@ -211,6 +211,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2758314482863030098, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: settingsButton
+      value: 
+      objectReference: {fileID: 423990835}
     - target: {fileID: 3463471319300561175, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -230,6 +234,14 @@ PrefabInstance:
     - target: {fileID: 5036544186067468472, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161312192093154789, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 997307660}
+    - target: {fileID: 6161312192093154789, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TurnOff
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -267,6 +279,17 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 7207596417964773124, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
   m_PrefabInstance: {fileID: 29422421}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &29422426 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1831999342798180348, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+  m_PrefabInstance: {fileID: 29422421}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &60376288
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,7 +3387,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleSettingsMenu
   settingsCanvas: {fileID: 29422425}
+  settingsButton: {fileID: 423990835}
   isVisible: 0
+  volumeSlider: {fileID: 29422426}
 --- !u!1001 &1003401843
 PrefabInstance:
   m_ObjectHideFlags: 0

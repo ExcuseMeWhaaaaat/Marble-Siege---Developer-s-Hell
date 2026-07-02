@@ -421,6 +421,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2758314482863030098, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: settingsButton
+      value: 
+      objectReference: {fileID: 1897975630102745125}
     - target: {fileID: 3463471319300561175, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -449,6 +453,14 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6161312192093154789, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5343724750285029247}
+    - target: {fileID: 6161312192093154789, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TurnOff
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -464,6 +476,17 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 7207596417964773124, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
   m_PrefabInstance: {fileID: 582302987}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &582302990 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1831999342798180348, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+  m_PrefabInstance: {fileID: 582302987}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1001 &745504895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1024,7 +1047,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleSettingsMenu
   settingsCanvas: {fileID: 582302989}
+  settingsButton: {fileID: 1897975630102745125}
   isVisible: 0
+  volumeSlider: {fileID: 582302990}
 --- !u!1 &1622626836
 GameObject:
   m_ObjectHideFlags: 0
@@ -2435,7 +2460,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleSettingsMenu
   settingsCanvas: {fileID: 582302989}
+  settingsButton: {fileID: 1897975630102745125}
   isVisible: 0
+  volumeSlider: {fileID: 582302990}
 --- !u!224 &5587070182548012198
 RectTransform:
   m_ObjectHideFlags: 0

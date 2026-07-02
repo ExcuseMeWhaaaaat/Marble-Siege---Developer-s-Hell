@@ -410,7 +410,6 @@ GameObject:
   - component: {fileID: 8938783802152661708}
   - component: {fileID: 4971392187214467435}
   - component: {fileID: 6161312192093154789}
-  - component: {fileID: 2758314482863030098}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -520,7 +519,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2758314482863030098}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: ToggleSettingsMenu, Assembly-CSharp
         m_MethodName: TurnOff
         m_Mode: 1
@@ -532,20 +531,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2758314482863030098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3962176162140577026}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4fb68ac5e5d5afb4c8e281de1c13d08f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ToggleSettingsMenu
-  settingsCanvas: {fileID: 7207596417964773124}
-  isVisible: 0
 --- !u!1 &4738422394376764856
 GameObject:
   m_ObjectHideFlags: 0

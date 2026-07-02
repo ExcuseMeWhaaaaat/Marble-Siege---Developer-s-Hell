@@ -35,10 +35,12 @@ public class SoundManagement : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(gameObject);
+        masterVol = 0.5f;
     }
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        
     }
 
     

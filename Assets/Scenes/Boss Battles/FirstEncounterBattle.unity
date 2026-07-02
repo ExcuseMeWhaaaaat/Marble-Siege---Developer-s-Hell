@@ -4569,6 +4569,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2758314482863030098, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: settingsButton
+      value: 
+      objectReference: {fileID: 1897975629820351127}
     - target: {fileID: 4738422394376764856, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
       propertyPath: m_Name
       value: SettingsCanvas 1
@@ -4581,16 +4585,60 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6161312192093154789, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1873644180}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3962176162140577026, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1873644180}
   m_SourcePrefab: {fileID: 100100000, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
 --- !u!224 &1873644177 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1359693677983131652, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
   m_PrefabInstance: {fileID: 1873644176}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1873644178 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3962176162140577026, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+  m_PrefabInstance: {fileID: 1873644176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &1873644179 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 7207596417964773124, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+  m_PrefabInstance: {fileID: 1873644176}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1873644180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873644178}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fb68ac5e5d5afb4c8e281de1c13d08f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ToggleSettingsMenu
+  settingsCanvas: {fileID: 1873644179}
+  settingsButton: {fileID: 1897975629820351127}
+  isVisible: 0
+  volumeSlider: {fileID: 1873644181}
+--- !u!114 &1873644181 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1831999342798180348, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+  m_PrefabInstance: {fileID: 1873644176}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!1 &1882332082
 GameObject:
   m_ObjectHideFlags: 0
@@ -6047,7 +6095,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5343724749801831884}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1873644180}
+        m_TargetAssemblyTypeName: ToggleSettingsMenu, Assembly-CSharp
+        m_MethodName: TurnOn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!222 &1953057925239682045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7485,6 +7545,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: b4ad1282-697e-4906-be50-98069cfc7791
     m_ActionName: 'Interface/Pause[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8eeaded7-da01-4768-be78-90690709914d
+    m_ActionName: 'Player/ExitSettings[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

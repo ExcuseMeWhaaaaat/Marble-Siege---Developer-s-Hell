@@ -1927,6 +1927,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2758314482863030098, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: settingsButton
+      value: 
+      objectReference: {fileID: 655541651092082068}
     - target: {fileID: 3463471319300561175, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
       propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1946,6 +1950,14 @@ PrefabInstance:
     - target: {fileID: 5036544186067468472, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6161312192093154789, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 655541651092082067}
+    - target: {fileID: 6161312192093154789, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: TurnOff
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1973,6 +1985,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SettingsMenu1
   audioMixer: {fileID: 24100000, guid: ca9ac433ba51aef488f87f03325d892d, type: 2}
+--- !u!114 &508120632737367268 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1831999342798180348, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+  m_PrefabInstance: {fileID: 508120632737367265}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Slider
 --- !u!223 &586815642162253268 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 7207596417964773124, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
@@ -2148,7 +2171,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ToggleSettingsMenu
   settingsCanvas: {fileID: 586815642162253268}
+  settingsButton: {fileID: 655541651092082068}
   isVisible: 0
+  volumeSlider: {fileID: 508120632737367268}
+--- !u!114 &655541651092082068 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3121115297478283486, guid: d838e264ebabe134887d8416caa1855c, type: 3}
+  m_PrefabInstance: {fileID: 655541651092082065}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 655541651092082066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Button
 --- !u!1001 &1303531310325308989
 PrefabInstance:
   m_ObjectHideFlags: 0
