@@ -472,13 +472,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898e50550cd27074da54128e507df543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManagement
+  dialogueMode: 0
   textBox: {fileID: 1569937377}
-  currentChunk: {fileID: 11400000, guid: 886bc67d2c293ed4f91cf5f8b6b6b378, type: 2}
+  currentChunk: {fileID: 11400000, guid: e5363d8b9432eac4080a5d9f4cae86cd, type: 2}
   isTyping: 0
   autoAdvance: 1
   messageIndex: 0
   delay: 1
-  dialoguePresent: {fileID: 11400000, guid: 81cf5866d0b837a4fac0fc0ae0d0f349, type: 2}
   nextButton: {fileID: 1220107236}
   setTextPosition:
   - {fileID: 1311583866}
@@ -4759,11 +4759,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1556116127089984455, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 78.1861
+      value: 110.3962
       objectReference: {fileID: 0}
     - target: {fileID: 1556116127089984455, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 33.677
+      value: 47.5508
       objectReference: {fileID: 0}
     - target: {fileID: 1556116127089984455, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4795,11 +4795,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1556116127089984455, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 236
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1556116127089984455, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -234.7
+      value: -229
       objectReference: {fileID: 0}
     - target: {fileID: 1556116127089984455, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4817,6 +4817,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: NextButton
       objectReference: {fileID: 0}
+    - target: {fileID: 2150020405250979104, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3030978256098751905, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -4832,6 +4836,18 @@ PrefabInstance:
     - target: {fileID: 6872603013378011902, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
       propertyPath: targetScene
       value: FirstActualEncounter
+      objectReference: {fileID: 0}
+    - target: {fileID: 9155020681513171684, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 9155020681513171684, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6089114040639030846, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 9155020681513171684, guid: 26faf5c938b854042ac3bc8883740445, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8857,7 +8873,7 @@ PrefabInstance:
     - target: {fileID: 3435319287384404917, guid: 12cf876f9dbce904ab926610aa4478d2, type: 3}
       propertyPath: chunk
       value: 
-      objectReference: {fileID: 11400000, guid: 886bc67d2c293ed4f91cf5f8b6b6b378, type: 2}
+      objectReference: {fileID: 11400000, guid: e5363d8b9432eac4080a5d9f4cae86cd, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

@@ -20,6 +20,7 @@ public class DialogueLine
 
     public int correctID;
     public Speaking speak;
+    public float typeDelay;
 }
 
 

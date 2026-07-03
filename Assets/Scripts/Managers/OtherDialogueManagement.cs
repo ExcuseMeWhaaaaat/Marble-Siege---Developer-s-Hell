@@ -7,9 +7,16 @@ using UnityEngine.Rendering;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
 
+
 public class DialogueManager : MonoBehaviour
 {
-    
+    public enum DialogueMode
+    {
+        Cutscene,
+        Battle,
+    }
+
+    public DialogueMode dialogueMode;
 
     //Entire thing was copy and pasted
     public static DialogueManager Instance;
@@ -19,20 +26,18 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private DialogueChunk currentChunk;
 
     
-    
     private Coroutine typingRoutine;
     public Coroutine anotherTypingRoutiune;
     private Coroutine repeatCoroutine;
     
     public bool isTyping;
     public bool autoAdvance;
-    public int messageIndex = 0;
+    public int messageIndex;
     
-
 
     [SerializeField] float delay;
 
-    [SerializeField] TypePresentation dialoguePresent;
+    
     public Button nextButton;
 
 
@@ -46,6 +51,7 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         nextButton.gameObject.SetActive(false);
+        messageIndex = 0;
         
     }
     public void StartDialogue(DialogueChunk chunk)
@@ -53,7 +59,6 @@ public class DialogueManager : MonoBehaviour
         currentChunk = chunk;
         var yetAnotherLine = currentChunk.lines[messageIndex];
 
-        typingRoutine = StartCoroutine(TypeLine(yetAnotherLine));
     }
     
     //Show Next Line
@@ -64,16 +69,21 @@ public class DialogueManager : MonoBehaviour
             SkipTyping();
             return;
         }
-        if(messageIndex >= currentChunk.lines.Count)
+        if (currentChunk == null) return;
+        if (dialogueMode == DialogueMode.Battle)
+        {
+            return; 
+        }
+        if (messageIndex >= currentChunk.lines.Count)
         {
             nextButton.gameObject.SetActive(true);
             return;
         }
-        Debug.Log(messageIndex);
-        
-        
-        
 
+        
+        Debug.Log(messageIndex + " at " + currentChunk.lines[messageIndex].text);
+
+        
     }
     public void ShowNextBattleLine(string lineToShow, Speaking speak3)
     {
@@ -84,7 +94,7 @@ public class DialogueManager : MonoBehaviour
             var anotherline = new DialogueLine();
             anotherline.text = lineToShow;
             anotherline.speak = speak3;
-            anotherTypingRoutiune = StartCoroutine(TypeLine(anotherline));
+            anotherTypingRoutiune = StartCoroutine(TypeBattleLine(anotherline));
             
         }
             
@@ -103,20 +113,19 @@ public class DialogueManager : MonoBehaviour
     }
     public IEnumerator TypeLine(DialogueLine line)
     {
-        
-        
+        Debug.Log($"Typing line {messageIndex} / Count {currentChunk.lines.Count}");
         isTyping = true;
         SpeakStyle(line.speak);
         
         
         textBox.text = "";
         
-        
-        foreach(var stp in setTextPosition)
+
+        foreach (var stp in setTextPosition)
         {
             stp.SetTextPos(line);
         }
-        
+        Debug.Log(currentChunk.lines[messageIndex].text);
         foreach (char c in line.text)
         {
            
@@ -125,32 +134,47 @@ public class DialogueManager : MonoBehaviour
             {
                 SoundManagement.instance.audioSource.PlayOneShot(line.speak.speakerVoice, SoundManagement.instance.masterVol);
             }
-            yield return new WaitForSeconds(dialoguePresent.typingSpeed);
+            yield return new WaitForSeconds(0.05f);
         }
-        
+        yield return new WaitForSeconds(currentChunk.lines[messageIndex].typeDelay);
         isTyping = false;
         messageIndex++;
         if (!autoAdvance)
         {
             yield break;
         }
-        yield return new WaitForSeconds(dialoguePresent.typingDelay);
         ShowNextLine();
 
+
     }
-    
+
+    public IEnumerator TypeBattleLine(DialogueLine line)
+    {
+        isTyping = true;
+
+        SpeakStyle(line.speak);
+        textBox.text = "";
+
+        foreach (char c in line.text)
+        {
+            textBox.text += c;
+            yield return new WaitForSeconds(0.05f);
+        }
+
+        isTyping = false;
+        ShowNextLine();
+    }
     public void SkipTyping()
     {
         if (typingRoutine != null)
         {
-            
+            StopCoroutine(typingRoutine);
             typingRoutine = null;
-            Debug.Log("Stopped");
-            textBox.text = textBox.text;
-            
-        } 
+
+        }
+        textBox.text = currentChunk.lines[messageIndex].text;
+        isTyping = false;
     }
     
-        
     
 }
