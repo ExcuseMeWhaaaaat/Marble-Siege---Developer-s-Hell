@@ -42,7 +42,15 @@ MonoBehaviour:
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1
-  - text: "E is the only one who can do that! Besides me, of course\u2026"
+  - text: AAAAAAAAAHHHH THEY'RE FLOATING THEY'RE FLOATING THEY'RE FLOATING AAAAAAHHHHHH
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 0.25
+  - text: Only 2 of us can do that around here...
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 1
+  - text: How did you get this ability?
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1
@@ -55,12 +63,7 @@ MonoBehaviour:
     correctID: 11
     speak: {fileID: 11400000, guid: 8e483e21e4fe87f43bee9eaa667e41de, type: 2}
     typeDelay: 1
-  - text: Oh yeah... we heard about that...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-    typeDelay: 1
-  - text: "Yeah\u2026 I\u2019ll try not to let my floating-related PTSD get the better
-      of me."
+  - text: Oh yeah... we makes sense now...
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1
