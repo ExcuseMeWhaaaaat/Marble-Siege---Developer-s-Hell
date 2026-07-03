@@ -14,18 +14,20 @@ public class ToggleSettingsMenu : MonoBehaviour
     private void Start()
     {
         
-        volumeSlider.value = 0.5f;
+        volumeSlider.value = SoundManagement.instance.masterVol;
     }
 
     public void TurnOn()
     {
         settingsButton.gameObject.SetActive(false);
         settingsCanvas.gameObject.SetActive(true);
+        SoundManagement.PlaySound(SoundType.Click, SoundManagement.instance.masterVol);
     }
     public void TurnOff()
     {
         settingsButton.gameObject.SetActive(true);
         settingsCanvas.gameObject.SetActive(false);
+        SoundManagement.PlaySound(SoundType.Click, SoundManagement.instance.masterVol);
     }
 
 }

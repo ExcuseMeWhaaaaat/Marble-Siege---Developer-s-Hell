@@ -28,7 +28,7 @@ public class PauseUI : MonoBehaviour
         
         if (!context.performed || isPaused || toggleSettingsMenu.isVisible) return;
         if (GameManagement.instance.currentScene.ToString() == GameManagement.instance.exception) return;
-        
+        SoundManagement.PlaySound(SoundType.Click, SoundManagement.instance.masterVol);
         DetermineGameState(GameStates.Paused);
         isPaused = true;
     }
@@ -45,6 +45,7 @@ public class PauseUI : MonoBehaviour
 
     public void TakeToMainMenu()
     {
+        SoundManagement.PlaySound(SoundType.Click, SoundManagement.instance.masterVol);
         toggleSettingsMenu.settingsCanvas.gameObject.SetActive(false);
         DetermineGameState(GameStates.MainMenu);
     }

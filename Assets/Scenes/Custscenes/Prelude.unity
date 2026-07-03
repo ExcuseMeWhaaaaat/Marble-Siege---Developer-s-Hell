@@ -1281,6 +1281,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: b4ad1282-697e-4906-be50-98069cfc7791
     m_ActionName: 'Interface/Pause[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 8eeaded7-da01-4768-be78-90690709914d
+    m_ActionName: 'Player/ExitSettings[/Keyboard/escape]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: 
@@ -1703,7 +1707,7 @@ MonoBehaviour:
   - {fileID: 1897975630102745125}
   backgroundImage: {fileID: 2759243007708388213}
   isPaused: 0
-  toggleSettingsMenu: {fileID: 0}
+  toggleSettingsMenu: {fileID: 5343724750285029247}
 --- !u!1 &1618596464695418783
 GameObject:
   m_ObjectHideFlags: 0
