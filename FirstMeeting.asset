@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eb87bd1c28cd449acda7359981c29c, type: 3}
+  m_Name: FirstMeeting
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
+  lines:
+  - text: Hey, did you get the news?
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: 'Yes, I did.
+
+'
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+  - text: "Alright, so here\u2019s what we know so far and what we told everyone-"
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: 12 former members are confirmed to be involved.
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: And the raid is said to occur in under an hour.
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: "Wait\u2026 how would they even come back when we banished them to the
+      shadow realm! "
+    correctID: 6
+    speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
+  - text: "Metaphorically speaking\u2026 "
+    correctID: 6
+    speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
+  - text: "They must be members of Anarchon; So removing them again won\u2019t be
+      that simple\u2026 its members seem to have some sort of \u201Cremoval immunity\u201D
+      which prevents them from being removed under convential circumstances."
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: "Oh\u2026 well then how do we stop them?"
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+  - text: '*Knock*'
+    correctID: 0
+    speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
+  - text: "Maybe they know\u2026"
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: Wait, who's they?
+    correctID: 9
+    speak: {fileID: 11400000, guid: b26e30c4c21e91343a9f0aa3f78d8773, type: 2}
+  - text: Ah, there you 3 are!
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: "Hey, sorry for being late\u2026 "
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: "Someone was acting a little stubborn\u2026 "
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: "The same can be said about you dragging me here, yet no one talks about
+      that one\u2026 "
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+  - text: "Anyways, I heard you 3 know some things on how to stop this raid\u2026 "
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+  - text: "We do but\u2026..  "
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: "It won\u2019t exactly be easy\u2026 "
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: "We\u2019re gonna have to fend all of them off and their minions. "
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+  - text: 'Wait what? '
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+  - text: "It's\u2026 a lot to explain\u2026 so I think we should get moving. "
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
