@@ -1201,7 +1201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5075455348779875220, guid: 5b6e9e68485d40a49b7d255485c9d17e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -21.220005
+      value: -25.7
       objectReference: {fileID: 0}
     - target: {fileID: 5075455348779875220, guid: 5b6e9e68485d40a49b7d255485c9d17e, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2727,6 +2727,10 @@ PrefabInstance:
       value: ObtsacleSpawner
       objectReference: {fileID: 0}
     - target: {fileID: 4539590279530518703, guid: 39ec1b7bc0d010f4a843bd9ab5d57be3, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1542024800637487545}
+    - target: {fileID: 4539590279530518703, guid: 39ec1b7bc0d010f4a843bd9ab5d57be3, type: 3}
       propertyPath: topLeft
       value: 
       objectReference: {fileID: 983377808}
@@ -2742,6 +2746,10 @@ PrefabInstance:
       propertyPath: bottomRight
       value: 
       objectReference: {fileID: 325073630}
+    - target: {fileID: 4539590279530518703, guid: 39ec1b7bc0d010f4a843bd9ab5d57be3, type: 3}
+      propertyPath: spawnProofRange
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 6436653727705169907, guid: 39ec1b7bc0d010f4a843bd9ab5d57be3, type: 3}
       propertyPath: m_LocalPosition.x
       value: 48.144997

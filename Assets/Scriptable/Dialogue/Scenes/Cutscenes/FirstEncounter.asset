@@ -35,9 +35,21 @@ MonoBehaviour:
   - text: You 3 are... flying?
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+<<<<<<< Updated upstream
   - text: "E is the only one who can do that! Besides me, of course\u2026"
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+=======
+    typeDelay: 1
+  - text: Only 2 of us can do that around here...
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 1
+  - text: How did you get this ability?
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 1
+>>>>>>> Stashed changes
   - text: "Well you see\u2026 me and the other 2 are members of Anarchon's good counterpart:
       Protagon."
     correctID: 1
@@ -45,6 +57,7 @@ MonoBehaviour:
   - text: "Really? That\u2019s nice..."
     correctID: 11
     speak: {fileID: 11400000, guid: 8e483e21e4fe87f43bee9eaa667e41de, type: 2}
+<<<<<<< Updated upstream
   - text: Oh yeah... we heard about that...
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
@@ -52,6 +65,18 @@ MonoBehaviour:
       of me."
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+=======
+    typeDelay: 1
+  - text: Oh yeah... makes sense now...
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 1
+  - text: 'And none of you 3 are supposed to be still characters on a screen so I
+      guess its okay! '
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 0.5
+>>>>>>> Stashed changes
   - text: Anyways, I think we can get ourselves through this!
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}

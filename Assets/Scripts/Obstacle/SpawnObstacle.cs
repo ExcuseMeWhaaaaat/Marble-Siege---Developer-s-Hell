@@ -8,6 +8,8 @@ public class SpawnObstacle : MonoBehaviour
     [SerializeField] float delay;
     [SerializeField] float interval;
     [SerializeField] int numtoSpawn;
+    [SerializeField] GameObject player;
+    [SerializeField] float spawnProofRange;
     void Start()
     {
         InvokeRepeating(nameof(SpawnGrass), delay, interval);
@@ -20,6 +22,7 @@ public class SpawnObstacle : MonoBehaviour
     {
         for(int i = 0;i < numtoSpawn;i++)
         {
+            
             Instantiate(grassPf, GenerateSpawnPos(), transform.rotation);
         }
         
@@ -27,9 +30,13 @@ public class SpawnObstacle : MonoBehaviour
 
     public Vector2 GenerateSpawnPos()
     {
-        float xPos = Random.Range(bottomRight.position.x, topLeft.position.x);
-        float yPos = Random.Range(bottomRight.position.y, topLeft.position.y);
+        float xPos = Random.Range(bottomRight.position.x, topLeft.position.x) * 1.5f;
+        float yPos = Random.Range(bottomRight.position.y, topLeft.position.y) * 1.5f;
+        
         Vector2 spawnPos = new Vector2(xPos, yPos);
+        
         return spawnPos;
     }
+
+    
 }

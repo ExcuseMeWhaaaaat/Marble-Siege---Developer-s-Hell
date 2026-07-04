@@ -137,6 +137,31 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(dialoguePresent.typingDelay);
         ShowNextLine();
 
+<<<<<<< Updated upstream
+=======
+
+    }
+
+    public IEnumerator TypeBattleLine(DialogueLine line)
+    {
+        isTyping = true;
+
+        SpeakStyle(line.speak);
+        textBox.text = "";
+
+        foreach (char c in line.text)
+        {
+            textBox.text += c;
+            yield return new WaitForSeconds(0.05f);
+            if (SoundManagement.instance != null)
+            {
+                SoundManagement.instance.audioSource.PlayOneShot(line.speak.speakerVoice, SoundManagement.instance.masterVol);
+            }
+        }
+
+        isTyping = false;
+        ShowNextLine();
+>>>>>>> Stashed changes
     }
     
     public void SkipTyping()
