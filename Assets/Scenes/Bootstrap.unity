@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b2d54f52a369c4badb7528f8d41642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  sceneToLoad: FirstActualEncounter
+  sceneToLoad: MainMenu
 --- !u!4 &1789050746
 Transform:
   m_ObjectHideFlags: 0

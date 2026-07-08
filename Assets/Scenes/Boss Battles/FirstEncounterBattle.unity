@@ -2133,51 +2133,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1222744277}
   m_CullTransparentMesh: 1
---- !u!1 &1305585258
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1305585260}
-  - component: {fileID: 1305585259}
-  m_Layer: 0
-  m_Name: LoadHere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1305585259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305585258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d86f52e34d1c4040a71658dd5423ddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LoadThisScene
-  sceneName: FirstEncounterBattle
---- !u!4 &1305585260
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1305585258}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.81006, y: 7.51349, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1326779054
 GameObject:
   m_ObjectHideFlags: 0
@@ -7813,7 +7768,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 1654122611804293932}
   targetScene: MainMenu
-  currentScene: {}
+  openResetPanel: {fileID: 0}
+  loadThisScene: {fileID: 0}
+  currentScene: 
 --- !u!1 &7209099722365935693
 GameObject:
   m_ObjectHideFlags: 0
@@ -8160,7 +8117,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 8044820974496846511}
   targetScene: MainMenu
-  currentScene: {}
+  openResetPanel: {fileID: 0}
+  loadThisScene: {fileID: 0}
+  currentScene: 
 --- !u!222 &7538492995878823759
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9222,6 +9181,5 @@ SceneRoots:
   - {fileID: 312358668}
   - {fileID: 5406738648134986812}
   - {fileID: 3061175209740837907}
-  - {fileID: 1305585260}
   - {fileID: 204534779}
   - {fileID: 607985047}

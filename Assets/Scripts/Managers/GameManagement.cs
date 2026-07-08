@@ -11,9 +11,10 @@ public class GameManagement : MonoBehaviour
     public static GameManagement instance;
     public string exception;
     public bool isPaused;
-    
-    
-    
+    public bool gameLoaded;
+
+
+
     public Scene currentScene;
 
     private void Awake()
@@ -46,7 +47,11 @@ public class GameManagement : MonoBehaviour
     public GameStates currentState;
     
     
-
+    public void GameLoadedFilter()
+    {
+        if (gameLoaded) return;
+        gameLoaded = true;
+    }
     
 
     

@@ -8,17 +8,12 @@ public class TakeToScene : MonoBehaviour
     public string targetScene;
     
     public static TakeToScene instance;
-    public Scene currentScene;
+    [SerializeField] private OpenResetPanel openResetPanel;
+    
 
-    private void Start()
-    {
-        
-        currentScene = SceneManager.GetActiveScene();
-        
-        
-    }
     public void SceneChange()
     {
+        
         SceneManager.LoadScene(targetScene);
         Conditions(); 
     }
@@ -37,13 +32,28 @@ public class TakeToScene : MonoBehaviour
             if (targetScene == "MainMenu")
             QuitGame();  
         }
-        
-    
     }
 
-    
+    public void ShouldGameReset()
+    {
+        if (LoadThisScene.instance.currentScene != "MainMenu")
+        return;
+        
 
-    
+        if (LoadThisScene.instance.allowedScene != "Prelude" && GameManagement.instance.gameLoaded)
+        {
+            if (openResetPanel == null) return;
+            openResetPanel.OpenReseter();
+        }
+        else
+        {
+            SceneChange();
+            GameManagement.instance.GameLoadedFilter();
+            
+        }
+    }
+
+
 
     public void Conditions()
     {

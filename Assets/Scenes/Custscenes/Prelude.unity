@@ -1501,23 +1501,6 @@ RectTransform:
   m_AnchoredPosition: {x: 4.4865, y: -2.3484154}
   m_SizeDelta: {x: 1132.973, y: 534.6968}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &707991481838942437
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1644577268469295544}
-  - component: {fileID: 1644577268469295545}
-  m_Layer: 0
-  m_Name: LoadHere
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
 --- !u!224 &898198459620279822
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1726,34 +1709,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1644577268469295544
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707991481838942437}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.81006, y: 7.51349, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1644577268469295545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 707991481838942437}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4d86f52e34d1c4040a71658dd5423ddf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LoadThisScene
-  sceneName: Prelude
 --- !u!114 &1897975630102745125
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1911,13 +1866,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 898e50550cd27074da54128e507df543, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
+  dialogueMode: 0
   textBox: {fileID: 5711497010190614761}
   currentChunk: {fileID: 11400000, guid: 7e92500533db821479d5a1fd4021b5c6, type: 2}
   isTyping: 0
   autoAdvance: 1
   messageIndex: 0
-  delay: 1
-  dialoguePresent: {fileID: 11400000, guid: 81cf5866d0b837a4fac0fc0ae0d0f349, type: 2}
+  delay: 0
   nextButton: {fileID: 5162683915596039619}
   setTextPosition: []
 --- !u!114 &2666108309994993751
@@ -2037,7 +1992,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 5162683915596039619}
   targetScene: FirstMeeting
-  currentScene: {}
+  openResetPanel: {fileID: 0}
 --- !u!4 &3925497754323168410
 Transform:
   m_ObjectHideFlags: 0
@@ -2867,7 +2822,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 8044820974407389213}
   targetScene: MainMenu
-  currentScene: {}
+  openResetPanel: {fileID: 0}
 --- !u!222 &7538492996102497789
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2963,7 +2918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &8150245582714817397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3098,6 +3053,5 @@ SceneRoots:
   - {fileID: 564025329}
   - {fileID: 1801969424}
   - {fileID: 3061175209807268760}
-  - {fileID: 1644577268469295544}
   - {fileID: 1072003605}
   - {fileID: 1731681629}
