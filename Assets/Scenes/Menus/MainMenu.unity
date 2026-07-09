@@ -2787,6 +2787,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 442148751}
     m_Modifications:
+    - target: {fileID: 544707676858652351, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: audioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: ca9ac433ba51aef488f87f03325d892d, type: 2}
+    - target: {fileID: 972788540716073250, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: audioMixer
+      value: 
+      objectReference: {fileID: 24100000, guid: ca9ac433ba51aef488f87f03325d892d, type: 2}
     - target: {fileID: 1014745073139314184, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

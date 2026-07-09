@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
@@ -26,9 +27,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private DialogueChunk currentChunk;
 
     
-    private Coroutine typingRoutine;
+    public Coroutine typingRoutine;
     public Coroutine anotherTypingRoutiune;
-    private Coroutine repeatCoroutine;
+    
     
     public bool isTyping;
     public bool autoAdvance;
@@ -64,7 +65,8 @@ public class DialogueManager : MonoBehaviour
     //Show Next Line
     public void ShowNextLine()
     {
-        if (isTyping)
+        
+        if (isTyping || !autoAdvance)
         {
             SkipTyping();
             return;
@@ -79,9 +81,6 @@ public class DialogueManager : MonoBehaviour
             nextButton.gameObject.SetActive(true);
             return;
         }
-
-        
-        Debug.Log(messageIndex + " at " + currentChunk.lines[messageIndex].text);
 
         
     }
@@ -102,7 +101,7 @@ public class DialogueManager : MonoBehaviour
     
     public void SpeakStyle(Speaking speak)
     {
-        Debug.Log(speak);
+        
         if (speak == null) 
         {
             return;
@@ -113,7 +112,7 @@ public class DialogueManager : MonoBehaviour
     }
     public IEnumerator TypeLine(DialogueLine line)
     {
-        Debug.Log($"Typing line {messageIndex} / Count {currentChunk.lines.Count}");
+        
         isTyping = true;
         SpeakStyle(line.speak);
         
@@ -125,7 +124,7 @@ public class DialogueManager : MonoBehaviour
         {
             stp.SetTextPos(line);
         }
-        Debug.Log(currentChunk.lines[messageIndex].text);
+        
         foreach (char c in line.text)
         {
            
@@ -138,12 +137,13 @@ public class DialogueManager : MonoBehaviour
         }
         yield return new WaitForSeconds(currentChunk.lines[messageIndex].typeDelay);
         isTyping = false;
-        messageIndex++;
+        
         if (!autoAdvance)
         {
             yield break;
         }
-        ShowNextLine();
+        
+        messageIndex++;
 
 
     }

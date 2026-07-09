@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.TextCore.Text;
 
@@ -29,7 +30,7 @@ public class CutsceneDirector : MonoBehaviour
             characters.Add(theCharacter.charID,theCharacter);
         }
         
-        DialogueManager.Instance.autoAdvance = true;
+        
         
     }
 
@@ -38,7 +39,7 @@ public class CutsceneDirector : MonoBehaviour
     {
         var line = chunk.lines;
 
-        
+        if (DialogueManager.Instance == null) yield break;
             
         for (stepIndex = 0; stepIndex < cutscene.steps.Count; stepIndex++)
         {
@@ -47,15 +48,17 @@ public class CutsceneDirector : MonoBehaviour
                 
                 yield break;
             }
+
+            if (!DialogueManager.Instance.autoAdvance)
+            {
+                Debug.Log("Yield Broken!");
+                yield return new WaitUntil(() => Keyboard.current.zKey.wasPressedThisFrame);
+
+            }
             ExecuteAnimation(stepIndex);
-            
             yield return DialogueManager.Instance.TypeLine(line[stepIndex]);
-            
-            
-            
-            
         }
-        
+
     }
     public void ExecuteAnimation(int index)
     {
@@ -71,10 +74,21 @@ public class CutsceneDirector : MonoBehaviour
     }
     public void Play()
     {
-        ExecuteAnimation(stepIndex);
-        StartCoroutine(PlayCoroutine());
+        if (!DialogueManager.Instance.isTyping)
+        {
+            Debug.Log("Played");
+            StartCoroutine(PlayCoroutine());
+        }
+        
         
     }
 
-    
+    public void ManualAdvance(InputAction.CallbackContext context)
+    {
+        if (!context.performed) return;
+        if (DialogueManager.Instance.isTyping) return;
+        
+        
+
+    }
 }

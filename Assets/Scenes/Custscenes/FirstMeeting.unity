@@ -5991,7 +5991,19 @@ MonoBehaviour:
     m_ActionId: b25a7799-660f-4212-827c-24814e1f513b
     m_ActionName: 'Player/Heal[/Keyboard/1]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 6990411103434039251}
+        m_TargetAssemblyTypeName: CutsceneDirector, Assembly-CSharp
+        m_MethodName: ManualAdvance
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: dc59715c-31ee-4b62-a02b-4c4967af906a
     m_ActionName: 'Player/Skip[/Keyboard/z]'
   - m_PersistentCalls:

@@ -1393,15 +1393,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 524919697105684186, guid: 62ccdb4249410474199c4d10e7a66eca, type: 3}
       propertyPath: m_Color.b
-      value: 0.9411765
+      value: 0.8862746
       objectReference: {fileID: 0}
     - target: {fileID: 524919697105684186, guid: 62ccdb4249410474199c4d10e7a66eca, type: 3}
       propertyPath: m_Color.g
-      value: 0.1254902
+      value: 0.1686275
       objectReference: {fileID: 0}
     - target: {fileID: 524919697105684186, guid: 62ccdb4249410474199c4d10e7a66eca, type: 3}
       propertyPath: m_Color.r
-      value: 0.627451
+      value: 0.5411765
       objectReference: {fileID: 0}
     - target: {fileID: 4543377336724833361, guid: 62ccdb4249410474199c4d10e7a66eca, type: 3}
       propertyPath: m_Name
@@ -3787,15 +3787,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1244150013643876475, guid: 1a9404309297a6540a626f3759cc9788, type: 3}
       propertyPath: m_Color.b
-      value: 0.9411765
+      value: 0.8862746
       objectReference: {fileID: 0}
     - target: {fileID: 1244150013643876475, guid: 1a9404309297a6540a626f3759cc9788, type: 3}
       propertyPath: m_Color.g
-      value: 0.1254902
+      value: 0.1686275
       objectReference: {fileID: 0}
     - target: {fileID: 1244150013643876475, guid: 1a9404309297a6540a626f3759cc9788, type: 3}
       propertyPath: m_Color.r
-      value: 0.627451
+      value: 0.5411765
       objectReference: {fileID: 0}
     - target: {fileID: 5247725292090465597, guid: 1a9404309297a6540a626f3759cc9788, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4524,15 +4524,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3544783834638243754, guid: 6cddd645c8359b14094111fb4dd8c6a2, type: 3}
       propertyPath: m_Color.b
-      value: 0.9411765
+      value: 0.8862746
       objectReference: {fileID: 0}
     - target: {fileID: 3544783834638243754, guid: 6cddd645c8359b14094111fb4dd8c6a2, type: 3}
       propertyPath: m_Color.g
-      value: 0.1254902
+      value: 0.1686275
       objectReference: {fileID: 0}
     - target: {fileID: 3544783834638243754, guid: 6cddd645c8359b14094111fb4dd8c6a2, type: 3}
       propertyPath: m_Color.r
-      value: 0.627451
+      value: 0.5411765
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5837,7 +5837,19 @@ MonoBehaviour:
     m_ActionId: b25a7799-660f-4212-827c-24814e1f513b
     m_ActionName: 'Player/Heal[/Keyboard/1]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1429879886}
+        m_TargetAssemblyTypeName: CutsceneDirector, Assembly-CSharp
+        m_MethodName: ManualAdvance
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: dc59715c-31ee-4b62-a02b-4c4967af906a
     m_ActionName: 'Player/Skip[/Keyboard/z]'
   - m_PersistentCalls:
@@ -7491,15 +7503,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3989556572902463089, guid: bb25240341f00984eb3be3c3869322f5, type: 3}
       propertyPath: m_Color.b
-      value: 0.9411765
+      value: 0.8862746
       objectReference: {fileID: 0}
     - target: {fileID: 3989556572902463089, guid: bb25240341f00984eb3be3c3869322f5, type: 3}
       propertyPath: m_Color.g
-      value: 0.1254902
+      value: 0.1686275
       objectReference: {fileID: 0}
     - target: {fileID: 3989556572902463089, guid: bb25240341f00984eb3be3c3869322f5, type: 3}
       propertyPath: m_Color.r
-      value: 0.627451
+      value: 0.5411765
       objectReference: {fileID: 0}
     - target: {fileID: 5593285569727977970, guid: bb25240341f00984eb3be3c3869322f5, type: 3}
       propertyPath: m_LocalPosition.x

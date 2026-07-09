@@ -286,9 +286,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
   thisButton: {fileID: 3030978256098751905}
   targetScene: PlayOpening
-  currentScene: {}
-  confirmImage: {fileID: 0}
-  loadThisScene: {fileID: 0}
+  openResetPanel: {fileID: 0}
 --- !u!114 &396898285753655823
 MonoBehaviour:
   m_ObjectHideFlags: 0
