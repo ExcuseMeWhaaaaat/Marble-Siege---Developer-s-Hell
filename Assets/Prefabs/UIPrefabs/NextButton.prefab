@@ -260,9 +260,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 396898285753655823}
-        m_TargetAssemblyTypeName: ShowButton, Assembly-CSharp
-        m_MethodName: RevealButton
+      - m_Target: {fileID: 6872603013378011902}
+        m_TargetAssemblyTypeName: TakeToScene, Assembly-CSharp
+        m_MethodName: SceneChange
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

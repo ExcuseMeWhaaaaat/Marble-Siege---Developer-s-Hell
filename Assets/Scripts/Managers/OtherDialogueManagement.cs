@@ -51,6 +51,7 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1;
         nextButton.gameObject.SetActive(false);
         messageIndex = 0;
         
@@ -78,6 +79,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (messageIndex >= currentChunk.lines.Count)
         {
+            Debug.Log("Enough");
             nextButton.gameObject.SetActive(true);
             return;
         }
@@ -144,7 +146,7 @@ public class DialogueManager : MonoBehaviour
         }
         
         messageIndex++;
-
+        ShowNextLine();
 
     }
 
@@ -158,11 +160,15 @@ public class DialogueManager : MonoBehaviour
         foreach (char c in line.text)
         {
             textBox.text += c;
+            if (SoundManagement.instance != null)
+            {
+                SoundManagement.instance.audioSource.PlayOneShot(line.speak.speakerVoice, SoundManagement.instance.masterVol);
+            }
             yield return new WaitForSeconds(0.05f);
         }
 
         isTyping = false;
-        ShowNextLine();
+        
     }
     public void SkipTyping()
     {

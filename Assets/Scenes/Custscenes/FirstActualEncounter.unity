@@ -2960,14 +2960,14 @@ PrefabInstance:
     - target: {fileID: 8044820974399301851, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1500744209}
+      objectReference: {fileID: 887579997}
     - target: {fileID: 8044820974399301851, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: TakeToMainMenu
+      value: SceneChange
       objectReference: {fileID: 0}
     - target: {fileID: 8044820974399301851, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: PauseUI, Assembly-CSharp
+      value: TakeToScene, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2977,6 +2977,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1174783454}
   m_SourcePrefab: {fileID: 100100000, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
+--- !u!114 &887579997 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7526749130682063083, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
+  m_PrefabInstance: {fileID: 887579996}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eed2a614ede1d5f49ac9ad9dbd8799ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
 --- !u!114 &887579998 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2759243007700296627, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
@@ -5770,7 +5781,6 @@ MonoBehaviour:
   - {fileID: 887580000}
   - {fileID: 887579999}
   backgroundImage: {fileID: 887579998}
-  isPaused: 0
   toggleSettingsMenu: {fileID: 1174783454}
 --- !u!4 &1500744210
 Transform:

@@ -4,10 +4,10 @@ using UnityEngine.Audio;
 public class SettingsMenu1 : MonoBehaviour
 {
     [SerializeField] AudioMixer audioMixer;
-    
-    
+
 
     
+
     public void IsFullScreen(bool fullScreen)
     {
         Screen.fullScreen = fullScreen;
@@ -33,10 +33,8 @@ public class SettingsMenu1 : MonoBehaviour
     {
         if(DialogueManager.Instance == null) return;
         DialogueManager.Instance.autoAdvance = auto;
-        Debug.Log(DialogueManager.Instance.autoAdvance);
+        
         
         
     }
-    
-    
 }

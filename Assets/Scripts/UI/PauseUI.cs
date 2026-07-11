@@ -9,8 +9,9 @@ public class PauseUI : MonoBehaviour
 {
     [SerializeField] List<Button> buttonList;
     [SerializeField] Image backgroundImage;
-    [SerializeField] bool isPaused;
+    
     [SerializeField] private ToggleSettingsMenu toggleSettingsMenu;
+    
     private void Start()
     {
         if (backgroundImage != null)
@@ -26,28 +27,30 @@ public class PauseUI : MonoBehaviour
     public void Pause(InputAction.CallbackContext context)
     {
         
-        if (!context.performed || isPaused || toggleSettingsMenu.isVisible) return;
+        if (!context.performed || toggleSettingsMenu.isVisible) return;
         if (GameManagement.instance.currentScene.ToString() == GameManagement.instance.exception) return;
         SoundManagement.PlaySound(SoundType.Click, SoundManagement.instance.masterVol);
         DetermineGameState(GameStates.Paused);
-        isPaused = true;
+        
     }
 
     public void Resume()
     {
+        if (GameManagement.instance.currentState == GameManagement.GameStates.Playing) return;
         toggleSettingsMenu.settingsCanvas.gameObject.SetActive(false);
         SoundManagement.PlaySound(SoundType.Click,SoundManagement.instance.masterVol);
-        if(!isPaused) return;   
+          
         DetermineGameState(GameStates.Playing);
         
-        isPaused = false;
+        
     }
 
     public void TakeToMainMenu()
     {
+        DetermineGameState(GameStates.MainMenu);
         SoundManagement.PlaySound(SoundType.Click, SoundManagement.instance.masterVol);
         toggleSettingsMenu.settingsCanvas.gameObject.SetActive(false);
-        DetermineGameState(GameStates.MainMenu);
+        
     }
 
     public void DetermineGameState(GameStates gameState)

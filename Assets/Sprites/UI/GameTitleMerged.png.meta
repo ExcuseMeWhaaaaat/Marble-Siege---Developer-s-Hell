@@ -1,0 +1,754 @@
+fileFormatVersion: 2
+guid: 408ddb5bf26b5c94183a4ba1bbd533dd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 81447632798748027
+    second: GameTitleMerged_0
+  - first:
+      213: -7019425721580966893
+    second: GameTitleMerged_1
+  - first:
+      213: -7261055718864906088
+    second: GameTitleMerged_2
+  - first:
+      213: -130209172540632527
+    second: GameTitleMerged_3
+  - first:
+      213: -8293450048155849466
+    second: GameTitleMerged_4
+  - first:
+      213: -9185763443746915357
+    second: GameTitleMerged_5
+  - first:
+      213: 8005109352174406159
+    second: GameTitleMerged_6
+  - first:
+      213: 3498235909932599786
+    second: GameTitleMerged_7
+  - first:
+      213: -1729701226591931524
+    second: GameTitleMerged_8
+  - first:
+      213: 810896029103672997
+    second: GameTitleMerged_9
+  - first:
+      213: -3831346506070359700
+    second: GameTitleMerged_10
+  - first:
+      213: 5359795391531109547
+    second: GameTitleMerged_11
+  - first:
+      213: 7656548213274705877
+    second: GameTitleMerged_12
+  - first:
+      213: 817860943612557368
+    second: GameTitleMerged_13
+  - first:
+      213: 3491240072938812292
+    second: GameTitleMerged_14
+  - first:
+      213: 3607264755864529896
+    second: GameTitleMerged_15
+  - first:
+      213: 1412189565563767085
+    second: GameTitleMerged_16
+  - first:
+      213: 5637598435920538460
+    second: GameTitleMerged_17
+  - first:
+      213: -8237643303793835821
+    second: GameTitleMerged_18
+  - first:
+      213: -8955451519365789972
+    second: GameTitleMerged_19
+  - first:
+      213: 8909557914053473143
+    second: GameTitleMerged_20
+  - first:
+      213: 6109682710113546953
+    second: GameTitleMerged_21
+  - first:
+      213: 6686210793897315001
+    second: GameTitleMerged_22
+  - first:
+      213: -3080641741003538573
+    second: GameTitleMerged_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: GameTitleMerged_0
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 830
+        width: 239
+        height: 197
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7d04c4c03c512100800000000000000
+      internalID: 81447632798748027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_1
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 830
+        width: 136
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31c2de92f7df59e90800000000000000
+      internalID: -7019425721580966893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_2
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 830
+        width: 122
+        height: 144
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8981dbe5b4c8b3b90800000000000000
+      internalID: -7261055718864906088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_3
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 830
+        width: 150
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 132d73c8277613ef0800000000000000
+      internalID: -130209172540632527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_4
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 830
+        width: 73
+        height: 199
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60d693d2f1fb7ec80800000000000000
+      internalID: -8293450048155849466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_5
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 830
+        width: 148
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3eb32b0f0dc958080800000000000000
+      internalID: -9185763443746915357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_6
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 830
+        width: 154
+        height: 196
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0a438cfa8cd71f60800000000000000
+      internalID: 8005109352174406159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_7
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 967
+        width: 84
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae94c00960b3c8030800000000000000
+      internalID: 3498235909932599786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_8
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 830
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c733e6516eddef7e0800000000000000
+      internalID: -1729701226591931524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_9
+      rect:
+        serializedVersion: 2
+        x: 1562
+        y: 748
+        width: 163
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aecf7464a1e04b00800000000000000
+      internalID: 810896029103672997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_10
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 830
+        width: 147
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c610e3ee6a254dac0800000000000000
+      internalID: -3831346506070359700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_11
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 830
+        width: 72
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bacccfcd281d16a40800000000000000
+      internalID: 5359795391531109547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_12
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 542
+        width: 127
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dff3e9a806814a60800000000000000
+      internalID: 7656548213274705877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 540
+        width: 110
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83831bbe130a95b00800000000000000
+      internalID: 817860943612557368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_14
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 542
+        width: 119
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48370255950637030800000000000000
+      internalID: 3491240072938812292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 540
+        width: 108
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8eb6710fe249f0230800000000000000
+      internalID: 3607264755864529896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_16
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 542
+        width: 52
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2901f28dea199310800000000000000
+      internalID: 1412189565563767085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_17
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 540
+        width: 110
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b675f78e5cc3e40800000000000000
+      internalID: 5637598435920538460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_18
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 493
+        width: 107
+        height: 176
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d04ef26f030ead80800000000000000
+      internalID: -8237643303793835821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_19
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 540
+        width: 110
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce648f88a48d7b380800000000000000
+      internalID: -8955451519365789972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_20
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 542
+        width: 92
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7737decc7bb15ab70800000000000000
+      internalID: 8909557914053473143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_21
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 651
+        width: 37
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c2f9aaed04f9c450800000000000000
+      internalID: 6109682710113546953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_22
+      rect:
+        serializedVersion: 2
+        x: 1169
+        y: 540
+        width: 113
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bac1afba413acc50800000000000000
+      internalID: 6686210793897315001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GameTitleMerged_23
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 515
+        width: 449
+        height: 215
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37f3e3398ac5f35d0800000000000000
+      internalID: -3080641741003538573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      GameTitleMerged_0: 81447632798748027
+      GameTitleMerged_1: -7019425721580966893
+      GameTitleMerged_10: -3831346506070359700
+      GameTitleMerged_11: 5359795391531109547
+      GameTitleMerged_12: 7656548213274705877
+      GameTitleMerged_13: 817860943612557368
+      GameTitleMerged_14: 3491240072938812292
+      GameTitleMerged_15: 3607264755864529896
+      GameTitleMerged_16: 1412189565563767085
+      GameTitleMerged_17: 5637598435920538460
+      GameTitleMerged_18: -8237643303793835821
+      GameTitleMerged_19: -8955451519365789972
+      GameTitleMerged_2: -7261055718864906088
+      GameTitleMerged_20: 8909557914053473143
+      GameTitleMerged_21: 6109682710113546953
+      GameTitleMerged_22: 6686210793897315001
+      GameTitleMerged_23: -3080641741003538573
+      GameTitleMerged_3: -130209172540632527
+      GameTitleMerged_4: -8293450048155849466
+      GameTitleMerged_5: -9185763443746915357
+      GameTitleMerged_6: 8005109352174406159
+      GameTitleMerged_7: 3498235909932599786
+      GameTitleMerged_8: -1729701226591931524
+      GameTitleMerged_9: 810896029103672997
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
