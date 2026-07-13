@@ -403,7 +403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43b2d54f52a369c4badb7528f8d41642, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  sceneToLoad: MainMenu
+  sceneToLoad: FirstActualEncounter
 --- !u!4 &1789050746
 Transform:
   m_ObjectHideFlags: 0
@@ -465,6 +465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManagement
   exception: MainMenu
   isPaused: 0
+  gameLoaded: 0
   currentScene: {}
   currentState: 0
 --- !u!1660057539 &9223372036854775807
