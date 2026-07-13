@@ -11,8 +11,9 @@ public class FadeStart : MonoBehaviour
 
     public void StartFadeIn()
     {
+        if (GameManagement.instance.currentState == GameManagement.GameStates.Paused) return;
         StartCoroutine(FadeCoroutine(0));
-        
+        DialogueManager.Instance.StopDialogue();
     }
 
     private IEnumerator FadeCoroutine(float startAlpha)
@@ -36,4 +37,6 @@ public class FadeStart : MonoBehaviour
     {
         this.gameObject.SetActive(false);
     }
+
+    
 }

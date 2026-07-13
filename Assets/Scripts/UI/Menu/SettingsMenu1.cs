@@ -22,12 +22,7 @@ public class SettingsMenu1 : MonoBehaviour
         
     }
 
-    public void CanSkipScene(bool skippable)
-    {
-        if (DialogueManager.Instance == null) return;
-        if (DialogueManager.Instance.nextButton == null) return;
-        DialogueManager.Instance.nextButton.gameObject.SetActive(skippable);
-    }
+    
 
     public void AutoDialogue(bool auto)
     {

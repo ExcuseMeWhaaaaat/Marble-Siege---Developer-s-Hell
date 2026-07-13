@@ -2,15 +2,15 @@ using UnityEngine;
 
 public class PlsSpareDis2 : MonoBehaviour
 {
-    public static PlsSpareDis2 instance;
+    public static PlsSpareDis2 buttonInstance;
     private void Awake()
     {
-        if (instance != null)
+        if (buttonInstance != null)
         {
             Destroy(gameObject);
             return;
         }
-        instance = this;
+        buttonInstance = this;
         DontDestroyOnLoad(this.gameObject);
 
     }

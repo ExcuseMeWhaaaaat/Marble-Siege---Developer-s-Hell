@@ -39,7 +39,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] float delay;
 
     
-    public Button nextButton;
+    
 
 
     
@@ -52,7 +52,7 @@ public class DialogueManager : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1;
-        nextButton.gameObject.SetActive(false);
+        
         messageIndex = 0;
         
     }
@@ -80,7 +80,7 @@ public class DialogueManager : MonoBehaviour
         if (messageIndex >= currentChunk.lines.Count)
         {
             Debug.Log("Enough");
-            nextButton.gameObject.SetActive(true);
+            
             return;
         }
 
@@ -181,6 +181,11 @@ public class DialogueManager : MonoBehaviour
         textBox.text = currentChunk.lines[messageIndex].text;
         isTyping = false;
     }
-    
-    
+
+    public void StopDialogue()
+    {
+        textBox.gameObject.SetActive(false);
+        
+
+    }
 }

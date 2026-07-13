@@ -25,6 +25,8 @@ public class PortalHealth : MonoBehaviour
     
     [SerializeField] string battleTarget;
 
+    [SerializeField] Button nextButton;
+
     private void Start()
     {
         if(portalHPSldier != null)
@@ -161,7 +163,7 @@ public class PortalHealth : MonoBehaviour
             skillPoints.addSkillPoints(portalHP / 3);
             SoundManagement.PlaySound(SoundType.Success, 0.75f);
         }
-        
+        nextButton.gameObject.SetActive(true);
         
     }
 

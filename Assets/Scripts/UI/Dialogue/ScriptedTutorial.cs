@@ -87,7 +87,7 @@ public class ScriptedTutorial : MonoBehaviour
             delay--;
         }
         CompleteEvent(TutorialEvents.BossDone, 4);
-        DialogueManager.Instance.nextButton.gameObject.SetActive(true);
+        
         
         
     }
