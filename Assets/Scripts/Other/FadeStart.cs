@@ -1,19 +1,25 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class FadeStart : MonoBehaviour
 {
     [SerializeField] CanvasGroup canvasGroup;
-    
+    public bool confirmableBattle;
+    [SerializeField] TextMeshProUGUI confirmText;
 
     
 
     public void StartFadeIn()
     {
+        
         if (GameManagement.instance.currentState == GameManagement.GameStates.Paused) return;
-        StartCoroutine(FadeCoroutine(0));
-        DialogueManager.Instance.StopDialogue();
+        
+            StartCoroutine(FadeCoroutine(0));
+            DialogueManager.Instance.StopDialogue();
+        
+        
     }
 
     private IEnumerator FadeCoroutine(float startAlpha)
@@ -31,6 +37,19 @@ public class FadeStart : MonoBehaviour
         
 
 
+    }
+
+    public void ConfirmSkipToBattle()
+    {
+        if (confirmableBattle)
+        {
+            StartFadeIn();
+        }
+        else
+        {
+            confirmText.text = "U sure?";
+            confirmableBattle = true;
+        }
     }
 
     public void DeleteButton()

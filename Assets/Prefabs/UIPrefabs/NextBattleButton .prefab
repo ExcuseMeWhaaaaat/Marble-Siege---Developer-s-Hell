@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 5306821780575873743}
   - component: {fileID: 2245397509605001291}
   - component: {fileID: 1062599643155422772}
-  - component: {fileID: 705161721748206203}
   m_Layer: 5
   m_Name: 'NextBattleButton '
   m_TagString: Untagged
@@ -151,6 +150,8 @@ MonoBehaviour:
   thisButton: {fileID: 5306821780575873743}
   targetScene: FirstEncounterBattle
   openResetPanel: {fileID: 0}
+  confirmText: {fileID: 0}
+  confirmable: 0
 --- !u!114 &1062599643155422772
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -163,19 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 899c3cff087c49d448772759cef16ed9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ShowButton
---- !u!114 &705161721748206203
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 492414559902138978}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f15d470016ea35047b0461f9a4734a28, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FadeStart
-  canvasGroup: {fileID: 0}
 --- !u!1 &8695771284671179062
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,8 +256,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

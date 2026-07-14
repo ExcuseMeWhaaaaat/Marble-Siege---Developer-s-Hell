@@ -13,7 +13,6 @@ public class TakeToScene : MonoBehaviour
     [SerializeField] private OpenResetPanel openResetPanel;
     [SerializeField] TextMeshProUGUI confirmText;
     public bool confirmable = false;
-
     public void SceneChange()
     {
         
@@ -61,15 +60,16 @@ public class TakeToScene : MonoBehaviour
         
         if (confirmable)
         {
+            Debug.Log("Can skip!");
             SceneChange();
         }
         else
         {
-            confirmText.text = "U sure?";
-            confirmable = true;
+            Ensure();
         }
     }
 
+    
     public void Conditions()
     {
         if (SoundManagement.instance != null)
@@ -77,5 +77,11 @@ public class TakeToScene : MonoBehaviour
             SoundManagement.PlaySound(SoundType.Click, 0.5f);
         }
         CheckForScene();
+    }
+
+    public void Ensure()
+    {
+        confirmText.text = "U sure?";
+        confirmable = true;
     }
 }
