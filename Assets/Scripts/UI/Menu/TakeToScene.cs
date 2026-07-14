@@ -1,4 +1,5 @@
 using System.Runtime.InteropServices.WindowsRuntime;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -10,7 +11,8 @@ public class TakeToScene : MonoBehaviour
     
     public static TakeToScene instance;
     [SerializeField] private OpenResetPanel openResetPanel;
-    
+    [SerializeField] TextMeshProUGUI confirmText;
+    public bool confirmable = false;
 
     public void SceneChange()
     {
@@ -54,7 +56,19 @@ public class TakeToScene : MonoBehaviour
         }
     }
 
-
+    public void ConfirmSkip()
+    {
+        
+        if (confirmable)
+        {
+            SceneChange();
+        }
+        else
+        {
+            confirmText.text = "U sure?";
+            confirmable = true;
+        }
+    }
 
     public void Conditions()
     {

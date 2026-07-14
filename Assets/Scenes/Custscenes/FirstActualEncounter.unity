@@ -889,6 +889,10 @@ PrefabInstance:
       value: NextButtonCanvas
       objectReference: {fileID: 0}
     - target: {fileID: 4514563532344966000, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
+      propertyPath: confirmText
+      value: 
+      objectReference: {fileID: 413950062}
+    - target: {fileID: 4514563532344966000, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
       propertyPath: targetScene
       value: FirstEncounterBattle
       objectReference: {fileID: 0}
@@ -984,6 +988,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7675759012464388461, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ConfirmSkip
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -994,6 +1002,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7372645062207516206, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
   m_PrefabInstance: {fileID: 413950060}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &413950062 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4793862002285005919, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
+  m_PrefabInstance: {fileID: 413950060}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
 --- !u!1001 &430460378
 PrefabInstance:
   m_ObjectHideFlags: 0
