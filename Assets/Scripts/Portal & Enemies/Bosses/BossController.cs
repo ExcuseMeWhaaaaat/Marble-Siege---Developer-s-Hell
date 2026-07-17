@@ -9,18 +9,23 @@ public class BossController : MonoBehaviour
     [SerializeField] private List<BossAttack> bossAttacks;
     [SerializeField] private CharacterAnimationController charAnim;
     public bool isAttacking;
-    
-    
+    [SerializeField] private PivotFly pivot;
+
+
 
     private void Start()
     {
-        
+
         InvokeRepeating(nameof(UseIntervalAttack), interval, interval);
-        
+
     }
     public void UseIntervalAttack()
     {
-
+        if (ScriptedTutorial.instance != null)
+        {
+            if (ScriptedTutorial.instance.fightEnded) return;
+        }
+        
         ChooseAttack();
     }
 
@@ -31,20 +36,20 @@ public class BossController : MonoBehaviour
         //If the boss is using a powerful attack, don't execute
         if (isAttacking) return;
 
-        
-        
+
+
         isAttacking = true;
         //Randomly choose an attack to execute
         int attackIndex = Random.Range(0, bossAttacks.Count);
-        
+
         BossAttack attack = bossAttacks[attackIndex];
         attack.Execute();
-        if(charAnim != null)
+        if (charAnim != null)
         {
             charAnim.animator.CrossFade(attack.animClip.name, charAnim.translationDuration);
         }
-        
-       
+
+
     }
 
     public void ReturnToIdle()
@@ -52,6 +57,8 @@ public class BossController : MonoBehaviour
         isAttacking = false;
         charAnim.animator.CrossFade(bossAttackSelection.idleAnim.name, charAnim.translationDuration);
     }
+
+    
 
     
     

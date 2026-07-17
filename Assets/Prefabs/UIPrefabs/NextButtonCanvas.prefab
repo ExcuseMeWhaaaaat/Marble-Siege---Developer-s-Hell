@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7675759012464388461}
   - component: {fileID: 4514563532344966000}
   - component: {fileID: 5308319004966568539}
+  - component: {fileID: 4650345581325596107}
   m_Layer: 5
   m_Name: NextButton
   m_TagString: Untagged
@@ -165,6 +166,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NoMainMenu
   notHere: []
+--- !u!114 &4650345581325596107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 78556430496407794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c638ad05c925ef468a37e0c09c44cb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DelayActivity
+  battleButton: {fileID: 7675759012464388461}
 --- !u!1 &2375930874165606361
 GameObject:
   m_ObjectHideFlags: 0

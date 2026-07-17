@@ -7,7 +7,7 @@ public class DelayActivity : MonoBehaviour
     private void Start()
     {
         battleButton.gameObject.SetActive(false);
-        Invoke(nameof(DelayButton),3f);
+        Invoke(nameof(DelayButton),2f);
     }
 
     public void DelayButton()

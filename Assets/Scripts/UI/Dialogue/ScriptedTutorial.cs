@@ -25,6 +25,8 @@ public class ScriptedTutorial : MonoBehaviour
     public float timer;
     public bool fightEnded = false;
     public float delay;
+    public bool isGone = false;
+    [SerializeField] private PivotFlyer bossController;
     
     
     private void Awake()
@@ -65,15 +67,15 @@ public class ScriptedTutorial : MonoBehaviour
         if (DialogueManager.Instance == null) return;
         
         if (completeEv[eventName]) return;
-        completeEv[eventName] = true;
+        
         
         if (!DialogueManager.Instance.isTyping)
         {
             DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak);
             DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text, scriptedChunk.lines[lineIndex].speak);
-            
-            
-            
+            completeEv[eventName] = true;
+
+
         }
         
 
@@ -87,7 +89,9 @@ public class ScriptedTutorial : MonoBehaviour
             delay--;
         }
         CompleteEvent(TutorialEvents.BossDone, 4);
-        
+
+        SeeIfGone();
+        bossController.ScriptedLeave();
         
         
     }
@@ -96,10 +100,16 @@ public class ScriptedTutorial : MonoBehaviour
     {
         if (fightEnded)
         {
-            delay = 3;
+            delay = 1;
             StartCoroutine(WaitForDialogue());
         }
            
+    }
+
+    public void SeeIfGone()
+    {
+        if (isGone) return;
+        isGone = true;
     }
 
 }

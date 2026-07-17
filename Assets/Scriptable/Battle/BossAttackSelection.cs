@@ -9,5 +9,6 @@ public class BossAttackSelection : ScriptableObject
     public List<AnimationClip> animations = new List<AnimationClip>();
     public AnimationClip idleAnim;
     
+    
 
 }

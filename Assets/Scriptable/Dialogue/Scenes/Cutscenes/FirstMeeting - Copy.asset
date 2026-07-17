@@ -13,37 +13,31 @@ MonoBehaviour:
   m_Name: FirstMeeting - Copy
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
   lines:
-  - text: 'Hey I got the news.
-
-'
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-    typeDelay: 0.75
   - text: "Alright, so here\u2019s what we know so far and what we told everyone-"
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: 12 former members are confirmed to be involved.
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: And the raid is said to occur in under an hour.
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: "Wait\u2026 how would they even come back when we banished them to the
       shadow realm! "
     correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: "Metaphorically speaking\u2026 "
     correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: '*Knock*'
     correctID: 0
     speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: I think they're here
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
@@ -51,25 +45,25 @@ MonoBehaviour:
   - text: Ah, there you 3 are!
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: "Hey, sorry for being late\u2026 "
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: "Someone was acting a little stubborn\u2026 "
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: "The same can be said about you dragging me here, yet no one talks about
       that one\u2026 "
     correctID: 3
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: 'Well its a good thing you''re all here. '
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: 'Because we should probably get going. '
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1

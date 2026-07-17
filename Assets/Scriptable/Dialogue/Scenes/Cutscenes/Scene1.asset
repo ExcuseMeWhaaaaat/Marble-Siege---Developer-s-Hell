@@ -16,31 +16,31 @@ MonoBehaviour:
   - text: Alright, here we are!
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: Yippeeeeeee!!!!!!!!!
     correctID: 0
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: 'Great! Can I leave now? '
     correctID: 0
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: We already talked about this...
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: We understand... things they don't...
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: I can't do this all by myself, you know...
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: 'You really understand freedom of choice, don''t you... '
     correctID: 0
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: Are you sure your thinking cap doesn't float up while reading underwater?
     correctID: 0
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
@@ -48,20 +48,20 @@ MonoBehaviour:
   - text: Cmon! Be nice...
     correctID: 0
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: 'And cheer up! '
     correctID: 0
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: Try viewing this as a... different experience this time!
     correctID: 0
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: I do, its just not a good one.
     correctID: 0
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
   - text: Anyways, they're waiting for us...
     correctID: 0
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 0.75
+    typeDelay: 1
