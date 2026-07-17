@@ -120,13 +120,13 @@ public class DialogueManager : MonoBehaviour
         
         
         textBox.text = "";
-        
 
         foreach (var stp in setTextPosition)
         {
             stp.SetTextPos(line);
         }
-        
+
+
         foreach (char c in line.text)
         {
            
@@ -137,6 +137,7 @@ public class DialogueManager : MonoBehaviour
             }
             yield return new WaitForSeconds(0.05f);
         }
+        
         yield return new WaitForSeconds(currentChunk.lines[messageIndex].typeDelay);
         isTyping = false;
         

@@ -11,9 +11,17 @@ public class CharacterAnimationController : MonoBehaviour
     
     public float translationDuration;
     public int charID;
-    public void PlayAnimation(string state)
+
+    
+    
+    public void PlayAnimation(AnimationClip clip)
     {
-        if (state == null || string.IsNullOrEmpty(state)) return; 
-        animator.CrossFade(state, translationDuration);
+        Debug.Log(clip);
+        
+        int stateHash = Animator.StringToHash(clip.name);
+        Debug.Log(animator.HasState(0, stateHash));
+        Debug.Log($"Playing: {clip.name}");
+        animator.CrossFade(stateHash, translationDuration);
+        Debug.Log("Played");
     }
 }
