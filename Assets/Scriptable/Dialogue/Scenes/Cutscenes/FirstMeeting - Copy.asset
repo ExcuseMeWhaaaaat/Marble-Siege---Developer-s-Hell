@@ -21,12 +21,12 @@ MonoBehaviour:
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
-  - text: And the raid is said to occur in under an hour.
+  - text: And the raid is said to occur in under an hour.....
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
   - text: "Wait\u2026 how would they even come back when we banished them to the
-      shadow realm! "
+      shadow realm?"
     correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
     typeDelay: 1
@@ -37,14 +37,6 @@ MonoBehaviour:
   - text: '*Knock*'
     correctID: 0
     speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
-    typeDelay: 1
-  - text: I think they're here
-    correctID: 8
-    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 1
-  - text: Ah, there you 3 are!
-    correctID: 8
-    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
   - text: "Hey, sorry for being late\u2026 "
     correctID: 1

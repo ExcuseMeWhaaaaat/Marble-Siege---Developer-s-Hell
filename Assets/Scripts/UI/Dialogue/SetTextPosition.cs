@@ -43,7 +43,7 @@ public class SetTextPosition : MonoBehaviour
 
         textRect.anchoredPosition = Vector2.SmoothDamp(textRect.anchoredPosition, targetPos,ref currentVel, 0.25f);
        
-        Debug.Log($"Target: {targetPos}");
+       
         
     }
 

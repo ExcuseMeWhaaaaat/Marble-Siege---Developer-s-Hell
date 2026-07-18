@@ -16,12 +16,12 @@ public class CharacterAnimationController : MonoBehaviour
     
     public void PlayAnimation(AnimationClip clip)
     {
-        Debug.Log(clip);
+        
         
         int stateHash = Animator.StringToHash(clip.name);
-        Debug.Log(animator.HasState(0, stateHash));
+        
         Debug.Log($"Playing: {clip.name}");
         animator.CrossFade(stateHash, translationDuration);
-        Debug.Log("Played");
+        
     }
 }

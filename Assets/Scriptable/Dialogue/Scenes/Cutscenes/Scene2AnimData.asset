@@ -33,6 +33,8 @@ MonoBehaviour:
       animID: 10
     - animationState: {fileID: 7400000, guid: 9f56838f4a6e2994c8baab935fe92216, type: 2}
       animID: 8
+    - animationState: {fileID: 7400000, guid: 9be9f493ec8cf7f45b1c72041f200f1e, type: 2}
+      animID: 4
   - animationChunks:
     - animationState: {fileID: 7400000, guid: 5449362b747e7a040a20718858a8fc95, type: 2}
       animID: 6
@@ -41,32 +43,60 @@ MonoBehaviour:
       animID: 5
     - animationState: {fileID: 7400000, guid: fe15664b06cc964438c83796adced8d6, type: 2}
       animID: 11
-    - animationState: {fileID: 7400000, guid: 5e4f4c4cdde6b8b4bb4be577c571bedf, type: 2}
-      animID: 2
-    - animationState: {fileID: 7400000, guid: cc7fd92164d5ac447aab956528c6f701, type: 2}
-      animID: 12
     - animationState: {fileID: 7400000, guid: 6a8855266bd931947a52b1e57aceb056, type: 2}
       animID: 6
-  - animationChunks:
-    - animationState: {fileID: 7400000, guid: 4ecc101c01d137047926b9b87e0c2918, type: 2}
-      animID: 8
-  - animationChunks:
-    - animationState: {fileID: 7400000, guid: 81a332661dda0a24aa31a8cff42c9a19, type: 2}
-      animID: 8
   - animationChunks:
     - animationState: {fileID: 7400000, guid: 3e50360e9855e454990a63cbf9d3f7f2, type: 2}
       animID: 1
     - animationState: {fileID: 7400000, guid: 9f56838f4a6e2994c8baab935fe92216, type: 2}
       animID: 8
+    - animationState: {fileID: 7400000, guid: 5e4f4c4cdde6b8b4bb4be577c571bedf, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: 2c25f69d33327b843be56067e3fc5267, type: 2}
+      animID: 3
+    - animationState: {fileID: 7400000, guid: 6061642c2569e3641af86ffd615fa624, type: 2}
+      animID: 5
+    - animationState: {fileID: 7400000, guid: fedf16d02797e7a4db00a49436741dc3, type: 2}
+      animID: 6
+    - animationState: {fileID: 7400000, guid: 307c860226a056f479d6d495185cc211, type: 2}
+      animID: 9
+    - animationState: {fileID: 7400000, guid: 7b5fd1ba410b9e24b916a4c41a1a7935, type: 2}
+      animID: 10
+    - animationState: {fileID: 7400000, guid: a4399a9af2c7a884eb2326730bf568bd, type: 2}
+      animID: 11
+    - animationState: {fileID: 7400000, guid: cc7fd92164d5ac447aab956528c6f701, type: 2}
+      animID: 12
   - animationChunks:
     - animationState: {fileID: 7400000, guid: dd27f6ff1d7c6f44b8750900d9d93322, type: 2}
       animID: 1
+    - animationState: {fileID: 7400000, guid: 4ad1ff90008054e419735b8b1847e49e, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: 930c353fe7b4a654599f3708c759c3bd, type: 2}
+      animID: 3
   - animationChunks:
-    - animationState: {fileID: 7400000, guid: 98b99e2bfb0673b45af6a92dfa90d38b, type: 2}
+    - animationState: {fileID: 7400000, guid: 3fbb625778e951041bf1a8fff9fb8b44, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: c0337ba267ae57c4899b2070c3edd1f8, type: 2}
       animID: 3
   - animationChunks:
     - animationState: {fileID: 7400000, guid: a7cd131a089115946b45776689c94480, type: 2}
       animID: 8
+    - animationState: {fileID: 7400000, guid: bf338701173f8f14da476eaff98ec0d4, type: 2}
+      animID: 3
+    - animationState: {fileID: 7400000, guid: 65a8a4a18b26f7448af06c3f2635af82, type: 2}
+      animID: 5
+    - animationState: {fileID: 7400000, guid: fd43441ee6833f24a9ba75cc98feaca4, type: 2}
+      animID: 6
+    - animationState: {fileID: 7400000, guid: f83bad311423422418bdc97f9d1ab00c, type: 2}
+      animID: 9
+    - animationState: {fileID: 7400000, guid: 66a1471d9276d734cb77da3f1b9e1077, type: 2}
+      animID: 10
+    - animationState: {fileID: 7400000, guid: edf82cdbf3dda9b449431f2ff425d8d8, type: 2}
+      animID: 11
+    - animationState: {fileID: 7400000, guid: 63e3231468960ad4fb3ae36f9606b72d, type: 2}
+      animID: 4
+    - animationState: {fileID: 7400000, guid: 5cd78ef7fdace9b47b234e4693f31612, type: 2}
+      animID: 12
   - animationChunks:
     - animationState: {fileID: 7400000, guid: a7cd131a089115946b45776689c94480, type: 2}
       animID: 8
