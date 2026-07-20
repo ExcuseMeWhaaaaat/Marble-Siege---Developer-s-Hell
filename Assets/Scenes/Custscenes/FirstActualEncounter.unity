@@ -2327,6 +2327,14 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 2045250961}
+    - target: {fileID: 1372867301797025856, guid: 989d8d3a038b1964f98cf3e668454a99, type: 3}
+      propertyPath: textRect
+      value: 
+      objectReference: {fileID: 1038186005}
+    - target: {fileID: 1372867301797025856, guid: 989d8d3a038b1964f98cf3e668454a99, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1916769074}
     - target: {fileID: 1598094127915963915, guid: 989d8d3a038b1964f98cf3e668454a99, type: 3}
       propertyPath: m_Name
       value: Y
@@ -3586,6 +3594,8 @@ MonoBehaviour:
   charPos: {fileID: 948511951}
   offset: {x: 0, y: 5}
   speakID: 2
+  canvasRect: {fileID: 1916769074}
+  textRect: {fileID: 1038186005}
 --- !u!1001 &954641469
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3801,6 +3811,14 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 2045250961}
+    - target: {fileID: 1312882714765322100, guid: 43d0297d04a10d7469fdfc8341a07cfb, type: 3}
+      propertyPath: textRect
+      value: 
+      objectReference: {fileID: 1038186005}
+    - target: {fileID: 1312882714765322100, guid: 43d0297d04a10d7469fdfc8341a07cfb, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1916769074}
     - target: {fileID: 4810670910900014907, guid: 43d0297d04a10d7469fdfc8341a07cfb, type: 3}
       propertyPath: animator
       value: 
@@ -3923,6 +3941,14 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 2045250961}
+    - target: {fileID: 1640447150676298205, guid: 3d62c90188be7a94d95d2b774945bee9, type: 3}
+      propertyPath: textRect
+      value: 
+      objectReference: {fileID: 1038186005}
+    - target: {fileID: 1640447150676298205, guid: 3d62c90188be7a94d95d2b774945bee9, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1916769074}
     - target: {fileID: 4024340356181456318, guid: 3d62c90188be7a94d95d2b774945bee9, type: 3}
       propertyPath: m_Name
       value: P
@@ -4674,6 +4700,8 @@ MonoBehaviour:
   charPos: {fileID: 1160163455}
   offset: {x: 0, y: 5}
   speakID: 1
+  canvasRect: {fileID: 1916769074}
+  textRect: {fileID: 1038186005}
 --- !u!1 &1174783453 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1115691121455836846, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
@@ -4843,6 +4871,14 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 2045250961}
+    - target: {fileID: 2814058393726688801, guid: f22dedf873d7cee4caf122d39f56ba0a, type: 3}
+      propertyPath: textRect
+      value: 
+      objectReference: {fileID: 1038186005}
+    - target: {fileID: 2814058393726688801, guid: f22dedf873d7cee4caf122d39f56ba0a, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1916769074}
     - target: {fileID: 5670361361072801158, guid: f22dedf873d7cee4caf122d39f56ba0a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.5047417
@@ -5088,6 +5124,14 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 2045250961}
+    - target: {fileID: 5272738496452301713, guid: b5809680ade7a124ab4e35a7b2324617, type: 3}
+      propertyPath: textRect
+      value: 
+      objectReference: {fileID: 1038186005}
+    - target: {fileID: 5272738496452301713, guid: b5809680ade7a124ab4e35a7b2324617, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1916769074}
     - target: {fileID: 9217178446482948184, guid: b5809680ade7a124ab4e35a7b2324617, type: 3}
       propertyPath: m_Name
       value: R
@@ -5235,6 +5279,14 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 2045250961}
+    - target: {fileID: 4964326231902908839, guid: 269bf3137403dc341b4a1904a540d310, type: 3}
+      propertyPath: textRect
+      value: 
+      objectReference: {fileID: 1038186005}
+    - target: {fileID: 4964326231902908839, guid: 269bf3137403dc341b4a1904a540d310, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1916769074}
     - target: {fileID: 8409700747639344912, guid: 269bf3137403dc341b4a1904a540d310, type: 3}
       propertyPath: m_Name
       value: ES
@@ -5556,6 +5608,10 @@ PrefabInstance:
       propertyPath: chunk
       value: 
       objectReference: {fileID: 11400000, guid: 5e884545f222249449991da5ffc82bec, type: 2}
+    - target: {fileID: 3435319287384404917, guid: 12cf876f9dbce904ab926610aa4478d2, type: 3}
+      propertyPath: cutscene
+      value: 
+      objectReference: {fileID: 11400000, guid: dab07df4a68b2734aa77f85c6b28e657, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6830,6 +6886,8 @@ MonoBehaviour:
   charPos: {fileID: 1659612746}
   offset: {x: 0, y: 5}
   speakID: 3
+  canvasRect: {fileID: 1916769074}
+  textRect: {fileID: 1038186005}
 --- !u!1001 &1682437557
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7645,6 +7703,8 @@ MonoBehaviour:
   charPos: {fileID: 1884090367}
   offset: {x: 0, y: 5}
   speakID: 7
+  canvasRect: {fileID: 1916769074}
+  textRect: {fileID: 1038186005}
 --- !u!4 &1884090370 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1995676748041444420, guid: f4b0bb51c6953044b9d24dab3826d211, type: 3}
@@ -7804,7 +7864,7 @@ GameObject:
   - component: {fileID: 1916769072}
   - component: {fileID: 1916769071}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: DialogueCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7907,6 +7967,14 @@ PrefabInstance:
       propertyPath: mainCam
       value: 
       objectReference: {fileID: 2045250961}
+    - target: {fileID: 154408380229295237, guid: d451941a2a8b3764f95318b9e538580f, type: 3}
+      propertyPath: textRect
+      value: 
+      objectReference: {fileID: 1038186005}
+    - target: {fileID: 154408380229295237, guid: d451941a2a8b3764f95318b9e538580f, type: 3}
+      propertyPath: canvasRect
+      value: 
+      objectReference: {fileID: 1916769074}
     - target: {fileID: 451497850694620964, guid: d451941a2a8b3764f95318b9e538580f, type: 3}
       propertyPath: m_Name
       value: L

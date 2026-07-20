@@ -1843,14 +1843,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afd4cedeee47a6f4ebb1500d61e396ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PortalHealth
-  portalHP: 300
+  portalHP: 200
   portalHPText: {fileID: 1661574974613436315}
   spawnPoint: {fileID: 3329325132381704234}
   pointVal: 0
   player: {fileID: 1542024800637487545}
   attackRange: 0
   portalHPSldier: {fileID: 667422712}
-  maxValue: 300
+  maxValue: 200
   spriteRenderer: {fileID: 0}
   activeColor: {r: 0, g: 0, b: 0, a: 0}
   inactiveColor: {r: 0, g: 0, b: 0, a: 0}

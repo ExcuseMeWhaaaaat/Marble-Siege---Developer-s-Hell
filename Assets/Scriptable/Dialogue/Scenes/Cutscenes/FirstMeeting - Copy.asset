@@ -25,15 +25,6 @@ MonoBehaviour:
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
-  - text: "Wait\u2026 how would they even come back when we banished them to the
-      shadow realm?"
-    correctID: 6
-    speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
-    typeDelay: 1
-  - text: "Metaphorically speaking\u2026 "
-    correctID: 6
-    speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
-    typeDelay: 1
   - text: '*Knock*'
     correctID: 0
     speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
@@ -51,11 +42,8 @@ MonoBehaviour:
     correctID: 3
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
     typeDelay: 1
-  - text: 'Well its a good thing you''re all here. '
-    correctID: 8
-    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
-    typeDelay: 1
-  - text: 'Because we should probably get going. '
+  - text: 'Well its a good thing you''re all here because we should probably get
+      going. '
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1

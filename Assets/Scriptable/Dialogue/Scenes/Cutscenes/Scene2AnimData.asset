@@ -23,33 +23,17 @@ MonoBehaviour:
     - animationState: {fileID: 7400000, guid: 4ecc101c01d137047926b9b87e0c2918, type: 2}
       animID: 8
   - animationChunks:
-    - animationState: {fileID: 7400000, guid: 9f988fd63fe66ed4cbe71487a9928a66, type: 2}
-      animID: 6
-    - animationState: {fileID: 7400000, guid: a4e6dafada824684da36c29033feb4da, type: 2}
-      animID: 12
-    - animationState: {fileID: 7400000, guid: dab9b2a0c0f85a647b4cf4e6decc4881, type: 2}
-      animID: 9
-    - animationState: {fileID: 7400000, guid: fbe7f4bd5d458244fa45145599177c1b, type: 2}
-      animID: 10
-    - animationState: {fileID: 7400000, guid: 9f56838f4a6e2994c8baab935fe92216, type: 2}
-      animID: 8
-    - animationState: {fileID: 7400000, guid: 9be9f493ec8cf7f45b1c72041f200f1e, type: 2}
-      animID: 4
-  - animationChunks:
-    - animationState: {fileID: 7400000, guid: 5449362b747e7a040a20718858a8fc95, type: 2}
-      animID: 6
-  - animationChunks:
     - animationState: {fileID: 7400000, guid: ebcff032f74ae054cbd584c8f8f59a39, type: 2}
       animID: 5
     - animationState: {fileID: 7400000, guid: fe15664b06cc964438c83796adced8d6, type: 2}
       animID: 11
     - animationState: {fileID: 7400000, guid: 6a8855266bd931947a52b1e57aceb056, type: 2}
       animID: 6
+    - animationState: {fileID: 7400000, guid: 6ed350d340bf4034284523aaa9576634, type: 2}
+      animID: 8
   - animationChunks:
     - animationState: {fileID: 7400000, guid: 3e50360e9855e454990a63cbf9d3f7f2, type: 2}
       animID: 1
-    - animationState: {fileID: 7400000, guid: 9f56838f4a6e2994c8baab935fe92216, type: 2}
-      animID: 8
     - animationState: {fileID: 7400000, guid: 5e4f4c4cdde6b8b4bb4be577c571bedf, type: 2}
       animID: 2
     - animationState: {fileID: 7400000, guid: 2c25f69d33327b843be56067e3fc5267, type: 2}
@@ -78,6 +62,8 @@ MonoBehaviour:
       animID: 1
     - animationState: {fileID: 7400000, guid: c0337ba267ae57c4899b2070c3edd1f8, type: 2}
       animID: 3
+    - animationState: {fileID: 7400000, guid: 78f06b3332e87484681649b1e3789634, type: 2}
+      animID: 2
   - animationChunks:
     - animationState: {fileID: 7400000, guid: a7cd131a089115946b45776689c94480, type: 2}
       animID: 8
@@ -97,6 +83,5 @@ MonoBehaviour:
       animID: 4
     - animationState: {fileID: 7400000, guid: 5cd78ef7fdace9b47b234e4693f31612, type: 2}
       animID: 12
-  - animationChunks:
-    - animationState: {fileID: 7400000, guid: a7cd131a089115946b45776689c94480, type: 2}
-      animID: 8
+    - animationState: {fileID: 7400000, guid: 88f9dceebeefd5f46a33f13974cf453a, type: 2}
+      animID: 1

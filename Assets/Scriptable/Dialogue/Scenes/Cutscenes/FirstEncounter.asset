@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: FirstEncounter
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
   lines:
-  - text: "I\u2019ll go notify everyone that you 3 are here."
+  - text: "I\u2019ll go notify everyone that these 3 are here."
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
@@ -21,12 +21,8 @@ MonoBehaviour:
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
-  - text: "Alright, I guess we\u2019ll just wait here\u2026"
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-    typeDelay: 1
-  - text: "Hey, so\u2026 we just wanted to say that sorry we had to meet again under
-      these circumstances\u2026\r\n "
+  - text: "Hey, so\u2026 we just wanted to say sorry we had to meet again under these
+      circumstances\u2026\r\n "
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
     typeDelay: 1
@@ -42,50 +38,25 @@ MonoBehaviour:
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1
-  - text: Only 2 of us can do that around here...
+  - text: I only know 2 of us around here that can do that...
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1
-  - text: How did you get this ability?
+  - text: I'm assuming you're Protagon members?
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1
-  - text: "Well you see\u2026 me and the other 2 are members of Anarchon's good counterpart:
-      Protagon."
-    correctID: 1
-    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
-    typeDelay: 1
-  - text: "Really? That\u2019s nice..."
-    correctID: 11
-    speak: {fileID: 11400000, guid: 8e483e21e4fe87f43bee9eaa667e41de, type: 2}
-    typeDelay: 1
-  - text: Oh yeah... that makes sense now...
-    correctID: 4
-    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-    typeDelay: 1
-  - text: Anyways, I think we can get ourselves through this!
-    correctID: 2
-    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
-    typeDelay: 1
-  - text: Bet!
+  - text: Indeed they are!
     correctID: 7
     speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}
     typeDelay: 1
-  - text: "Great, he\u2019s already here\u2026 "
-    correctID: 5
-    speak: {fileID: 11400000, guid: c2ae27be18ad00f48b1b34cedd44cf61, type: 2}
-    typeDelay: 1
-  - text: Yo can you banish yourself to the shadow realm please?
+  - text: seon hO
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 0.25
+  - text: Yo can you banish yourself to the shadow realm again please?
     correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
-    typeDelay: 1
-  - text: Wow! Not even a hello or welcome back?
-    correctID: 7
-    speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}
-    typeDelay: 1
-  - text: "Uhhh\u2026 hello\u2026 Can you please leave?"
-    correctID: 5
-    speak: {fileID: 11400000, guid: c2ae27be18ad00f48b1b34cedd44cf61, type: 2}
     typeDelay: 1
   - text: No can do!
     correctID: 7
