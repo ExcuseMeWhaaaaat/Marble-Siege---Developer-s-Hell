@@ -1854,7 +1854,7 @@ MonoBehaviour:
   spriteRenderer: {fileID: 0}
   activeColor: {r: 0, g: 0, b: 0, a: 0}
   inactiveColor: {r: 0, g: 0, b: 0, a: 0}
-  battleTarget: Cosidian (Shield)
+  battleTarget: ??????? (Shield)
   nextButton: {fileID: 114547665}
 --- !u!4 &560898961 stripped
 Transform:

@@ -31,6 +31,8 @@ MonoBehaviour:
       animID: 6
     - animationState: {fileID: 7400000, guid: 6ed350d340bf4034284523aaa9576634, type: 2}
       animID: 8
+    - animationState: {fileID: 7400000, guid: 9be9f493ec8cf7f45b1c72041f200f1e, type: 2}
+      animID: 4
   - animationChunks:
     - animationState: {fileID: 7400000, guid: 3e50360e9855e454990a63cbf9d3f7f2, type: 2}
       animID: 1
@@ -85,3 +87,5 @@ MonoBehaviour:
       animID: 12
     - animationState: {fileID: 7400000, guid: 88f9dceebeefd5f46a33f13974cf453a, type: 2}
       animID: 1
+    - animationState: {fileID: 7400000, guid: 63e3231468960ad4fb3ae36f9606b72d, type: 2}
+      animID: 4

@@ -38,7 +38,7 @@ MonoBehaviour:
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
     typeDelay: 1
   - text: "The same can be said about you dragging me here, yet no one talks about
-      that one\u2026 "
+      that\u2026 "
     correctID: 3
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
     typeDelay: 1

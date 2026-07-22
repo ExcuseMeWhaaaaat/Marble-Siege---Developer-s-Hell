@@ -53,7 +53,7 @@ MonoBehaviour:
   - text: seon hO
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
-    typeDelay: 0.25
+    typeDelay: 0.5
   - text: Yo can you banish yourself to the shadow realm again please?
     correctID: 6
     speak: {fileID: 11400000, guid: 51104adc72384c849832afd0a84d79fd, type: 2}
@@ -62,7 +62,7 @@ MonoBehaviour:
     correctID: 7
     speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}
     typeDelay: 1
-  - text: You brought your entire "Postpone Squad" to take on lil' ol' me?
+  - text: So, you brought your entire "Postpone Squad" to take on lil' ol' me?
     correctID: 7
     speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}
     typeDelay: 1
@@ -70,11 +70,11 @@ MonoBehaviour:
     correctID: 7
     speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}
     typeDelay: 1
-  - text: You know HE doesn't like traitors, right?
+  - text: You know he doesn't like traitors, right?
     correctID: 7
     speak: {fileID: 11400000, guid: af2bfbcd725ab7f4fadc71acc959705d, type: 2}
     typeDelay: 1
-  - text: Yeah yeah yada yada I know...
+  - text: ........................
     correctID: 3
     speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
     typeDelay: 1

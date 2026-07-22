@@ -13,14 +13,37 @@ MonoBehaviour:
   m_Name: Scene3AnimData
   m_EditorClassIdentifier: Assembly-CSharp::CutsceneSteps
   steps:
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: b1c24af8330853246bfcfb40f67553e0, type: 2}
+      animID: 8
+  - animationChunks: []
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 0abeae9e5ecf6d44ab5d1c9711a1a726, type: 2}
+      animID: 12
+    - animationState: {fileID: 7400000, guid: e18d44066220baa44b31efe80056b503, type: 2}
+      animID: 8
+    - animationState: {fileID: 7400000, guid: 9a770234504e29348b473cd85aa66cdb, type: 2}
+      animID: 1
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 809ddd0ee9dc9d6469b2afbc584ab44d, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: 7b86814accf2d9843b7c686e58b46a61, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: 93321ff683feb3749857f83b93095463, type: 2}
+      animID: 3
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 9be9f493ec8cf7f45b1c72041f200f1e, type: 2}
+      animID: 4
   - animationChunks: []
   - animationChunks: []
   - animationChunks: []
-  - animationChunks: []
-  - animationChunks: []
-  - animationChunks: []
-  - animationChunks: []
-  - animationChunks: []
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 3fbb625778e951041bf1a8fff9fb8b44, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: 8857813bf3e3e0c4a840f7560c1526a0, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: a5617a63b0ee4034bbbf6714b3cfb4e5, type: 2}
+      animID: 3
   - animationChunks: []
   - animationChunks: []
   - animationChunks: []
