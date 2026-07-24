@@ -59,6 +59,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Sky
+    uniqueID: 2378543141
+    locked: 0
   - name: PlainsBackground
     uniqueID: 810430921
     locked: 0

@@ -18,6 +18,7 @@ public class SetTextPosition : MonoBehaviour
     public RectTransform textRect;
     private Vector2 currentVel;
     private bool following;
+    
 
     public void SetTextPos(DialogueLine line)
     {

@@ -25,8 +25,8 @@ public class DialogueManager : MonoBehaviour
     [Header("UI")]
     public TextMeshProUGUI textBox;
     [SerializeField] private DialogueChunk currentChunk;
+    [SerializeField] TextMeshProUGUI lineCountText;
 
-    
     public Coroutine typingRoutine;
     public Coroutine anotherTypingRoutiune;
     
@@ -34,7 +34,8 @@ public class DialogueManager : MonoBehaviour
     public bool isTyping;
     public bool autoAdvance;
     public int messageIndex;
-    
+    [SerializeField] int maxLines;
+
 
     [SerializeField] float delay;
 
@@ -51,10 +52,15 @@ public class DialogueManager : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 1;
+        if(dialogueMode != DialogueMode.Battle)
+        {
+            Time.timeScale = 1;
+        }
+        
         
         messageIndex = 0;
-        
+        UpdateLine();
+
     }
     public void StartDialogue(DialogueChunk chunk)
     {
@@ -83,6 +89,8 @@ public class DialogueManager : MonoBehaviour
             
             return;
         }
+        UpdateLine();
+        
 
         
     }
@@ -188,5 +196,11 @@ public class DialogueManager : MonoBehaviour
         textBox.gameObject.SetActive(false);
         
 
+    }
+
+    public void UpdateLine()
+    {
+        if (lineCountText == null) return;
+        lineCountText.text = "Line " + messageIndex.ToString() + "/" + maxLines;
     }
 }
