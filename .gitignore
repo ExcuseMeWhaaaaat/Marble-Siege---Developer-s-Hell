@@ -73,3 +73,18 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+/WebGL Builds/Build
+Demo/MonoBleedingEdge/etc/mono/4.5/web.config
+/Demo
+Assets/_Recovery/0 (41).unity
+Assets/_Recovery/0 (42).unity
+Assets/_Recovery/0 (41).unity.meta
+Assets/_Recovery/0 (42).unity.meta
+/WebGL Builds
+/WebGL Builds/Build
+/WebGL Builds
+*.zip
+webgl_sharing
+/WebGL Builds
+/Official/MonoBleedingEdge
+/Official

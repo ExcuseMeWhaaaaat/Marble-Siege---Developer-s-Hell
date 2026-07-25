@@ -1,10 +1,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
-using static DialogueManager;
+using UnityEditor;
 
-[CreateAssetMenu(fileName = "DialogueChunk", menuName = "Scriptable Objects/DialogueChunk")]
-public class DialogueChunk : ScriptableObject
+
+[CreateAssetMenu(fileName = "ChunkDialogue", menuName = "Scriptable Objects/ChunkDialogue")]
+
+
+public class ChunkDialogue : ScriptableObject
 {
     
     public List<DialogueLine> lines;

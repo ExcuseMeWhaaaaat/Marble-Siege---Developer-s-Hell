@@ -5,7 +5,7 @@ public class WheresAcyd : MonoBehaviour
     
     public void AcydIsntHere()
     {
-        if (ScriptedTutorial.instance == null || DialogueManager.Instance.isTyping) return;
+        if (ScriptedTutorial.instance == null || DialogueManagement.Instance.isTyping) return;
         ScriptedTutorial.instance.CompleteEvent(ScriptedTutorial.TutorialEvents.Acyd, 3);
         
     }

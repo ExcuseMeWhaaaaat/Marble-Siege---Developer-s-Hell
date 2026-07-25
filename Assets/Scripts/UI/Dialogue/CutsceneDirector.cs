@@ -12,7 +12,7 @@ using UnityEngine.TextCore.Text;
 public class CutsceneDirector : MonoBehaviour
 {
     
-    public DialogueChunk chunk;
+    public ChunkDialogue chunk;
     private Dictionary<int,CharacterAnimationController> characters;
     [SerializeField] private CutsceneSteps cutscene;
     public int stepIndex;
@@ -22,7 +22,7 @@ public class CutsceneDirector : MonoBehaviour
     
     private void Awake()
     {
-        if (DialogueManager.Instance == null) return;
+        if (DialogueManagement.Instance == null) return;
         
         characters = new Dictionary<int,CharacterAnimationController>();
         foreach (var theCharacter in FindObjectsByType<CharacterAnimationController>())
@@ -40,9 +40,9 @@ public class CutsceneDirector : MonoBehaviour
     {
         var line = chunk.lines;
 
-        if (DialogueManager.Instance == null) yield break;
+        if (DialogueManagement.Instance == null) yield break;
 
-        if (!DialogueManager.Instance.autoAdvance)
+        if (!DialogueManagement.Instance.autoAdvance)
         {
 
             yield return new WaitUntil(() => Keyboard.current.zKey.wasPressedThisFrame);
@@ -62,7 +62,7 @@ public class CutsceneDirector : MonoBehaviour
 
             ExecuteAnimation(stepIndex);
             
-            yield return DialogueManager.Instance.TypeLine(line[stepIndex]);
+            yield return DialogueManagement.Instance.TypeLine(line[stepIndex]);
             
         }
 
@@ -93,7 +93,7 @@ public class CutsceneDirector : MonoBehaviour
     }
     public void Play()
     {
-        if (!DialogueManager.Instance.isTyping)
+        if (!DialogueManagement.Instance.isTyping)
         {
             
             StartCoroutine(PlayCoroutine());
@@ -105,7 +105,7 @@ public class CutsceneDirector : MonoBehaviour
     public void ManualAdvance(InputAction.CallbackContext context)
     {
         if (!context.performed) return;
-        if (DialogueManager.Instance.isTyping) return;
+        if (DialogueManagement.Instance.isTyping) return;
         
         
 

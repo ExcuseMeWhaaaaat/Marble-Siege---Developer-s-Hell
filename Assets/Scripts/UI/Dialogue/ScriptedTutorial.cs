@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEditor;
 
 public class ScriptedTutorial : MonoBehaviour
 {
@@ -21,7 +22,7 @@ public class ScriptedTutorial : MonoBehaviour
     public Dictionary<TutorialEvents,bool> completeEv;
     
     public static ScriptedTutorial instance;
-    public DialogueChunk scriptedChunk;
+    public ChunkDialogue scriptedChunk;
     public float timer;
     public bool fightEnded = false;
     public float delay;
@@ -64,15 +65,15 @@ public class ScriptedTutorial : MonoBehaviour
     {
 
         
-        if (DialogueManager.Instance == null) return;
+        if (DialogueManagement.Instance == null) return;
         
         if (completeEv[eventName]) return;
         
         
-        if (!DialogueManager.Instance.isTyping)
+        if (!DialogueManagement.Instance.isTyping)
         {
-            DialogueManager.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak);
-            DialogueManager.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text, scriptedChunk.lines[lineIndex].speak);
+            DialogueManagement.Instance.SpeakStyle(scriptedChunk.lines[lineIndex].speak);
+            DialogueManagement.Instance.ShowNextBattleLine(scriptedChunk.lines[lineIndex].text, scriptedChunk.lines[lineIndex].speak);
             completeEv[eventName] = true;
 
 

@@ -17,7 +17,7 @@ public class FadeStart : MonoBehaviour
         if (GameManagement.instance.currentState == GameManagement.GameStates.Paused) return;
         
             StartCoroutine(FadeCoroutine(0));
-            DialogueManager.Instance.StopDialogue();
+            DialogueManagement.Instance.StopDialogue();
         
         
     }

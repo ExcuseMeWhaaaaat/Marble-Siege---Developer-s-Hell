@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 [CreateAssetMenu(fileName = "BossAttackSelection", menuName = "Scriptable Objects/BossAttackSelection")]
 public class BossAttackSelection : ScriptableObject
 {

@@ -26,8 +26,8 @@ public class SettingsMenu1 : MonoBehaviour
 
     public void AutoDialogue(bool auto)
     {
-        if(DialogueManager.Instance == null) return;
-        DialogueManager.Instance.autoAdvance = auto;
+        if(DialogueManagement.Instance == null) return;
+        DialogueManagement.Instance.autoAdvance = auto;
         
         
         

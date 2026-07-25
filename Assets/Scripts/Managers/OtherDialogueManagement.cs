@@ -7,9 +7,10 @@ using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
+using UnityEditor;
 
 
-public class DialogueManager : MonoBehaviour
+public class DialogueManagement : MonoBehaviour
 {
     public enum DialogueMode
     {
@@ -20,11 +21,11 @@ public class DialogueManager : MonoBehaviour
     public DialogueMode dialogueMode;
 
     //Entire thing was copy and pasted
-    public static DialogueManager Instance;
+    public static DialogueManagement Instance;
 
     [Header("UI")]
     public TextMeshProUGUI textBox;
-    [SerializeField] private DialogueChunk currentChunk;
+    [SerializeField] private ChunkDialogue currentChunk;
     [SerializeField] TextMeshProUGUI lineCountText;
 
     public Coroutine typingRoutine;
@@ -62,7 +63,7 @@ public class DialogueManager : MonoBehaviour
         UpdateLine();
 
     }
-    public void StartDialogue(DialogueChunk chunk)
+    public void StartDialogue(ChunkDialogue chunk)
     {
         currentChunk = chunk;
         var yetAnotherLine = currentChunk.lines[messageIndex];
