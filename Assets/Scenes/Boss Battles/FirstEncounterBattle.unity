@@ -285,7 +285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3134236551660423616, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
       propertyPath: m_SortingOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3229071530949757088, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
       propertyPath: m_Layer
@@ -454,8 +454,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1374137037}
-  - {fileID: 718447960}
   - {fileID: 1382577413289254219}
+  - {fileID: 718447960}
   - {fileID: 8638737745964590727}
   - {fileID: 442479548919736374}
   - {fileID: 1873644177}
@@ -3369,6 +3369,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1873644180}
+    - target: {fileID: 7207596417964773124, guid: 00bf0446d583a1d42a5fc4004c0ae71e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7142,6 +7146,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 204534779}
     m_Modifications:
+    - target: {fileID: 1854148268848507323, guid: f94751934c8e72a4d87cbbb87664cd04, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2227635433224753603, guid: f94751934c8e72a4d87cbbb87664cd04, type: 3}
       propertyPath: m_Name
       value: TempCanvas
@@ -8469,7 +8477,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_TargetDisplay: 0
 --- !u!1 &8429491773470682528
 GameObject:
@@ -8541,7 +8549,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!222 &8501354234158652267
 CanvasRenderer:

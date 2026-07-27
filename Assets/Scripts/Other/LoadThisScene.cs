@@ -48,6 +48,7 @@ public class LoadThisScene : MonoBehaviour
     private void OnSceneLoaded(Scene scene,LoadSceneMode mode)
     {
         SaveScene();
+        GameManagement.instance.currentState= GameManagement.GameStates.Playing;
     }
 
     private void OnEnable()

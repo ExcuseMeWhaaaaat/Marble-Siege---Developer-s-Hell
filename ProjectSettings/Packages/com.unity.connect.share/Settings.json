@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"C:/Users/Owner/MainGame/WebGL Builds/Build;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"C:/Users/Owner/MainGame/WebGL Builds/New Build 1.3;C:/Users/Owner/MainGame/WebGL Builds;C:/Users/Owner/MainGame/WebGL Builds/New Build 1.1;C:/Users/Owner/MainGame/WebGL Builds/NewBuild;C:/Users/Owner/MainGame/WebGL Builds/Build;;;;;\"}"
             }
         ]
     }

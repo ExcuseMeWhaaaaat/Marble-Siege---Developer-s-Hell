@@ -467,7 +467,7 @@ MonoBehaviour:
   isPaused: 0
   gameLoaded: 0
   currentScene: {}
-  currentState: 2
+  currentState: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

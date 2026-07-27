@@ -11,12 +11,13 @@ public class Countdown : MonoBehaviour
     [SerializeField] TextMeshProUGUI countdownText;
     [SerializeField] CanvasGroup canvasGroup;
     [SerializeField] List<AudioClip> audioClipList;
+    
 
     private void Start()
     {
         Time.timeScale = 0;
-        StartCoroutine(SiegeCountdown());
-        
+
+        StartPlay();
         
     }
     private IEnumerator SiegeCountdown()
@@ -24,14 +25,19 @@ public class Countdown : MonoBehaviour
         int colorIndex = 0;
         while (countdown > 0)
         {
-            
-            yield return new WaitForSecondsRealtime(0.75f);
-            countdown--;
-            
-            colorIndex++;
-            countdownText.color = colorList[colorIndex];
-            
-            countdownText.text = countdown.ToString();
+            if(GameManagement.instance.currentState == GameManagement.GameStates.Playing)
+            {
+                yield return new WaitForSecondsRealtime(1f);
+                countdown--;
+                colorIndex++;
+                countdownText.color = colorList[colorIndex];
+
+                countdownText.text = countdown.ToString();
+            }
+            else
+            {
+                yield return new WaitUntil(() => GameManagement.instance.currentState == GameManagement.GameStates.Playing);
+            }
             
         }
         countdownText.text = "BEGIN THE SIEGE";
@@ -58,5 +64,9 @@ public class Countdown : MonoBehaviour
 
     }
 
-
+    public void StartPlay()
+    {
+        GameManagement.instance.currentState = GameManagement.GameStates.Playing;
+        StartCoroutine(SiegeCountdown());
+    }
 }

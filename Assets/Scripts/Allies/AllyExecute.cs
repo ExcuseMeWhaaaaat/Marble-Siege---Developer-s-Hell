@@ -1,7 +1,13 @@
 using UnityEngine;
 
-public abstract class AllyExecute : MonoBehaviour
+public class AllyExecuteAnimation : MonoBehaviour
 {
-    public abstract void ExecuteAbility();
-    public AnimationClip clip;
+    [SerializeField] Animator animator;
+    [SerializeField] AnimationClip clip;
+    
+
+    private void Start()
+    {
+        animator.CrossFade(clip.name, 0.5f);
+    }
 }

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8653719598885068355, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
       propertyPath: m_Name
-      value: Screenshot 2026-02-26 185007
+      value: Avatar
       objectReference: {fileID: 0}
     - target: {fileID: -7552582706839291426, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
       propertyPath: m_LocalPosition.x

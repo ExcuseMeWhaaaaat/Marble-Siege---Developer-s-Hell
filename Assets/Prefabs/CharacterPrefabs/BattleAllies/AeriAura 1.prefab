@@ -112,6 +112,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3133334, y: 0.5455934, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &1982614990702831013
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +322,7 @@ MonoBehaviour:
     m_Extent: {x: 0.15973073, y: 0.9053334, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &3223194786693919202
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +435,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3133334, y: 0.54453063, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &4548263800076355050
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +545,7 @@ GameObject:
   - component: {fileID: 1304196781277574278}
   - component: {fileID: 8140869734039937719}
   - component: {fileID: 5579267051833176381}
+  - component: {fileID: 6899232709741702504}
   m_Layer: 0
   m_Name: AeriAura 1
   m_TagString: Untagged
@@ -586,7 +590,7 @@ Animator:
   m_GameObject: {fileID: 7319753673786737936}
   m_Enabled: 0
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e9e24ef9496d2d84c80d721f5aebc726, type: 2}
+  m_Controller: {fileID: 9100000, guid: 7f4517156ec99b54fb93c751ab6c5cae, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -625,6 +629,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GarboCollection
   timeToLive: 15
+--- !u!114 &6899232709741702504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7319753673786737936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f17bf40c1b675fd4ea139d3fb7f73b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AllyExecuteAnimation
+  animator: {fileID: 1304196781277574278}
+  clip: {fileID: 7400000, guid: 884c3c8888b86dd4d9dcb90016b69630, type: 2}
 --- !u!1 &7654484004337962767
 GameObject:
   m_ObjectHideFlags: 0
@@ -736,6 +754,7 @@ MonoBehaviour:
     m_Extent: {x: 0.60666656, y: 0.6066667, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &7692922930372258528
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +898,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31568134, y: 0.54468006, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &8164427740342744998
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1075,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31333327, y: 0.5443866, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &8528823608810504572
 GameObject:
   m_ObjectHideFlags: 0
@@ -1199,6 +1220,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31547326, y: 0.54493207, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &8635240524100301389
 GameObject:
   m_ObjectHideFlags: 0
@@ -1311,6 +1333,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31339195, y: 0.5446626, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &8687214877106634313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1423,6 +1446,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3160001, y: 0.5474456, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &9057409613508377187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1535,6 +1559,7 @@ MonoBehaviour:
     m_Extent: {x: 0.315404, y: 0.54686403, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &9068028515361554215
 GameObject:
   m_ObjectHideFlags: 0
