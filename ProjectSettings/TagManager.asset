@@ -25,6 +25,7 @@ TagManager:
   - WIndBurst
   - AcydAttack
   - Radiation
+  - Windy
   layers:
   - Default
   - TransparentFX

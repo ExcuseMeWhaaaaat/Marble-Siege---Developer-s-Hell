@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -11,10 +12,12 @@ public class PlayerStatusEffects : MonoBehaviour
     [SerializeField] float chillTime;
     [SerializeField] float curifyTime;
     [SerializeField] float cureCD;
-    
+    [SerializeField] int windedTime = 30;
+
     [SerializeField] bool isStunned = false;
     [SerializeField] bool isChilled = false;
     [SerializeField] bool curified = false;
+    [SerializeField] bool isWinded;
     public bool canCure = true;
     
     private Coroutine chillCoroutine;
@@ -23,6 +26,7 @@ public class PlayerStatusEffects : MonoBehaviour
     [SerializeField] Color curifiedColor;
     [SerializeField] Color chilledColor;
     [SerializeField] Color stunColor;
+    [SerializeField] Color windedColor;
     [SerializeField] SpriteRenderer spriteRenderer;
 
     [SerializeField] TextMeshProUGUI cureText;
@@ -32,6 +36,11 @@ public class PlayerStatusEffects : MonoBehaviour
         if (stunCoroutine != null)
         {
             playerControls.rb.linearVelocity = Vector2.zero;
+        }
+
+        if (isWinded)
+        {
+            playerControls.canJump = true;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
@@ -69,6 +78,18 @@ public class PlayerStatusEffects : MonoBehaviour
         if (stunCoroutine == null)
         {
             playerControls.canJump = true;
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Windy"))
+        {
+            if (isWinded) return;
+            
+            spriteRenderer.color = windedColor;
+            isWinded = true;
+            StartCoroutine(Winded());
         }
     }
 
@@ -125,7 +146,19 @@ public class PlayerStatusEffects : MonoBehaviour
         isChilled = false;
         spriteRenderer.color = Color.white;
     }
+    IEnumerator Winded()
+    {
+        windedTime = 20;
+        while (windedTime > 0)
+        {
 
+            yield return new WaitForSeconds(1f);
+            windedTime--;
+        }
+        
+        spriteRenderer.color = Color.white;
+        isWinded = false;
+    }
     public void GetCured()
     {
         InstantCure();

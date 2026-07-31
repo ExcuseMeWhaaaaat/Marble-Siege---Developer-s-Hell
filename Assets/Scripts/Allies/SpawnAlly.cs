@@ -53,7 +53,7 @@ public class SpawnAlly : MonoBehaviour
 
 
     }
-    IEnumerator AllyCooldown()
+    public IEnumerator AllyCooldown()
     {
         cooldownTime = 75;
         

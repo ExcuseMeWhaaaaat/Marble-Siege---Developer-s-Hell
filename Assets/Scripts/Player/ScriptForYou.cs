@@ -16,6 +16,8 @@ public class ScriptForYou : MonoBehaviour
     [SerializeField] bool canBoost = true;
     [SerializeField] float boostTime;
     [SerializeField] float boostCooldown;
+    
+    
 
     public float speed;
     private Vector2 movement;
@@ -26,7 +28,8 @@ public class ScriptForYou : MonoBehaviour
     
     
     public string statusEffect;
-    [SerializeField] bool windCharged;
+    
+    
 
     [SerializeField] TextMeshProUGUI mbText;
     [SerializeField] TextMeshProUGUI mbDMG;
@@ -41,17 +44,8 @@ public class ScriptForYou : MonoBehaviour
 
     private void FixedUpdate()
     {
+        rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
         
-        
-        
-        if (windCharged)
-        {
-            rb.linearVelocity = new Vector2(horizontal * speed * 2,rb.linearVelocity.y);
-        }
-        else
-        {
-            rb.linearVelocity = new Vector2(horizontal * speed, rb.linearVelocity.y);
-        }
 
         if(transform.position.x > outOfBOundsX || transform.position.x < -outOfBOundsX || transform.position.y > outOfBoundsY)
         {
@@ -94,23 +88,10 @@ public class ScriptForYou : MonoBehaviour
         }
     }
     
-    private void OnTriggerStay2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("WindCharge"))
-        {
-            windCharged = true;
-            Debug.Log("Wind Charge Used!");
-        }
-    }
+    
 
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("WindCharge"))
-        {
-            windCharged = false;
-            Debug.Log("Charge Exited");
-        }
-    }
+    
+
     
 
     IEnumerator MoraleBoost()

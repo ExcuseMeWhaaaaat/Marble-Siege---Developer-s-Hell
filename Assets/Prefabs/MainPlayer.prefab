@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1542024801047930527
+--- !u!1 &8065536473880436661
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,45 +8,45 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 9169752204739278753}
-  - component: {fileID: 6839906490716739306}
-  - component: {fileID: 3978330736180616193}
-  - component: {fileID: 5050488050091578929}
-  - component: {fileID: 7046320992616065008}
-  - component: {fileID: 7756811196446984244}
-  - component: {fileID: 4352167158123384099}
-  - component: {fileID: 8153320365389422804}
-  - component: {fileID: 1878866580035320967}
+  - component: {fileID: 2951192872274385240}
+  - component: {fileID: 7256696547838830596}
+  - component: {fileID: 375815079455948469}
+  - component: {fileID: 2016379895691274535}
+  - component: {fileID: 5381581178678655271}
+  - component: {fileID: 8276380744332992706}
+  - component: {fileID: 6951682707849544510}
+  - component: {fileID: 8507252034495112533}
+  - component: {fileID: 4660059538504523949}
   m_Layer: 0
-  m_Name: MainPlayer 1
+  m_Name: MainPlayer
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &9169752204739278753
+--- !u!4 &2951192872274385240
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.46, y: 6.33, z: 0}
+  m_LocalPosition: {x: 0, y: -2.33, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6839906490716739306
+--- !u!212 &7256696547838830596
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -84,28 +84,28 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: -176743411
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 1826062710117970509, guid: 71653c81d4f55954fb0d1bbc29a840bd, type: 3}
+  m_Sprite: {fileID: 7872722273471896646, guid: 795947eaa846b56429ad17105ddb4595, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.0333333, y: 4.2}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!96 &3978330736180616193
+--- !u!96 &375815079455948469
 TrailRenderer:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -169,8 +169,8 @@ TrailRenderer:
       m_RotationOrder: 4
     colorGradient:
       serializedVersion: 2
-      key0: {r: 1, g: 0.5, b: 0, a: 1}
-      key1: {r: 1, g: 0.5, b: 0, a: 1}
+      key0: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
       key2: {r: 0, g: 0, b: 0, a: 0}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -193,7 +193,7 @@ TrailRenderer:
       atime5: 0
       atime6: 0
       atime7: 0
-      m_Mode: 0
+      m_Mode: 1
       m_ColorSpace: -1
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
@@ -208,13 +208,13 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 1
   m_ApplyActiveColorSpace: 1
---- !u!58 &5050488050091578929
+--- !u!58 &2016379895691274535
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
@@ -244,14 +244,14 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
---- !u!50 &7046320992616065008
+--- !u!50 &5381581178678655271
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
@@ -271,41 +271,41 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
---- !u!114 &7756811196446984244
+--- !u!114 &8276380744332992706
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c8941d8a25348d44ae56616a898c5bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScriptForYou
-  rb: {fileID: 7046320992616065008}
+  rb: {fileID: 5381581178678655271}
   outOfBoundsY: 15
-  outOfBOundsX: 32
+  outOfBOundsX: 20
   spawnPoint: {fileID: 0}
   canBoost: 1
   boostTime: 15
   boostCooldown: 0
+  isWinded: 0
+  windedTime: 30
   speed: 10
   hit: 0
   canJump: 0
   dmgMultiplier: 1
   statusEffect: 
-  windCharged: 0
-  windCharging: {fileID: 0}
   mbText: {fileID: 0}
   mbDMG: {fileID: 0}
---- !u!114 &4352167158123384099
+--- !u!114 &6951682707849544510
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
@@ -326,7 +326,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7756811196446984244}
+      - m_Target: {fileID: 8276380744332992706}
         m_TargetAssemblyTypeName: ScriptForYou, Assembly-CSharp
         m_MethodName: Movement
         m_Mode: 0
@@ -342,7 +342,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7756811196446984244}
+      - m_Target: {fileID: 8276380744332992706}
         m_TargetAssemblyTypeName: ScriptForYou, Assembly-CSharp
         m_MethodName: Jump
         m_Mode: 0
@@ -366,7 +366,7 @@ MonoBehaviour:
     m_ActionName: 'Player/ToggleUI[/Keyboard/f3]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8153320365389422804}
+      - m_Target: {fileID: 8507252034495112533}
         m_TargetAssemblyTypeName: PlayerHeallth, Assembly-CSharp
         m_MethodName: Heal
         m_Mode: 0
@@ -397,53 +397,53 @@ MonoBehaviour:
     m_ActionId: 361f138d-1fc4-4dd1-b03a-d768f98c1ace
     m_ActionName: 'Player/Cutscene[/Keyboard/c]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1878866580035320967}
-        m_TargetAssemblyTypeName: PlayerStatusEffects, Assembly-CSharp
-        m_MethodName: Cure
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: 5b71e1b9-6d86-479d-831f-6b1294025158
     m_ActionName: 'Player/Cure[/Keyboard/2]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7756811196446984244}
-        m_TargetAssemblyTypeName: ScriptForYou, Assembly-CSharp
-        m_MethodName: Boost
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: d6a6bb36-349f-43e2-9f56-19a5434ff198
     m_ActionName: 'Player/Boost[/Keyboard/3]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 8db70096-da1b-4ca5-8af2-00dcdff1199e
-    m_ActionName: 'Player/Pause[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls: []
     m_ActionId: ce1b05c1-78b1-4378-8a4b-fc09d61bd02e
     m_ActionName: 'Player/Interact[/Keyboard/q]'
   - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 8db70096-da1b-4ca5-8af2-00dcdff1199e
+    m_ActionName: 'Player/Pause[/Keyboard/escape]'
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
+        m_MethodName: Pause
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: b4ad1282-697e-4906-be50-98069cfc7791
+    m_ActionName: 'Interface/Pause[/Keyboard/escape]'
+  - m_PersistentCalls:
       m_Calls: []
     m_ActionId: 8eeaded7-da01-4768-be78-90690709914d
     m_ActionName: 'Player/ExitSettings[/Keyboard/escape]'
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: b4ad1282-697e-4906-be50-98069cfc7791
-    m_ActionName: 'Interface/Pause[/Keyboard/escape]'
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6684737713718459835, guid: 2d2cb9c76f7bda34686de170a2d56d9d, type: 3}
@@ -465,13 +465,13 @@ MonoBehaviour:
   m_DefaultActionMap: Player
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
---- !u!114 &8153320365389422804
+--- !u!114 &8507252034495112533
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41dc114de09f39245a0811be83f9328d, type: 3}
@@ -487,22 +487,22 @@ MonoBehaviour:
   portal: {fileID: 0}
   invincColor: {r: 1, g: 1, b: 1, a: 0.2509804}
   defColor: {r: 1, g: 1, b: 1, a: 1}
-  spriteColor: {fileID: 6839906490716739306}
+  spriteColor: {fileID: 7256696547838830596}
   healingImage: {fileID: 0}
   statusEffect: 
---- !u!114 &1878866580035320967
+--- !u!114 &4660059538504523949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1542024801047930527}
+  m_GameObject: {fileID: 8065536473880436661}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63a358b25d6bad84f811dbc7c31de795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStatusEffects
-  playerControls: {fileID: 7756811196446984244}
+  playerControls: {fileID: 8276380744332992706}
   stunTime: 0
   chillTime: 0
   curifyTime: 0
@@ -510,9 +510,10 @@ MonoBehaviour:
   isStunned: 0
   isChilled: 0
   curified: 0
-  canCure: 0
+  canCure: 1
   curifiedColor: {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
   chilledColor: {r: 0.282353, g: 0.8196079, b: 0.8000001, a: 1}
   stunColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  spriteRenderer: {fileID: 6839906490716739306}
+  windedColor: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
+  spriteRenderer: {fileID: 7256696547838830596}
   cureText: {fileID: 0}
