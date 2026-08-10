@@ -77,9 +77,9 @@ public class EnemySpawnController : MonoBehaviour
 
     public Vector2 GenerateSpawnPos()
     {
-        float xPos = Random.Range(bottomRight.position.x, topLeft.position.x);
-        float yPos = Random.Range(bottomRight.position.y, topLeft.position.y);
-        Vector2 spawnPos = new Vector2(xPos, yPos);
+        float xPos = Random.Range(topLeft.position.x, bottomRight.position.x);
+        
+        Vector2 spawnPos = new Vector2(xPos, 0);
         return spawnPos;
     }
     public void SpawnEnemyType()

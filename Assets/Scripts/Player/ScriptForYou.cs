@@ -79,7 +79,7 @@ public class ScriptForYou : MonoBehaviour
 
         if (canBoost)
         {
-            dmgMultiplier++;
+            dmgMultiplier*=1.25f;
             canBoost = false;
             StartCoroutine(MoraleBoost());
             StartCoroutine(MBCooldown());
@@ -103,7 +103,7 @@ public class ScriptForYou : MonoBehaviour
             boostTime--;
             UpdateUI();
         }
-        dmgMultiplier--;
+        dmgMultiplier = 1;
         
     }
 

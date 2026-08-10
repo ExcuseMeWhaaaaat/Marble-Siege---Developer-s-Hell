@@ -10,8 +10,8 @@ public class EnemyTrack : MonoBehaviour
     [SerializeField] float detectRange;
     
 
-    [SerializeField] float yAngle;
-    [SerializeField] float flippedAngle;
+    
+    
     
     
     void Start()
@@ -38,16 +38,11 @@ public class EnemyTrack : MonoBehaviour
             transform.Translate(Vector3.right * speed * Time.deltaTime * xDirection, Space.World);
         }
 
-        if(player.transform.position.x < transform.position.x)
-        {
-            transform.rotation = Quaternion.Euler(0,flippedAngle,0);
-        }
-        else
-        {
-            transform.rotation = Quaternion.Euler(0, yAngle, 0);
-        }
+        
 
     }
 
     
+
+
 }

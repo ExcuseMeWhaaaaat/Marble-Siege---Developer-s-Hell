@@ -5,11 +5,12 @@ public class AcidDrop : MonoBehaviour
     [SerializeField] Rigidbody2D dropRb;
     [SerializeField] float speed;
     private Vector2 direction;
+    private Color fadeColor;
     
 
     private void Start()
     {
-        direction = new Vector2(Random.Range(-2, 2), Random.Range(-3,0));
+        direction = new Vector2(0,-speed);
         
         
     }
@@ -20,4 +21,8 @@ public class AcidDrop : MonoBehaviour
         
     }
 
+    private void Update()
+    {
+        fadeColor.a--;
+    }
 }

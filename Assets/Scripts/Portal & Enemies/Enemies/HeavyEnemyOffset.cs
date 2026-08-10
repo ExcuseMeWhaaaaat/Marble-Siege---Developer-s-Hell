@@ -7,6 +7,6 @@ public class HeavyEnemyOffset : MonoBehaviour
 
     private void Start()
     {
-        transform.position = new Vector2(0,yPos);
+        transform.position = new Vector2(transform.position.x,yPos);
     }
 }

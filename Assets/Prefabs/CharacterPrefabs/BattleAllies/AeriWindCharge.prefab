@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingOrder: 7
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4676576009268862152, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -195,7 +195,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 10
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 508361542653815874, guid: 5a20db5fc46729f49948b969d68fad08, type: 3}
+  m_Sprite: {fileID: -6747565766798716600, guid: 0c3568053312b4446a59c55e53b1a15b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -407,7 +407,7 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2779669638266159334, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -520,7 +520,7 @@ SpriteRenderer:
   m_SortingOrder: 6
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5635264486642227171, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -633,7 +633,7 @@ SpriteRenderer:
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7874792609554000976, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -809,7 +809,7 @@ SpriteRenderer:
   m_SortingOrder: 9
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3560245113966120327, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -882,7 +882,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1443099096733468985}
   - component: {fileID: 3790958069836153703}
-  - component: {fileID: 8361297409316966303}
   m_Layer: 0
   m_Name: WCS
   m_TagString: Untagged
@@ -964,20 +963,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &8361297409316966303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5304739815816640420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f5938dcef5807ca4d8e5bef6f475968c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::WindCharging
-  windCharge: {fileID: 7204115258518505750, guid: 04d7d3c401fa19f4fb63089f90acc013, type: 3}
-  windChargeSpawner: {fileID: 1443099096733468985}
 --- !u!1 &6242652139524163033
 GameObject:
   m_ObjectHideFlags: 0
@@ -1244,7 +1229,7 @@ SpriteRenderer:
   m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4462618274907182900, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1388,7 +1373,7 @@ SpriteRenderer:
   m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3465232336174563952, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1501,7 +1486,7 @@ SpriteRenderer:
   m_SortingOrder: 8
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7576355026767995069, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1614,7 +1599,7 @@ SpriteRenderer:
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1538447604230228581, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
-  m_Color: {r: 0.495, g: 0.6975, b: 0.9, a: 1}
+  m_Color: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -116,10 +116,10 @@ TextureImporter:
       name: Krumb_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 849
-        height: 782
+        x: 553
+        y: 609
+        width: 264
+        height: 284
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

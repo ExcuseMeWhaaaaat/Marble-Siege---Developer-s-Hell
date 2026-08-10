@@ -1,34 +1,44 @@
+using System.Collections;
+using UnityEditorInternal;
 using UnityEngine;
 
-public class Clusterblast : MonoBehaviour
+public class AcidRain : MonoBehaviour
 {
-    [SerializeField] GameObject clusterSpew;
+    [SerializeField] GameObject acidDrop;
     [SerializeField] float delay;
-    [SerializeField] float speed;
+    [SerializeField] float spawnRange;
+    [SerializeField] float rainTime;
 
 
     private void Start()
     {
-        Invoke(nameof(Poof), delay);
+        StartCoroutine(SummonRain());
+        rainTime = 10;
     }
 
-    public void OnDestroy()
+    IEnumerator SummonRain()
     {
-        for(int i = 0;i < 18; i++)
-        {   
-            Instantiate(clusterSpew, transform.position, transform.rotation);
+        while(rainTime > 0)
+        {
+            yield return new WaitForSeconds(1f);
+            rainTime--;
+            SpawnDrop();
         }
-        
-    }
-
-    private void Update()
-    {
-        transform.Translate(Vector2.zero);
-    }
-
-    public void Poof()
-    {
         Destroy(gameObject);
+    }
+
+    public Vector2 SpawnAtPos()
+    {
+        float xPos = transform.position.x + Random.Range(-spawnRange,spawnRange);
+        float yPos = transform.position.y - 4;
+        Vector2 spawnPos = new Vector2(xPos, yPos);
+        return spawnPos;
+    }
+
+    public void SpawnDrop()
+    {
+        if (acidDrop == null) return;
+        Instantiate(acidDrop,SpawnAtPos(),transform.rotation);
     }
 
 }

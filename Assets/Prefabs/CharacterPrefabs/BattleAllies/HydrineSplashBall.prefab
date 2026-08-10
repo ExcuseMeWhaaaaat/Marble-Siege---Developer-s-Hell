@@ -193,6 +193,7 @@ MonoBehaviour:
     m_Extent: {x: 0.15973073, y: 0.9053334, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &670862284055326025
 GameObject:
   m_ObjectHideFlags: 0
@@ -305,6 +306,7 @@ MonoBehaviour:
     m_Extent: {x: 0.315404, y: 0.54686403, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &861672483868509412
 GameObject:
   m_ObjectHideFlags: 0
@@ -417,6 +419,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3160001, y: 0.5474456, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &1293793664316452787
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,6 +626,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31568134, y: 0.54468006, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &1980060883603461014
 GameObject:
   m_ObjectHideFlags: 0
@@ -892,6 +896,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3133334, y: 0.54453063, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &4931577658155469051
 GameObject:
   m_ObjectHideFlags: 0
@@ -985,8 +990,8 @@ Transform:
   m_GameObject: {fileID: 5499982402411657367}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.197, y: -0.368, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.2, z: 1}
+  m_LocalPosition: {x: 0.829, y: -0.755, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1.4219}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2515514548769159507}
@@ -1040,7 +1045,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 8271926189331283912, guid: 255189e2b2dc0a442b21344f9bb8b362, type: 3}
+  m_Sprite: {fileID: -7184646587105964232, guid: 47b453543b398e646974c428319dda5a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1063,7 +1068,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FollowPlayer
   player: {fileID: 0}
-  speed: 8
+  speed: 10
 --- !u!58 &7768416521928634819
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1098,8 +1103,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 2.33
+  m_Offset: {x: 0.026857195, y: 0}
+  m_Radius: 1.6988636
 --- !u!1 &5611738066360712092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1212,6 +1217,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31339195, y: 0.5446626, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &6291380571690217670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,6 +1394,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31333327, y: 0.5443866, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &7445616178242810406
 GameObject:
   m_ObjectHideFlags: 0
@@ -1531,6 +1538,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3133334, y: 0.5455934, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &7912290176507172734
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,6 +1650,7 @@ MonoBehaviour:
     m_Extent: {x: 0.60666656, y: 0.6066667, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &8369805137129307981
 GameObject:
   m_ObjectHideFlags: 0
@@ -1755,6 +1764,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31547326, y: 0.54493207, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &8519109109661365160
 GameObject:
   m_ObjectHideFlags: 0

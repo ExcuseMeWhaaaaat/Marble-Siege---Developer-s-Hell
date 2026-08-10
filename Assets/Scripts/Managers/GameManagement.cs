@@ -33,6 +33,7 @@ public class GameManagement : MonoBehaviour
     private void Start()
     {
         currentScene = SceneManager.GetActiveScene();
+        
     }
 
     
@@ -46,6 +47,8 @@ public class GameManagement : MonoBehaviour
 
     public GameStates currentState;
     
+    
+
     
     public void GameLoadedFilter()
     {

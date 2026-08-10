@@ -6,6 +6,7 @@ public class FollowPlayer : MonoBehaviour
 
     [SerializeField] private GameObject player;
     [SerializeField] float speed;
+    
 
     private void Start()
     {
@@ -30,11 +31,5 @@ public class FollowPlayer : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 }

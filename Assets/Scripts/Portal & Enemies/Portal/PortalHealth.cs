@@ -91,7 +91,7 @@ public class PortalHealth : MonoBehaviour
                 if (skillPoints != null)
                 {
                     skillPoints.addSkillPoints((int)dmg / 6);
-                    skillPoints.FillMeter((int)dmg / 6);
+                    
                 }
 
 
@@ -163,7 +163,7 @@ public class PortalHealth : MonoBehaviour
             skillPoints.addSkillPoints(portalHP / 3);
             SoundManagement.PlaySound(SoundType.Success, 0.75f);
         }
-        nextButton.gameObject.SetActive(true);
+        
         
     }
 

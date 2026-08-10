@@ -73,6 +73,15 @@ public class PlayerStatusEffects : MonoBehaviour
                     }
                 }
                 break;
+            case "Windy":
+                {
+                    if (isWinded) return;
+
+                    spriteRenderer.color = windedColor;
+                    isWinded = true;
+                    StartCoroutine(Winded());
+                }
+                break;
         }
 
         if (stunCoroutine == null)
@@ -81,17 +90,7 @@ public class PlayerStatusEffects : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Windy"))
-        {
-            if (isWinded) return;
-            
-            spriteRenderer.color = windedColor;
-            isWinded = true;
-            StartCoroutine(Winded());
-        }
-    }
+    
 
     public void Cure(InputAction.CallbackContext context)
     {

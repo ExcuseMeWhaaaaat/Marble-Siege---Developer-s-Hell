@@ -68,22 +68,7 @@ public class EnemyHealth : MonoBehaviour
     }
 
 
-    void Update()
-    {
-        
-        
-        if (signal.spriteColorChange != null)
-        {
-            if (enemyDistance < attackRange)
-            {
-                signal.spriteColorChange.color = signal.signalColor;
-            }
-            else
-            {
-                signal.spriteColorChange.color = signal.noSignalColor;
-            }
-        }
-    }
+    
 
     public void EnemyDefeat()
     {
@@ -120,12 +105,13 @@ public class EnemyHealth : MonoBehaviour
     {
         Rigidbody2D acidRb;
         acidRb = collision.GetComponent<Rigidbody2D>();
+        
         switch (collision.gameObject.tag)
         {
             case "Player":
                 {
                     enemyHealth -= Mathf.RoundToInt(scriptYou.hit);
-                    UpdateUI();
+                    
                     SeeEnemyDefeat();
                     break;
                 }
@@ -143,7 +129,8 @@ public class EnemyHealth : MonoBehaviour
                 break;
             
         }
-        
+        UpdateUI();
+
     }
 
     

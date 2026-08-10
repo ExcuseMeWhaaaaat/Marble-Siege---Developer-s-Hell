@@ -11,6 +11,8 @@ public class PauseUI : MonoBehaviour
     [SerializeField] Image backgroundImage;
     
     [SerializeField] private ToggleSettingsMenu toggleSettingsMenu;
+
+    
     
     private void Start()
     {

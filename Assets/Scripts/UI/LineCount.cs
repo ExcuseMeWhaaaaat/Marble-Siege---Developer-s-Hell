@@ -16,7 +16,7 @@ public class Countdown : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 0;
-
+        
         StartPlay();
         
     }
@@ -25,25 +25,19 @@ public class Countdown : MonoBehaviour
         int colorIndex = 0;
         while (countdown > 0)
         {
-            if(GameManagement.instance.currentState == GameManagement.GameStates.Playing)
-            {
-                yield return new WaitForSecondsRealtime(1f);
-                countdown--;
-                colorIndex++;
-                countdownText.color = colorList[colorIndex];
-
-                countdownText.text = countdown.ToString();
-            }
-            else
-            {
-                yield return new WaitUntil(() => GameManagement.instance.currentState == GameManagement.GameStates.Playing);
-            }
+            GameManagement.instance.currentState = GameManagement.GameStates.Paused;
+            yield return new WaitForSecondsRealtime(1f);
+            countdown--;
+            colorIndex++;
+            countdownText.color = colorList[colorIndex];
+            countdownText.text = countdown.ToString();
             
         }
         countdownText.text = "BEGIN THE SIEGE";
         countdownText.color = colorList[3];
         StartCoroutine(FadeCoroutine(1));
         Time.timeScale = 1;
+        GameManagement.instance.currentState = GameManagement.GameStates.Playing;
     }
     
    

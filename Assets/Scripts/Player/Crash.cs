@@ -36,15 +36,5 @@ public class Crash : MonoBehaviour
         canHarm = true;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (canHarm && meterPoints.meterAmount < meterPoints.maxMeterAmount)
-        {
-            playerHeallth.CheckForHealth(1);
-        }
-        else
-        {
-            meterPoints.meterAmount -= 5;
-        }
-    }
+    
 }

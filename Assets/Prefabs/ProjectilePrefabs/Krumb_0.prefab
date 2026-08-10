@@ -10,9 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 582721212086749228}
   - component: {fileID: 4356852326823790305}
-  - component: {fileID: 3957399855142222250}
   - component: {fileID: 9124309555250369417}
   - component: {fileID: 6977127550124324170}
+  - component: {fileID: 198477404815651599}
+  - component: {fileID: 1329425710769158734}
   m_Layer: 6
   m_Name: Krumb_0
   m_TagString: NormalAttack
@@ -30,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.4143, y: -5.9056, z: 0}
-  m_LocalScale: {x: 0.37704468, y: 0.37704468, z: 0.37704468}
+  m_LocalScale: {x: 1, y: 1, z: 0.37704468}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -94,7 +95,35 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!60 &3957399855142222250
+--- !u!114 &9124309555250369417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189940842791843884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 681a4aecbfe88fa498964af0469f04c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyProjectile
+  player: {fileID: 0}
+  speed: 8
+  attackType: Projectile
+--- !u!114 &6977127550124324170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7189940842791843884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df08b66c5f9103e47afe74b9993999f6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ExplosiveAttack
+  explosion: {fileID: 4610959961430052106, guid: 982cc3876c996dc46a5d9c2eb2dae538, type: 3}
+--- !u!60 &198477404815651599
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +161,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8.49, y: 7.82}
+    oldSize: {x: 2.64, y: 2.84}
     newSize: {x: 8.49, y: 7.82}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -140,76 +169,56 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -1.345, y: -2.9299998}
-      - {x: -1.255, y: -2.8799999}
-      - {x: -0.965, y: -2.59}
-      - {x: -0.825, y: -2.36}
-      - {x: -0.72499996, y: -2.07}
-      - {x: -0.705, y: -1.9499999}
-      - {x: -0.705, y: -1.63}
-      - {x: -0.715, y: -1.56}
-      - {x: -0.745, y: -1.41}
-      - {x: -0.775, y: -1.31}
-      - {x: -0.815, y: -1.2099999}
-      - {x: -0.935, y: -0.97999996}
-      - {x: -0.995, y: -0.9}
-      - {x: -1.175, y: -0.71}
-      - {x: -1.285, y: -0.63}
-      - {x: -1.365, y: -0.57}
-      - {x: -1.5949999, y: -0.45}
-      - {x: -1.765, y: -0.41}
-      - {x: -1.865, y: -0.39}
-      - {x: -1.935, y: -0.38}
-      - {x: -2.2649999, y: -0.38}
-      - {x: -2.415, y: -0.41}
-      - {x: -2.5549998, y: -0.45}
-      - {x: -2.7549999, y: -0.53999996}
-      - {x: -2.975, y: -0.69}
-      - {x: -3.205, y: -0.91999996}
-      - {x: -3.385, y: -1.24}
-      - {x: -3.455, y: -1.4699999}
-      - {x: -3.465, y: -1.61}
-      - {x: -3.465, y: -1.91}
-      - {x: -3.445, y: -2.04}
-      - {x: -3.415, y: -2.1599998}
-      - {x: -3.365, y: -2.29}
-      - {x: -3.2849998, y: -2.46}
-      - {x: -3.175, y: -2.62}
-      - {x: -3.0149999, y: -2.8}
-      - {x: -2.8149998, y: -2.9399998}
-      - {x: -2.565, y: -3.07}
-      - {x: -2.395, y: -3.12}
-      - {x: -2.215, y: -3.1399999}
-      - {x: -1.9649999, y: -3.1399999}
-      - {x: -1.745, y: -3.11}
-      - {x: -1.5649999, y: -3.04}
-      - {x: -1.375, y: -2.95}
+    - - {x: 0.78, y: -0.63}
+      - {x: 0.82, y: -0.45}
+      - {x: 0.83, y: -0.39999998}
+      - {x: 0.83, y: -0.13}
+      - {x: 0.79999995, y: -0.01}
+      - {x: 0.59, y: 0.17999999}
+      - {x: 0.32, y: 0.37}
+      - {x: 0.14999999, y: 0.44}
+      - {x: -0.17999999, y: 0.44}
+      - {x: -0.26, y: 0.42999998}
+      - {x: -0.56, y: 0.19999999}
+      - {x: -0.69, y: 0.08}
+      - {x: -0.87, y: -0.17}
+      - {x: -0.88, y: -0.31}
+      - {x: -0.88, y: -0.53}
+      - {x: -0.85999995, y: -0.61}
+      - {x: -0.7, y: -0.87}
+      - {x: -0.61, y: -0.94}
+      - {x: -0.55, y: -0.97999996}
+      - {x: -0.45999998, y: -1.02}
+      - {x: -0.31, y: -1.05}
+      - {x: -0.28, y: -1.06}
+      - {x: 0.19999999, y: -1.06}
+      - {x: 0.41, y: -0.96999997}
+      - {x: 0.55, y: -0.87}
   m_UseDelaunayMesh: 1
---- !u!114 &9124309555250369417
-MonoBehaviour:
+--- !u!50 &1329425710769158734
+Rigidbody2D:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7189940842791843884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 681a4aecbfe88fa498964af0469f04c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyProjectile
-  player: {fileID: 0}
-  speed: 8
-  attackType: Projectile
---- !u!114 &6977127550124324170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7189940842791843884}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df08b66c5f9103e47afe74b9993999f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ExplosiveAttack
-  explosion: {fileID: 4610959961430052106, guid: 982cc3876c996dc46a5d9c2eb2dae538, type: 3}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

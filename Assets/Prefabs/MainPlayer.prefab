@@ -290,8 +290,6 @@ MonoBehaviour:
   canBoost: 1
   boostTime: 15
   boostCooldown: 0
-  isWinded: 0
-  windedTime: 30
   speed: 10
   hit: 0
   canJump: 0
@@ -507,9 +505,11 @@ MonoBehaviour:
   chillTime: 0
   curifyTime: 0
   cureCD: 0
+  windedTime: 30
   isStunned: 0
   isChilled: 0
   curified: 0
+  isWinded: 0
   canCure: 1
   curifiedColor: {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
   chilledColor: {r: 0.282353, g: 0.8196079, b: 0.8000001, a: 1}

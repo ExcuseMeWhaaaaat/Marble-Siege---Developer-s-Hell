@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4352167158123384099}
   - component: {fileID: 8153320365389422804}
   - component: {fileID: 1878866580035320967}
+  - component: {fileID: -1229684149177655992}
   m_Layer: 0
   m_Name: MainPlayer 1
   m_TagString: Player
@@ -295,8 +296,6 @@ MonoBehaviour:
   canJump: 0
   dmgMultiplier: 1
   statusEffect: 
-  windCharged: 0
-  windCharging: {fileID: 0}
   mbText: {fileID: 0}
   mbDMG: {fileID: 0}
 --- !u!114 &4352167158123384099
@@ -507,12 +506,43 @@ MonoBehaviour:
   chillTime: 0
   curifyTime: 0
   cureCD: 0
+  windedTime: 30
   isStunned: 0
   isChilled: 0
   curified: 0
+  isWinded: 0
   canCure: 0
   curifiedColor: {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
   chilledColor: {r: 0.282353, g: 0.8196079, b: 0.8000001, a: 1}
   stunColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  windedColor: {r: 0, g: 0, b: 0, a: 0}
   spriteRenderer: {fileID: 6839906490716739306}
   cureText: {fileID: 0}
+--- !u!114 &-1229684149177655992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1542024801047930527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9047e165ddf98204eb813976a15cebdd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SkillPoints
+  skillPoints: 0
+  skillPointInd: {fileID: 0}
+  specialObject: {fileID: 0}
+  abilityTime: 0
+  fillInterval: 0
+  abilityCooldown: 0
+  meterAmount: 0
+  maxMeterAmount: 0
+  meterInd: {fileID: 0}
+  fillImage: {fileID: 0}
+  maxVal: 0
+  meterSlider: {fileID: 0}
+  minColor: {r: 0, g: 0, b: 0, a: 0}
+  maxColor: {r: 0, g: 0, b: 0, a: 0}
+  saturation: 0
+  value: 0

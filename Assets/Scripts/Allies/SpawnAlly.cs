@@ -26,7 +26,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability()
     {
-        
+        if (GameManagement.instance.currentState == GameManagement.GameStates.Paused) return;
         if (!isOnCooldown && portal !=null)
         {
             Conditions(0);
@@ -40,7 +40,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public void Ability2()
     {
-        
+        if (GameManagement.instance.currentState == GameManagement.GameStates.Paused) return;
         if (!isOnCooldown && portal != null)
         {
 

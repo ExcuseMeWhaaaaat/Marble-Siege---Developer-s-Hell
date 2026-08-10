@@ -44,7 +44,7 @@ public class PlayerHeallth : MonoBehaviour
         }
         UpdateHealthUI();
         healCDFramesInd.text = healCooldownFrames.ToString();
-
+        
     }
     public void Eliminate()
     {
@@ -150,10 +150,7 @@ public class PlayerHeallth : MonoBehaviour
 
             playerHealth -= damageTaken;
             ActivateInvincibility();
-            if(skillPoints != null)
-            {
-                skillPoints.FillMeter(2);
-            }
+            
             
             if (spriteColor != null)
             {
@@ -190,6 +187,12 @@ public class PlayerHeallth : MonoBehaviour
 
     }
 
-    
+    public void addDodgeSkill()
+    {
+        if (!isInvincible && EnemyCounting.instance.enemyCount > 0)
+        {
+            skillPoints.skillPoints++;
+        }
+    }
     
 }

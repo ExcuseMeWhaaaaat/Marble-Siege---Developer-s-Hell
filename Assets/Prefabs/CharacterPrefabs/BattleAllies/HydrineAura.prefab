@@ -112,7 +112,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 7
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4676576009268862152, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -144,6 +144,7 @@ MonoBehaviour:
     m_Extent: {x: 0.315404, y: 0.54686403, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &372469054819610250
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,7 +225,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 8
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -7576355026767995069, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -256,6 +257,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31547326, y: 0.54493207, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &952698553517679132
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,7 +369,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 7874792609554000976, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -399,6 +401,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31333327, y: 0.5443866, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &1421328228001149261
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,7 +482,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 3465232336174563952, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -511,6 +514,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31568134, y: 0.54468006, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &1777821477060628329
 GameObject:
   m_ObjectHideFlags: 0
@@ -669,8 +673,8 @@ Transform:
   m_GameObject: {fileID: 2668995303900638470}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.11, y: 2.28, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalPosition: {x: -0.09, y: 2.34, z: 0}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.3758}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4843471298295578183}
@@ -722,10 +726,10 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -1598459535811796548, guid: 28af233f5dca37d4f8dfd496b3a6de84, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.5019608}
+  m_Sprite: {fileID: 2773772817750623241, guid: 47b453543b398e646974c428319dda5a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.40392157}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -783,8 +787,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 5.485
+  m_Offset: {x: 0.029604247, y: 0}
+  m_Radius: 3.8566732
 --- !u!1 &2830440270477316568
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +869,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -3560245113966120327, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -898,6 +902,7 @@ MonoBehaviour:
     m_Extent: {x: 0.15973073, y: 0.9053334, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &3175579270949483362
 GameObject:
   m_ObjectHideFlags: 0
@@ -978,7 +983,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1538447604230228581, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -1010,6 +1015,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3160001, y: 0.5474456, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &3405590026971301470
 GameObject:
   m_ObjectHideFlags: 0
@@ -1090,7 +1096,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4818833056530280578, guid: 926a9324fc0ce224eb31a4633529d7ac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1121,6 +1127,7 @@ MonoBehaviour:
     m_Extent: {x: 0.60666656, y: 0.6066667, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &3616539973284929641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1296,7 +1303,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 5635264486642227171, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -1328,6 +1335,7 @@ MonoBehaviour:
     m_Extent: {x: 0.3133334, y: 0.5455934, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &6207205810885411717
 GameObject:
   m_ObjectHideFlags: 0
@@ -1408,7 +1416,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 5
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -4462618274907182900, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -1440,6 +1448,7 @@ MonoBehaviour:
     m_Extent: {x: 0.31339195, y: 0.5446626, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
 --- !u!1 &6229176775723822217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1779,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2779669638266159334, guid: 74f0d22401e97a746b999d4dcb3fff35, type: 3}
   m_Color: {r: 0.225, g: 0.225, b: 0.9, a: 1}
@@ -1802,3 +1811,4 @@ MonoBehaviour:
     m_Extent: {x: 0.3133334, y: 0.54453063, z: 0}
   m_AlwaysUpdate: 1
   m_AutoRebind: 0
+  m_BoundsMode: 0
