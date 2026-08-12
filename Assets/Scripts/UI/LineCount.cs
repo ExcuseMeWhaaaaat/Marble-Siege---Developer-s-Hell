@@ -15,8 +15,8 @@ public class Countdown : MonoBehaviour
 
     private void Start()
     {
-        Time.timeScale = 0;
         
+        Debug.Log(Time.timeScale);
         StartPlay();
         
     }
@@ -25,6 +25,7 @@ public class Countdown : MonoBehaviour
         int colorIndex = 0;
         while (countdown > 0)
         {
+            Time.timeScale = 0;
             GameManagement.instance.currentState = GameManagement.GameStates.Paused;
             yield return new WaitForSecondsRealtime(1f);
             countdown--;

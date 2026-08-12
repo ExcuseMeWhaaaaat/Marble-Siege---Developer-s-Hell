@@ -110,8 +110,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyTrack
   speed: 5
   detectRange: 10
-  yAngle: 0
-  flippedAngle: 180
 --- !u!114 &6082409812409191953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -189,7 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HeavyEnemyOffset
   yPos: -6
---- !u!1 &4715975781243573772
+--- !u!1 &3646284800146934690
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -197,9 +195,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5238668880492103855}
-  - component: {fileID: 4509672318356925}
-  - component: {fileID: 4294827649134151761}
+  - component: {fileID: 4956373054234648646}
+  - component: {fileID: 298864410811972516}
+  - component: {fileID: 5510663637226888388}
   m_Layer: 0
   m_Name: SnareGunn_0
   m_TagString: Untagged
@@ -207,29 +205,29 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5238668880492103855
+--- !u!4 &4956373054234648646
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4715975781243573772}
+  m_GameObject: {fileID: 3646284800146934690}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: -3.12, y: 5.88, z: 0}
-  m_LocalScale: {x: 0.6815, y: 0.5, z: 1.227928}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.09, y: 6.02, z: 0}
+  m_LocalScale: {x: -0.8522839, y: 0.7293275, z: 0.37757248}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8735032982624468664}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!212 &4509672318356925
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &298864410811972516
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4715975781243573772}
+  m_GameObject: {fileID: 3646284800146934690}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -281,13 +279,13 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &4294827649134151761
+--- !u!114 &5510663637226888388
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4715975781243573772}
+  m_GameObject: {fileID: 3646284800146934690}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 27f3779b790a12c4cbfbb68e9c873b07, type: 3}
@@ -365,7 +363,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 6be5eac7e6e27914eb713868225219ed, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 5238668880492103855}
+      addedObject: {fileID: 4956373054234648646}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 6be5eac7e6e27914eb713868225219ed, type: 3}
 --- !u!4 &8735032982624468664 stripped

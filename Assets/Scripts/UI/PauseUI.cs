@@ -57,14 +57,14 @@ public class PauseUI : MonoBehaviour
 
     public void DetermineGameState(GameStates gameState)
     {
-        Debug.Log("Called");
+        
         GameManagement.instance.currentState = gameState;
         if (GameManagement.instance.currentScene.ToString() == GameManagement.instance.exception) return;
         switch (GameManagement.instance.currentState)
         {
             case GameStates.Playing:
                 {
-                    Debug.Log("Played");
+                    
                     Conditions(1,false);
                     
                     
@@ -72,13 +72,13 @@ public class PauseUI : MonoBehaviour
                 }
             case GameStates.Paused:
                 {
-                    Debug.Log("Paused");
+                    
                     Conditions(0, true);
                     break;
                 }
             case GameStates.MainMenu:
                 {
-                    Debug.Log("Main Menu");
+                    
                     Conditions(1, false);
                     break;
                 }

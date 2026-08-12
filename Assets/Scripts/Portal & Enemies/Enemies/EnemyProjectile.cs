@@ -31,7 +31,7 @@ public class EnemyProjectile : MonoBehaviour
     {
         if (player == null) return;
         
-        transform.Translate(direction * speed * Time.deltaTime );
+        transform.Translate(direction * speed * Time.deltaTime);
         
     }
 

@@ -12,19 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1eb87bd1c28cd449acda7359981c29c, type: 3}
   m_Name: StrangeStreets
   m_EditorClassIdentifier: Assembly-CSharp::DialogueChunk
-  dialogueContext: 1
   lines:
-  - text: Oh! They're here!
-    typingSpeed: 0.05
-    delay: 0
+  - text: Get ready, THE SHOW MUST BE GO!
+    correctID: 12
     speak: {fileID: 11400000, guid: 0138fb8b68963864f974206c5c439d99, type: 2}
-    cfTime: 0.15
-    speakerID: 
-    animClips: []
-  - text: The show must be go!
-    typingSpeed: 0.05
-    delay: 0
-    speak: {fileID: 11400000, guid: 0138fb8b68963864f974206c5c439d99, type: 2}
-    cfTime: 0.15
-    speakerID: 
-    animClips: []
+    typeDelay: 0

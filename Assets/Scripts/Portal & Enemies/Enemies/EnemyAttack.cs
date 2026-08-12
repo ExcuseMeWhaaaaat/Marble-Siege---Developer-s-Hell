@@ -10,11 +10,7 @@ public class EnemyAttack : MonoBehaviour
         InvokeRepeating(nameof(SpawnProjectile),delay,cooldown);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 
     public void SpawnProjectile()
     {

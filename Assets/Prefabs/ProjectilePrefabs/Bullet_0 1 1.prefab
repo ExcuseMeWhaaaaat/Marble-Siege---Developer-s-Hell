@@ -106,9 +106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 681a4aecbfe88fa498964af0469f04c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyProjectile
-  player: {fileID: 0}
-  speed: 10
-  attackType: 
+  player: {fileID: 8065536473880436661, guid: ef722de5e1c18474bae3b47b24ede84d, type: 3}
+  speed: 8
+  attackType: Projectile
 --- !u!60 &4606715359891418282
 PolygonCollider2D:
   m_ObjectHideFlags: 0

@@ -1243,6 +1243,7 @@ MonoBehaviour:
   inactiveColor: {r: 0, g: 0, b: 0, a: 0}
   battleTarget: ??????? (Shield)
   nextButton: {fileID: 114547665}
+  battleDialogue: {fileID: 0}
 --- !u!60 &495078734
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1959,6 +1960,26 @@ PrefabInstance:
     - target: {fileID: 5025803647610900447, guid: 8b88c7c8cea3dcb4e8204a21e305b8f5, type: 3}
       propertyPath: m_Name
       value: NewCommonEnemyCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768582248690633350, guid: 8b88c7c8cea3dcb4e8204a21e305b8f5, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 283.38
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768582248690633350, guid: 8b88c7c8cea3dcb4e8204a21e305b8f5, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 46.198
+      objectReference: {fileID: 0}
+    - target: {fileID: 7768582248690633350, guid: 8b88c7c8cea3dcb4e8204a21e305b8f5, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 212.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740269446873148678, guid: 8b88c7c8cea3dcb4e8204a21e305b8f5, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8740269446873148678, guid: 8b88c7c8cea3dcb4e8204a21e305b8f5, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8766051994611855915, guid: 8b88c7c8cea3dcb4e8204a21e305b8f5, type: 3}
       propertyPath: m_Pivot.x

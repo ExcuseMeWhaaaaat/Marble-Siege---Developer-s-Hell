@@ -97,16 +97,13 @@ public class DialogueManagement : MonoBehaviour
     }
     public void ShowNextBattleLine(string lineToShow, Speaking speak3)
     {
-        
-        if(ScriptedTutorial.instance != null)
-        {
             if (isTyping) return; 
             var anotherline = new DialogueLine();
             anotherline.text = lineToShow;
             anotherline.speak = speak3;
             anotherTypingRoutiune = StartCoroutine(TypeBattleLine(anotherline));
             
-        }
+        
             
     }
     

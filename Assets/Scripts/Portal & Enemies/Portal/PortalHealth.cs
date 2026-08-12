@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using TMPro;
 using Unity.VisualScripting;
@@ -26,6 +27,8 @@ public class PortalHealth : MonoBehaviour
     [SerializeField] string battleTarget;
 
     [SerializeField] Button nextButton;
+
+    
 
     private void Start()
     {
@@ -73,7 +76,7 @@ public class PortalHealth : MonoBehaviour
        
         Rigidbody2D acidRb;
         acidRb = collision.GetComponent<Rigidbody2D>();
-        
+
         
         
         switch (collision.gameObject.tag)
@@ -86,6 +89,7 @@ public class PortalHealth : MonoBehaviour
                 if (EnemyCounting.instance.enemyCount < 1)
                 {
                     portalHP -= dmg;
+                    
                     TeleportPlayer();
                 }
                 if (skillPoints != null)
@@ -108,7 +112,7 @@ public class PortalHealth : MonoBehaviour
                 break;
             case "Radiation":
                 {
-                    portalHP -= Mathf.RoundToInt(playerControls.hit) / 2;
+                    portalHP -= Mathf.RoundToInt(playerControls.hit);
                     UpdateUI();
                     break;
                     
@@ -117,8 +121,8 @@ public class PortalHealth : MonoBehaviour
                 {
                     
                     if (acidRb == null) return;
-                    portalHP -= (int)acidRb.linearVelocity.magnitude / 2;
-                    Debug.Log((int)acidRb.linearVelocity.magnitude);
+                    portalHP -= (int)acidRb.linearVelocity.magnitude;
+                    
                     UpdateUI();
                     break;
                 }

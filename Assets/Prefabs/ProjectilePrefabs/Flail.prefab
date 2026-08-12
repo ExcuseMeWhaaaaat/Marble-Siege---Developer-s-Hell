@@ -713,7 +713,6 @@ GameObject:
   - component: {fileID: 8730147232264409156}
   - component: {fileID: 7044192139920718291}
   - component: {fileID: 2321938558030322219}
-  - component: {fileID: 1871981328131792182}
   m_Layer: 0
   m_Name: FlailHandle_0
   m_TagString: Untagged
@@ -822,32 +821,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!233 &1871981328131792182
-HingeJoint2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5786802729857566107}
-  m_Enabled: 1
-  serializedVersion: 4
-  m_EnableCollision: 0
-  m_ConnectedRigidBody: {fileID: 0}
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_BreakAction: 3
-  m_AutoConfigureConnectedAnchor: 1
-  m_Anchor: {x: 0.00000014948432, y: -1.0349998}
-  m_ConnectedAnchor: {x: 2.9548802, y: -3.038232}
-  m_UseConnectedAnchor: 1
-  m_UseMotor: 0
-  m_Motor:
-    m_MotorSpeed: 0
-    m_MaximumMotorForce: 10000
-  m_UseLimits: 0
-  m_AngleLimits:
-    m_LowerAngle: 0
-    m_UpperAngle: 359
 --- !u!1 &7737240987787302146
 GameObject:
   m_ObjectHideFlags: 0
