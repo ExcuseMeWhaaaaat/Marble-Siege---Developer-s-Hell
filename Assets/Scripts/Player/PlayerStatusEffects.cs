@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using TMPro;
 using UnityEngine;
@@ -7,10 +8,12 @@ using UnityEngine.InputSystem;
 public class PlayerStatusEffects : MonoBehaviour
 {
     [SerializeField] private ScriptForYou playerControls;
+    [SerializeField] private PlayerHeallth playerHealth;
     
     [SerializeField] float stunTime;
     [SerializeField] float chillTime;
     [SerializeField] float curifyTime;
+    [SerializeField] float poisonTime;
     [SerializeField] float cureCD;
     [SerializeField] int windedTime = 30;
 
@@ -18,15 +21,14 @@ public class PlayerStatusEffects : MonoBehaviour
     [SerializeField] bool isChilled = false;
     [SerializeField] bool curified = false;
     [SerializeField] bool isWinded;
+    [SerializeField] bool isPoisoned = false;
     public bool canCure = true;
     
     private Coroutine chillCoroutine;
     private Coroutine stunCoroutine;
+    private Coroutine poisonCoroutine;
 
-    [SerializeField] Color curifiedColor;
-    [SerializeField] Color chilledColor;
-    [SerializeField] Color stunColor;
-    [SerializeField] Color windedColor;
+    [SerializeField] List<Color> statusEffectColors;
     [SerializeField] SpriteRenderer spriteRenderer;
 
     [SerializeField] TextMeshProUGUI cureText;
@@ -50,7 +52,7 @@ public class PlayerStatusEffects : MonoBehaviour
             case "Cure":
                 CurifyCure();
 
-                Debug.Log("Cured!");
+                
 
                 break;
             case "NormalStun":
@@ -77,11 +79,16 @@ public class PlayerStatusEffects : MonoBehaviour
                 {
                     if (isWinded) return;
 
-                    spriteRenderer.color = windedColor;
+                    spriteRenderer.color = statusEffectColors[3];
                     isWinded = true;
                     StartCoroutine(Winded());
                 }
                 break;
+            case "Poison":
+                {
+                    PoisonCheck();
+                    break;
+                }
         }
 
         if (stunCoroutine == null)
@@ -90,7 +97,33 @@ public class PlayerStatusEffects : MonoBehaviour
         }
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Poison":
+                {
+                    PoisonCheck();
+                    break;
+                }
+        }
+    }
+
+    public void PoisonCheck()
+    {
+        if (!curified && playerHealth.playerHealth > 1)
+        {
+            isPoisoned = true;
+            if (poisonCoroutine == null)
+            {
+                poisonCoroutine = StartCoroutine(Poison());
+            }
+            else
+            {
+                return;
+            }
+        }
+    }
 
     public void Cure(InputAction.CallbackContext context)
     {
@@ -102,10 +135,6 @@ public class PlayerStatusEffects : MonoBehaviour
             StartCoroutine(Cured());
             
         }
-        
-
-
-        
     }
 
 
@@ -115,7 +144,7 @@ public class PlayerStatusEffects : MonoBehaviour
         stunTime = 3;
         while (stunTime > 0 && isStunned)
         {
-            spriteRenderer.color = stunColor;
+            spriteRenderer.color = statusEffectColors[2];
             playerControls.speed *= 0f;
             playerControls.canJump = false;
             yield return new WaitForSeconds(1f);
@@ -135,7 +164,7 @@ public class PlayerStatusEffects : MonoBehaviour
         chillTime = 10;
         while (chillTime > 0 && isChilled)
         {
-            spriteRenderer.color = chilledColor;
+            spriteRenderer.color = statusEffectColors[1];
             playerControls.speed--;
             yield return new WaitForSeconds(1f);
             chillTime--;
@@ -188,7 +217,7 @@ public class PlayerStatusEffects : MonoBehaviour
         curifyTime = 20;
         while (curifyTime > 0)
         {
-            spriteRenderer.color = curifiedColor;
+            spriteRenderer.color = statusEffectColors[0];
             curified = true;
             yield return new WaitForSeconds(1f);
             curifyTime--;
@@ -219,4 +248,23 @@ public class PlayerStatusEffects : MonoBehaviour
             cureText.text = "Ready";
         }
     }
+
+
+    IEnumerator Poison()
+    {
+        poisonTime = 3;
+        while (poisonTime > 0)
+        {
+            spriteRenderer.color = statusEffectColors[4];
+            playerHealth.playerHealth--;
+            playerHealth.UpdateHealthUI();
+            yield return new WaitForSeconds(1f);
+            poisonTime--;
+        }
+        poisonCoroutine = null;
+        isPoisoned = false;
+        
+        spriteRenderer.color = Color.white;
+    }
+
 }

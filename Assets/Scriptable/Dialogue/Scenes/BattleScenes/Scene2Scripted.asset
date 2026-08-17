@@ -18,7 +18,7 @@ MonoBehaviour:
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
     typeDelay: 0
-  - text: Its a good thing he didn't take away our healthcare!
+  - text: Oh and remember to heal ig
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
     typeDelay: 0

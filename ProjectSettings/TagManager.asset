@@ -26,6 +26,7 @@ TagManager:
   - AcydAttack
   - Radiation
   - Windy
+  - Poison
   layers:
   - Default
   - TransparentFX

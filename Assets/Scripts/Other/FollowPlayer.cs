@@ -11,6 +11,7 @@ public class FollowPlayer : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        
     }
 
     private void Update()
@@ -18,9 +19,9 @@ public class FollowPlayer : MonoBehaviour
         
         if (player != null)
         {
-            Vector2 direction = player.transform.position - transform.position;
-            transform.Translate(speed * Time.deltaTime * direction);
+            transform.position = player.transform.position;
         }
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

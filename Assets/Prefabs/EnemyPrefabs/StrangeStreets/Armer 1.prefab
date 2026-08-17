@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5931521163662339994}
   - component: {fileID: 2177841279036076354}
-  - component: {fileID: 1431422283095683557}
   - component: {fileID: 6082409812409191953}
   - component: {fileID: 8057503493278725306}
   - component: {fileID: 6314237147757100251}
@@ -96,20 +95,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!114 &1431422283095683557
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3488596660444452051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2611f65c0a2c2354090278b7a9a4ed70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyTrack
-  speed: 5
-  detectRange: 10
 --- !u!114 &6082409812409191953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,6 +112,8 @@ MonoBehaviour:
   attackRange: 0
   canvasTransform: {fileID: 0}
   dmgText: {fileID: 6152901323927680145, guid: f2d9fdf6e7e3f7f4d8249b8fbdbbb99a, type: 3}
+  newTextColor: {r: 1, g: 1, b: 1, a: 1}
+  fontAsset: {fileID: 11400000, guid: 13af66cec617f2344aac0621abc994e5, type: 2}
   enemyDistance: 0
 --- !u!61 &8057503493278725306
 BoxCollider2D:
@@ -213,9 +200,9 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3646284800146934690}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.09, y: 6.02, z: 0}
-  m_LocalScale: {x: -0.8522839, y: 0.7293275, z: 0.37757248}
+  m_LocalRotation: {x: -0, y: -0, z: -0.000000029802315, w: 1}
+  m_LocalPosition: {x: -3.0900018, y: 6.019999, z: 0}
+  m_LocalScale: {x: -0.8522838, y: 0.72932756, z: 0.37757248}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8735032982624468664}
@@ -294,6 +281,9 @@ MonoBehaviour:
   projectile: {fileID: 560439810011106062, guid: d6baec719a8e1cb44a0cdf95054110b7, type: 3}
   delay: 5
   cooldown: 5
+  animator: {fileID: 5837588615559942640}
+  attackState: ArmerShoot
+  idleState: ArmerIdle
 --- !u!1001 &7932743558601312102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -364,8 +354,38 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -7552582706839291426, guid: 6be5eac7e6e27914eb713868225219ed, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4956373054234648646}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: 6be5eac7e6e27914eb713868225219ed, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5837588615559942640}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: 6be5eac7e6e27914eb713868225219ed, type: 3}
+--- !u!1 &7633895915004995291 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: 6be5eac7e6e27914eb713868225219ed, type: 3}
+  m_PrefabInstance: {fileID: 7932743558601312102}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &5837588615559942640
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7633895915004995291}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0fcbc920f33f3c34c9c75497b33bf7c3, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!4 &8735032982624468664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -7552582706839291426, guid: 6be5eac7e6e27914eb713868225219ed, type: 3}

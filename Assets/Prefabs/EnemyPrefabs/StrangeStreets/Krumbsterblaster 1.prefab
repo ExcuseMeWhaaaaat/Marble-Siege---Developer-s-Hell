@@ -335,7 +335,6 @@ GameObject:
   - component: {fileID: 8599241232247093593}
   - component: {fileID: 786164773573320884}
   - component: {fileID: 9040148350352691649}
-  - component: {fileID: 6995582895414265794}
   - component: {fileID: 1202308598756113281}
   m_Layer: 0
   m_Name: Krumbsterblaster 1
@@ -436,6 +435,8 @@ MonoBehaviour:
   attackRange: 0
   canvasTransform: {fileID: 0}
   dmgText: {fileID: 6152901323927680145, guid: f2d9fdf6e7e3f7f4d8249b8fbdbbb99a, type: 3}
+  newTextColor: {r: 0.83137256, g: 0.49019608, b: 0, a: 1}
+  fontAsset: {fileID: 11400000, guid: 13af66cec617f2344aac0621abc994e5, type: 2}
   enemyDistance: 0
 --- !u!61 &9040148350352691649
 BoxCollider2D:
@@ -483,22 +484,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6995582895414265794
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2041739838198753637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 767b1991ef30f9a49a25821af3462d46, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AirborneEnemyTrack
-  speed: 5
-  detectRange: 16
-  yLevel: 0
-  yRange: 2
 --- !u!114 &1202308598756113281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,6 +499,9 @@ MonoBehaviour:
   projectile: {fileID: 7189940842791843884, guid: 719d7708121d5d94eba9568bfd75c62a, type: 3}
   delay: 5
   cooldown: 5
+  animator: {fileID: 6030600444870552226}
+  attackState: KrumbsterblasterShoot
+  idleState: KrumbsterblasterIdle
 --- !u!1 &2374508132597852187
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,6 +511,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3795236762928192477}
+  - component: {fileID: 6030600444870552226}
   m_Layer: 0
   m_Name: KrumbsterblasterSprite
   m_TagString: Untagged
@@ -556,6 +545,28 @@ Transform:
   - {fileID: 7582257494703668110}
   m_Father: {fileID: 752431232961114657}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &6030600444870552226
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2374508132597852187}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0b64972b0fbdc04cb3b4b002656c9a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2782681615431959590
 GameObject:
   m_ObjectHideFlags: 0

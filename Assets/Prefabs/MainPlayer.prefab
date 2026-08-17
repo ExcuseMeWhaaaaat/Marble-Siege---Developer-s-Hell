@@ -33,7 +33,7 @@ Transform:
   m_GameObject: {fileID: 8065536473880436661}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -2.33, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -395,11 +395,35 @@ MonoBehaviour:
     m_ActionId: 361f138d-1fc4-4dd1-b03a-d768f98c1ace
     m_ActionName: 'Player/Cutscene[/Keyboard/c]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4660059538504523949}
+        m_TargetAssemblyTypeName: PlayerStatusEffects, Assembly-CSharp
+        m_MethodName: Cure
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 5b71e1b9-6d86-479d-831f-6b1294025158
     m_ActionName: 'Player/Cure[/Keyboard/2]'
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8276380744332992706}
+        m_TargetAssemblyTypeName: ScriptForYou, Assembly-CSharp
+        m_MethodName: Boost
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: d6a6bb36-349f-43e2-9f56-19a5434ff198
     m_ActionName: 'Player/Boost[/Keyboard/3]'
   - m_PersistentCalls:
@@ -408,7 +432,7 @@ MonoBehaviour:
     m_ActionName: 'Player/Interact[/Keyboard/q]'
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1537823730146884628, guid: fbd506879da130c43a2c4a1a63b2f145, type: 3}
         m_TargetAssemblyTypeName: PauseUI, Assembly-CSharp
         m_MethodName: Pause
         m_Mode: 0
@@ -443,19 +467,7 @@ MonoBehaviour:
     m_ActionId: 8eeaded7-da01-4768-be78-90690709914d
     m_ActionName: 'Player/ExitSettings[/Keyboard/escape]'
   - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6684737713718459835, guid: 2d2cb9c76f7bda34686de170a2d56d9d, type: 3}
-        m_TargetAssemblyTypeName: WindCharging, Assembly-CSharp
-        m_MethodName: Spawn
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_ActionId: ae3aa6c2-b256-4402-a114-9da2be7da9cf
     m_ActionName: 'Player/SpawnCharge[/Mouse/rightButton]'
   m_NeverAutoSwitchControlSchemes: 0
@@ -501,19 +513,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PlayerStatusEffects
   playerControls: {fileID: 8276380744332992706}
+  playerHealth: {fileID: 8507252034495112533}
   stunTime: 0
   chillTime: 0
   curifyTime: 0
+  poisonTime: 0
   cureCD: 0
   windedTime: 30
   isStunned: 0
   isChilled: 0
   curified: 0
   isWinded: 0
+  isPoisoned: 0
   canCure: 1
-  curifiedColor: {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
-  chilledColor: {r: 0.282353, g: 0.8196079, b: 0.8000001, a: 1}
-  stunColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
-  windedColor: {r: 0.6901961, g: 0.85882354, b: 0.98039216, a: 1}
+  statusEffectColors:
+  - {r: 0, g: 0.9803922, b: 0.6039216, a: 1}
+  - {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  - {r: 0, g: 0.8078432, b: 0.8196079, a: 1}
+  - {r: 0.495, g: 0.69750005, b: 0.9, a: 1}
+  - {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  - {r: 0.3679245, g: 0.1509879, b: 0.36792454, a: 1}
   spriteRenderer: {fileID: 7256696547838830596}
   cureText: {fileID: 0}

@@ -79,7 +79,7 @@ public class ScriptForYou : MonoBehaviour
 
         if (canBoost)
         {
-            dmgMultiplier*=1.25f;
+            dmgMultiplier*=1.5f;
             canBoost = false;
             StartCoroutine(MoraleBoost());
             StartCoroutine(MBCooldown());

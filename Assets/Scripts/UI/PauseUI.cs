@@ -8,7 +8,7 @@ using static GameManagement;
 public class PauseUI : MonoBehaviour
 {
     [SerializeField] List<Button> buttonList;
-    [SerializeField] Image backgroundImage;
+    
     
     [SerializeField] private ToggleSettingsMenu toggleSettingsMenu;
 
@@ -16,8 +16,7 @@ public class PauseUI : MonoBehaviour
     
     private void Start()
     {
-        if (backgroundImage != null)
-            backgroundImage.gameObject.SetActive(false);
+        
         foreach (Button button in buttonList)
         {
             if (button != null)
@@ -93,7 +92,7 @@ public class PauseUI : MonoBehaviour
             if (button != null)
                 button.gameObject.SetActive(setActiveObjects);
         }
-        backgroundImage.gameObject.SetActive(setActiveObjects);
+        
         GameManagement.instance.isPaused = setActiveObjects;
         Time.timeScale = timedScale;
         

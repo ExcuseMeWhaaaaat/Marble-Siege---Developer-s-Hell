@@ -9,7 +9,7 @@ public class BossController : MonoBehaviour
     [SerializeField] private List<BossAttack> bossAttacks;
     [SerializeField] private CharacterAnimationController charAnim;
     public bool isAttacking;
-    [SerializeField] private PivotFly pivot;
+    
 
 
 

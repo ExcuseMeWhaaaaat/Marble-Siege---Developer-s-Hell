@@ -3,6 +3,7 @@ using TMPro;
 using Unity.Jobs;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.TextCore.Text;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -16,9 +17,11 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] TextMeshProUGUI dmgText;
     private Camera cam;
     private TextMeshProUGUI newText;
+    [SerializeField] Color newTextColor;
+    [SerializeField] TMP_FontAsset fontAsset;
     private SkillPoints skillPoints;
     public float enemyDistance;
-    private Signal signal;
+    
     private bool isDead;
 
 
@@ -58,7 +61,7 @@ public class EnemyHealth : MonoBehaviour
             }
         }
 
-        signal = GetComponentInChildren<Signal>();
+        
         if (!scriptYou || !skillPoints)
         {
             enabled = false;
@@ -88,6 +91,8 @@ public class EnemyHealth : MonoBehaviour
         newText.transform.SetParent(canvasTransform, true);
         newText.rectTransform.position = cam.WorldToScreenPoint(transform.position);
         newText.text = enemyHealth.ToString();
+        newText.color = newTextColor;
+        newText.font = fontAsset;
         Destroy(newText.gameObject, 10f);
 
     }

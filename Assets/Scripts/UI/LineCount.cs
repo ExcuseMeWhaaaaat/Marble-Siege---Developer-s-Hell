@@ -11,34 +11,38 @@ public class Countdown : MonoBehaviour
     [SerializeField] TextMeshProUGUI countdownText;
     [SerializeField] CanvasGroup canvasGroup;
     [SerializeField] List<AudioClip> audioClipList;
+    [SerializeField] GameObject starterCircle;
+    [SerializeField] private EnemySpawnController enemySpawnController;
+    [SerializeField] private BossController bossController;
     
 
     private void Start()
     {
-        
-        Debug.Log(Time.timeScale);
         StartPlay();
+        
         
     }
     private IEnumerator SiegeCountdown()
     {
         int colorIndex = 0;
+        
         while (countdown > 0)
         {
-            Time.timeScale = 0;
-            GameManagement.instance.currentState = GameManagement.GameStates.Paused;
-            yield return new WaitForSecondsRealtime(1f);
+            yield return new WaitWhile(() => GameManagement.instance.currentState == GameManagement.GameStates.Paused);
+            yield return new WaitForSeconds(1f);
             countdown--;
             colorIndex++;
             countdownText.color = colorList[colorIndex];
             countdownText.text = countdown.ToString();
-            
         }
         countdownText.text = "BEGIN THE SIEGE";
         countdownText.color = colorList[3];
         StartCoroutine(FadeCoroutine(1));
-        Time.timeScale = 1;
-        GameManagement.instance.currentState = GameManagement.GameStates.Playing;
+        Destroy(starterCircle);
+        EnableBossScript();
+        EnableSpawnerScript();
+        
+        
     }
     
    
@@ -63,5 +67,20 @@ public class Countdown : MonoBehaviour
     {
         GameManagement.instance.currentState = GameManagement.GameStates.Playing;
         StartCoroutine(SiegeCountdown());
+    }
+
+    public void EnableSpawnerScript()
+    {
+        if (enemySpawnController == null) return;
+        if (enemySpawnController.enabled) return;
+        enemySpawnController.enabled = true;
+    }
+
+
+    public void EnableBossScript()
+    {
+        if(bossController == null) return;
+        if(bossController.enabled) return;
+        bossController.enabled = true;
     }
 }

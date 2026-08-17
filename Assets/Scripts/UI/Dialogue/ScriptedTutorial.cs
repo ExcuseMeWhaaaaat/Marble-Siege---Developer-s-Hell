@@ -92,7 +92,7 @@ public class ScriptedTutorial : MonoBehaviour
         CompleteEvent(TutorialEvents.BossDone, 4);
 
         SeeIfGone();
-        bossController.ScriptedLeave();
+        
         
         
     }
@@ -109,8 +109,12 @@ public class ScriptedTutorial : MonoBehaviour
 
     public void SeeIfGone()
     {
+        Debug.Log(bossController);
+        
+        if (bossController == null) return;
         if (isGone) return;
         isGone = true;
+        bossController.ScriptedLeave();
     }
 
 }

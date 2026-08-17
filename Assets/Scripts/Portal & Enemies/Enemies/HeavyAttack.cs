@@ -7,9 +7,13 @@ public class HeavyAttack : MonoBehaviour
     [SerializeField] float activeTime;
     
     [SerializeField] float delay;
+    [SerializeField] Animator animator;
+    [SerializeField] string attackState;
+    [SerializeField] string idleState;
     
     void Start()
     {
+        gameObject.SetActive(false);
         InvokeRepeating(nameof(ActivateAttack),delay,cooldown);
     }
 
@@ -18,6 +22,7 @@ public class HeavyAttack : MonoBehaviour
 
     private void ActivateAttack()
     {
+        PlayAnim();
         gameObject.SetActive(true);
         StartCoroutine(UseBat());
     }
@@ -25,8 +30,22 @@ public class HeavyAttack : MonoBehaviour
     IEnumerator UseBat()
     {
         yield return new WaitForSeconds(activeTime);
+        ReturnToIdle();
         gameObject.SetActive(false);
     }
 
+    public void PlayAnim()
+    {
+        if (animator == null) return;
+        if (string.IsNullOrEmpty(attackState)) return;
+        animator.Play(attackState);
+        
+    }
     
+    public void ReturnToIdle()
+    {
+        if (animator == null) return;
+        if (string.IsNullOrEmpty(idleState)) return;
+        animator.CrossFade(idleState, 0.5f);
+    }
 }
