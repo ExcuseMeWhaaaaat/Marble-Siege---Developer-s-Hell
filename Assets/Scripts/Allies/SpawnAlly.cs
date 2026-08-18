@@ -9,7 +9,7 @@ public class SpawnAlly : MonoBehaviour
 {
     
     
-    [SerializeField] Vector2 spawnPos;
+    [SerializeField] Transform spawnPos;
     [SerializeField] float cooldownTime;
     public bool isOnCooldown = false;
     
@@ -55,7 +55,7 @@ public class SpawnAlly : MonoBehaviour
     }
     public IEnumerator AllyCooldown()
     {
-        cooldownTime = 75;
+        cooldownTime = 90;
         
         while (cooldownTime > 0 && isOnCooldown)
         {
@@ -74,7 +74,7 @@ public class SpawnAlly : MonoBehaviour
     public void Conditions(int indexAbility)
     {
         
-        Instantiate(ability[indexAbility], spawnPos, transform.rotation);
+        Instantiate(ability[indexAbility], spawnPos.position, transform.rotation);
         isOnCooldown = true;
         StartCoroutine (AllyCooldown());
     }

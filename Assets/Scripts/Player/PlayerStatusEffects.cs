@@ -111,7 +111,7 @@ public class PlayerStatusEffects : MonoBehaviour
 
     public void PoisonCheck()
     {
-        if (!curified && playerHealth.playerHealth > 1)
+        if (!curified && PlayerHeallth.playerHealth > 1)
         {
             isPoisoned = true;
             if (poisonCoroutine == null)
@@ -253,10 +253,10 @@ public class PlayerStatusEffects : MonoBehaviour
     IEnumerator Poison()
     {
         poisonTime = 3;
-        while (poisonTime > 0)
+        while (poisonTime > 0 && PlayerHeallth.playerHealth > 1)
         {
             spriteRenderer.color = statusEffectColors[4];
-            playerHealth.playerHealth--;
+            PlayerHeallth.playerHealth--;
             playerHealth.UpdateHealthUI();
             yield return new WaitForSeconds(1f);
             poisonTime--;

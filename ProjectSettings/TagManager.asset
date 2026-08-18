@@ -27,6 +27,7 @@ TagManager:
   - Radiation
   - Windy
   - Poison
+  - PowerfulAttack
   layers:
   - Default
   - TransparentFX

@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -36,7 +37,16 @@ public class GameManagement : MonoBehaviour
         
     }
 
-    
+    public static event Action OnGameReset;
+
+    // Call this method when the player clicks "Restart" or dies
+    public void ResetTheGame()
+    {
+        // The ?.Invoke() checks if anyone is listening before firing
+        OnGameReset?.Invoke();
+    }
+
+
     public enum GameStates 
     {
         Playing,

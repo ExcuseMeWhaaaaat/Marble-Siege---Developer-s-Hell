@@ -9,9 +9,14 @@ public class BossController : MonoBehaviour
     [SerializeField] private List<BossAttack> bossAttacks;
     [SerializeField] private CharacterAnimationController charAnim;
     public bool isAttacking;
+    public bool usingPowerful;
+    public List<GameObject> powerfulObjects;
+    public List<int> hpThresholds;
+    public List<float> delays;
     
-
-
+    
+    public int powerfulAttackIndex = 0;
+    [SerializeField] List<Transform> transforms;
 
     private void Start()
     {
@@ -33,7 +38,7 @@ public class BossController : MonoBehaviour
     {
         if (bossAttackSelection == null) return;
 
-        //If the boss is using a powerful attack, don't execute
+        if (usingPowerful) return;
         if (isAttacking) return;
 
 
@@ -41,14 +46,14 @@ public class BossController : MonoBehaviour
         isAttacking = true;
         //Randomly choose an attack to execute
         int attackIndex = Random.Range(0, bossAttacks.Count);
-
+        
         BossAttack attack = bossAttacks[attackIndex];
         attack.Execute();
         if (charAnim != null)
         {
             charAnim.animator.CrossFade(attack.animClip.name, charAnim.translationDuration);
         }
-
+        
 
     }
 
@@ -59,6 +64,25 @@ public class BossController : MonoBehaviour
     }
 
     
+
+    public void SummonPowerfulAttack()
+    {
+        Instantiate(powerfulObjects[powerfulAttackIndex], transforms[powerfulAttackIndex].position, transform.rotation);
+        
+        Invoke(nameof(Back), delays[powerfulAttackIndex]);
+    }
+
+    public void FlyOut()
+    {
+
+    }
+
+    public void Back()
+    {
+        usingPowerful = false;
+        powerfulObjects[powerfulAttackIndex] = null;
+        powerfulAttackIndex++;
+    }
 
     
     

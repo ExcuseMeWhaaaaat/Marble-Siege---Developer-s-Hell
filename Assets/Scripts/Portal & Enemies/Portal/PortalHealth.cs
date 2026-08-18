@@ -25,7 +25,7 @@ public class PortalHealth : MonoBehaviour
     [SerializeField] Color inactiveColor;
     
     [SerializeField] string battleTarget;
-
+    [SerializeField] private BossController bossController;
     [SerializeField] Button nextButton;
 
     
@@ -138,9 +138,31 @@ public class PortalHealth : MonoBehaviour
             }
             DestroyPortal();
         }
-
+        PowerfulAttackCondition();
             
        
+    }
+
+    public void PowerfulAttackCondition()
+    {
+        if (bossController == null) return;
+        
+        if (bossController.powerfulAttackIndex >= 0 && bossController.powerfulAttackIndex < bossController.powerfulObjects.Count)
+        {
+            foreach (var powerfulObject in bossController.powerfulObjects)
+            {
+                if (powerfulObject == null) return;
+                
+                if (portalHP < bossController.hpThresholds[bossController.powerfulAttackIndex])
+                {
+                    bossController.usingPowerful = true;
+                    bossController.SummonPowerfulAttack();
+                    
+                }
+
+            }
+        }
+
     }
 
     public void TeleportPlayer()
@@ -161,15 +183,19 @@ public class PortalHealth : MonoBehaviour
         //New
         if (isDestroyed) return;
         isDestroyed = true;
-        Destroy(gameObject);
-        if(skillPoints != null && SoundManagement.instance != null)
+        if(nextButton!= null)
         {
-            skillPoints.addSkillPoints(portalHP / 3);
-            SoundManagement.PlaySound(SoundType.Success, 0.75f);
+            nextButton.gameObject.SetActive(true);
         }
+        Destroy(gameObject);
+        
+        SoundManagement.PlaySound(SoundType.Success, 0.75f);
         
         
+        
+
     }
 
+    
     
 }

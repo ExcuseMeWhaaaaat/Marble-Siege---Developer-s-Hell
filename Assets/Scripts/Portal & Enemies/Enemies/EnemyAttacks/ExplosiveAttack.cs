@@ -7,13 +7,18 @@ public class ExplosiveAttack : MonoBehaviour
     
     public void Explode()
     {
+        
         Instantiate(explosion,transform.position,transform.rotation);
+        Destroy(gameObject);
     }
 
-    private void OnDestroy()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Explode();
+        if (explosion == null) return;
+        if (!Application.isPlaying) return;
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            Explode();
+        }
     }
-
-    
 }

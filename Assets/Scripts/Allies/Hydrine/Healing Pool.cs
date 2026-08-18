@@ -37,10 +37,10 @@ public class HealingPool : MonoBehaviour
     {
 
         secondsLeft = 3;
-        while (secondsLeft > 0 && playerHP.playerHealth < playerHP.maxPlayerHealth)
+        while (secondsLeft > 0 && PlayerHeallth.playerHealth < playerHP.maxPlayerHealth)
         {
             yield return new WaitForSeconds(interval);
-            playerHP.playerHealth++;
+            PlayerHeallth.playerHealth++;
             secondsLeft--;
             playerHP.UpdateHealthUI();
            

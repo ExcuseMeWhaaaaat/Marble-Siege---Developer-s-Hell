@@ -11,7 +11,7 @@ using static ScriptedTutorial;
 
 public class PlayerHeallth : MonoBehaviour
 {
-    public int playerHealth;
+    public static int playerHealth = 20;
     public TextMeshProUGUI hpIndicator;
     private bool isInvincible;
     [SerializeField] int invinciblityFrames;
@@ -52,7 +52,7 @@ public class PlayerHeallth : MonoBehaviour
         {
             isElimated = true;
             Destroy(gameObject);
-            skillPoints.skillPoints = 0;
+            
             SoundManagement.PlaySound(SoundType.Fail, 0.75f);
         }
         
@@ -99,6 +99,18 @@ public class PlayerHeallth : MonoBehaviour
             case "Cure":
                 statusEffect = "";
                 break;
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "PowerfulAttack":
+                {
+                    CheckForHealth(6);
+                    break;
+                }
         }
     }
 
@@ -159,11 +171,15 @@ public class PlayerHeallth : MonoBehaviour
             
         }
         UpdateHealthUI();
-        if (playerHealth < 1)
-        
-            Eliminate();
+        IsPlayerDefeated();
     }
 
+    public void IsPlayerDefeated()
+    {
+        if (playerHealth < 1)
+
+            Eliminate();
+    }
     public void UpdateHealthUI()
     {
 
@@ -173,7 +189,7 @@ public class PlayerHeallth : MonoBehaviour
 
     IEnumerator HealCooldown()
     {
-        healCooldownFrames = 45;
+        healCooldownFrames = 60;
         while (healCooldownFrames > 0)
         {
             yield return new WaitForSeconds(1);

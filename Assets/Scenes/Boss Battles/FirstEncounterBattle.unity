@@ -386,39 +386,19 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 78556430496407794, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 114547664}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
 --- !u!224 &114547662 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 7372645062207516206, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
   m_PrefabInstance: {fileID: 114547661}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &114547663 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 78556430496407794, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
-  m_PrefabInstance: {fileID: 114547661}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &114547664
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114547663}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d472ad80e0c316449adae9aa307924ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ShiftCamera
 --- !u!114 &114547665 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7675759012464388461, guid: 76574a792e2c1f040be9560af1d7d082, type: 3}
   m_PrefabInstance: {fileID: 114547661}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 114547663}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
@@ -555,6 +535,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1045617720847083806, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 1045617720847083806, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6089114040639030846, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 1045617720847083806, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2166240429429460734, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -23
@@ -593,6 +585,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5708745208868921037, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5875168226053025839, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 5875168226053025839, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -6089114040639030846, guid: da1d26dacf307ff45a49a373951b827e, type: 2}
+    - target: {fileID: 5875168226053025839, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
+      propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8551195009736581239, guid: 71bca2ea17d1e714a9f8aaaf9f4670c8, type: 3}
@@ -965,6 +969,7 @@ MonoBehaviour:
   activeColor: {r: 0, g: 0, b: 0, a: 0}
   inactiveColor: {r: 0, g: 0, b: 0, a: 0}
   battleTarget: ??????? (Shield)
+  bossController: {fileID: 1946385908}
   nextButton: {fileID: 114547665}
 --- !u!60 &495078734
 PolygonCollider2D:
@@ -3218,6 +3223,10 @@ MonoBehaviour:
   - {fileID: 1946385910}
   charAnim: {fileID: 1946385911}
   isAttacking: 0
+  powerfulObjects: []
+  hpThresholds: 
+  powerfulAttackIndex: 0
+  transforms: []
 --- !u!114 &1946385910
 MonoBehaviour:
   m_ObjectHideFlags: 0
