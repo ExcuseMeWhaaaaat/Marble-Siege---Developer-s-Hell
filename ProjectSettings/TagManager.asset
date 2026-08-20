@@ -28,6 +28,8 @@ TagManager:
   - Windy
   - Poison
   - PowerfulAttack
+  - Boss
+  - BossHeal
   layers:
   - Default
   - TransparentFX

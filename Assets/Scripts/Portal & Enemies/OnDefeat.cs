@@ -3,9 +3,10 @@ using Unity.Play.Publisher.Editor;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class OnDefeat : MonoBehaviour
+public class HealBoss : MonoBehaviour
 {
-    
+    [SerializeField] private PortalHealth portalHealth;
+
 
 
     

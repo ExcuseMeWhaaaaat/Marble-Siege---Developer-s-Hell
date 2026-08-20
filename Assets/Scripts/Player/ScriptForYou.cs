@@ -33,6 +33,7 @@ public class ScriptForYou : MonoBehaviour
 
     [SerializeField] TextMeshProUGUI mbText;
     [SerializeField] TextMeshProUGUI mbDMG;
+    [SerializeField] private PortalHealth portalHealth;
     
     private void Start()
     {
@@ -96,7 +97,7 @@ public class ScriptForYou : MonoBehaviour
 
     IEnumerator MoraleBoost()
     {
-        boostTime = 15;
+        boostTime = 20;
         while(boostTime > 0)
         {
             yield return new WaitForSeconds(1f);
@@ -139,6 +140,14 @@ public class ScriptForYou : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("BossHeal"))
+        {
 
+            portalHealth.portalHP += (int)hit;
+            portalHealth.UpdateUI();
+        }
+    }
 
 }

@@ -109,6 +109,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::AcidDrop
   dropRb: {fileID: 3850842927672894961}
   speed: 10
+  fadeColor: {r: 1, g: 1, b: 1, a: 1}
+  spriteRenderer: {fileID: 4881010723751430099}
 --- !u!50 &3850842927672894961
 Rigidbody2D:
   serializedVersion: 5
@@ -134,8 +136,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_CollisionDetection: 1
+  m_Constraints: 4
 --- !u!114 &-1749662444763676744
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class PortalHealth : MonoBehaviour
 {
     public int portalHP;
     public TextMeshProUGUI portalHPText;
+    public TextMeshProUGUI bossNameText;
     [SerializeField] GameObject spawnPoint;
     
     [SerializeField] int pointVal;
@@ -25,6 +26,7 @@ public class PortalHealth : MonoBehaviour
     [SerializeField] Color inactiveColor;
     
     [SerializeField] string battleTarget;
+
     [SerializeField] private BossController bossController;
     [SerializeField] Button nextButton;
 
@@ -44,8 +46,8 @@ public class PortalHealth : MonoBehaviour
             skillPoints = GameObject.FindGameObjectWithTag("Player").GetComponent<SkillPoints>();
         }
 
-        portalHPText.text = battleTarget + ": " + portalHP.ToString();
-        
+        portalHPText.text = "Health: " + portalHP.ToString();
+        bossNameText.text = battleTarget;
         
     }
     private void Update()
@@ -174,7 +176,7 @@ public class PortalHealth : MonoBehaviour
     public void UpdateUI()
     {
         if (portalHPText == null || portalHPSldier == null) return;
-        portalHPText.text = battleTarget + ": " + portalHP.ToString();
+        portalHPText.text = "Health: " + portalHP.ToString();
         portalHPSldier.value = portalHP;
     }
 

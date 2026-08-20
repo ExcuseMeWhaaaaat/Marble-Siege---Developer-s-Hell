@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 32093a94dc7e4f14aafb9e2cb5ae8efb
+guid: 8ae4d7f713090d6459fb80a70ff90bdc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6409688343659422394
-    second: Road 1_0
+      213: -4347532159779508366
+    second: Poison_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 400
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Road 1_0
+      name: Poison_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 562
+        x: 564
+        y: 212
+        width: 350
+        height: 505
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ab228cca699c3f850800000000000000
-      internalID: 6409688343659422394
+      spriteID: 27f61cee8867aa3c0800000000000000
+      internalID: -4347532159779508366
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Road 1_0: 6409688343659422394
+      Poison_0: -4347532159779508366
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

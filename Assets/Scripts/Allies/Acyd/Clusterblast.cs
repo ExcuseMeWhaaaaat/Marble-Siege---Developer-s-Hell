@@ -8,7 +8,7 @@ public class AcidRain : MonoBehaviour
     [SerializeField] float delay;
     [SerializeField] float spawnRange;
     [SerializeField] float rainTime;
-
+    
 
     private void Start()
     {
@@ -23,6 +23,7 @@ public class AcidRain : MonoBehaviour
             yield return new WaitForSeconds(1f);
             rainTime--;
             SpawnDrop();
+                
         }
         Destroy(gameObject);
     }
@@ -38,7 +39,15 @@ public class AcidRain : MonoBehaviour
     public void SpawnDrop()
     {
         if (acidDrop == null) return;
-        Instantiate(acidDrop,SpawnAtPos(),transform.rotation);
+        for (int i = 0; i < 6; i++)
+        {
+           Instantiate(acidDrop, SpawnAtPos(), transform.rotation);
+        }
+        
+            
+        
     }
+
+    
 
 }

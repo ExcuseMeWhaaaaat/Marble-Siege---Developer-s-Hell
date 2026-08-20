@@ -103,6 +103,7 @@ public class PlayerStatusEffects : MonoBehaviour
         {
             case "Poison":
                 {
+                    
                     PoisonCheck();
                     break;
                 }
@@ -114,6 +115,7 @@ public class PlayerStatusEffects : MonoBehaviour
         if (!curified && PlayerHeallth.playerHealth > 1)
         {
             isPoisoned = true;
+            
             if (poisonCoroutine == null)
             {
                 poisonCoroutine = StartCoroutine(Poison());

@@ -81,7 +81,10 @@ public class BossController : MonoBehaviour
     {
         usingPowerful = false;
         powerfulObjects[powerfulAttackIndex] = null;
-        powerfulAttackIndex++;
+        if (powerfulAttackIndex >= 0 && powerfulAttackIndex < powerfulObjects.Count)
+            powerfulAttackIndex++;
+        
+        
     }
 
     
