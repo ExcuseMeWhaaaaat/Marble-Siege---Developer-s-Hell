@@ -19,7 +19,9 @@ public class Countdown : MonoBehaviour
     private void Start()
     {
         StartPlay();
-        
+
+        EnableBossScript();
+        EnableSpawnerScript();
         
     }
     private IEnumerator SiegeCountdown()
@@ -37,10 +39,11 @@ public class Countdown : MonoBehaviour
         }
         countdownText.text = "BEGIN THE SIEGE";
         countdownText.color = colorList[3];
-        StartCoroutine(FadeCoroutine(1));
-        Destroy(starterCircle);
         EnableBossScript();
         EnableSpawnerScript();
+        StartCoroutine(FadeCoroutine(1));
+        Destroy(starterCircle);
+        
         
         
     }
@@ -73,6 +76,7 @@ public class Countdown : MonoBehaviour
     {
         if (enemySpawnController == null) return;
         if (enemySpawnController.enabled) return;
+        
         enemySpawnController.enabled = true;
     }
 
@@ -81,6 +85,7 @@ public class Countdown : MonoBehaviour
     {
         if(bossController == null) return;
         if(bossController.enabled) return;
+        
         bossController.enabled = true;
     }
 }

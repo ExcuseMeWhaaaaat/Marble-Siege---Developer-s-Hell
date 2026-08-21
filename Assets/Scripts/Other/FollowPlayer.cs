@@ -16,11 +16,10 @@ public class FollowPlayer : MonoBehaviour
 
     private void Update()
     {
+
+        if (player == null) return;
+        transform.Translate(speed* Time.deltaTime * (player.transform.position - transform.position));
         
-        if (player != null)
-        {
-            transform.position = player.transform.position;
-        }
         
     }
 

@@ -151,6 +151,14 @@ public class PortalHealth : MonoBehaviour
         
         if (bossController.powerfulAttackIndex >= 0 && bossController.powerfulAttackIndex < bossController.powerfulObjects.Count)
         {
+            foreach(var hpVal in bossController.hpWarnThresholds)
+            {
+                if(portalHP< bossController.hpWarnThresholds[bossController.powerfulAttackIndex])
+                {
+                    bossController.AttackWarning();
+                }
+            }
+            ;
             foreach (var powerfulObject in bossController.powerfulObjects)
             {
                 if (powerfulObject == null) return;
@@ -163,6 +171,7 @@ public class PortalHealth : MonoBehaviour
                 }
 
             }
+            
         }
 
     }

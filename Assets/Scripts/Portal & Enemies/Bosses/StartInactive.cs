@@ -14,5 +14,6 @@ public class StartInactive : MonoBehaviour
     public void SetToActive()
     {
         gameObject.SetActive(true);
+        
     }
 }

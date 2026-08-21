@@ -1,5 +1,8 @@
 using NUnit.Framework;
+using System.Collections;
 using System.Collections.Generic;
+using System.Timers;
+using TMPro;
 using UnityEngine;
 
 public class BossController : MonoBehaviour
@@ -12,12 +15,15 @@ public class BossController : MonoBehaviour
     public bool usingPowerful;
     public List<GameObject> powerfulObjects;
     public List<int> hpThresholds;
+    public List<int> hpWarnThresholds;
     public List<float> delays;
     
+    [SerializeField] float speed;
     
     public int powerfulAttackIndex = 0;
     [SerializeField] List<Transform> transforms;
-
+    [SerializeField] Transform target;
+    [SerializeField] TextMeshProUGUI warnText;
     private void Start()
     {
 
@@ -67,26 +73,30 @@ public class BossController : MonoBehaviour
 
     public void SummonPowerfulAttack()
     {
+        warnText.gameObject.SetActive(false);
         Instantiate(powerfulObjects[powerfulAttackIndex], transforms[powerfulAttackIndex].position, transform.rotation);
-        
         Invoke(nameof(Back), delays[powerfulAttackIndex]);
     }
 
-    public void FlyOut()
-    {
-
-    }
-
+    
     public void Back()
     {
+        
         usingPowerful = false;
-        powerfulObjects[powerfulAttackIndex] = null;
+        
+        
         if (powerfulAttackIndex >= 0 && powerfulAttackIndex < powerfulObjects.Count)
-            powerfulAttackIndex++;
+            powerfulObjects[powerfulAttackIndex] = null;
+        powerfulAttackIndex++;
         
         
     }
 
+    public void AttackWarning()
+    {
+        warnText.gameObject.SetActive(true);
+    }
     
+
     
 }

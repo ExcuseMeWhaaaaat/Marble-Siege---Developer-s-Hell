@@ -130,7 +130,7 @@ public class PlayerHeallth : MonoBehaviour
 
     IEnumerator Invinciblity()
     {
-        invinciblityFrames = 5;
+        invinciblityFrames = 3;
         while (invinciblityFrames > 0)
         {
             yield return new WaitForSeconds(1);
@@ -189,7 +189,7 @@ public class PlayerHeallth : MonoBehaviour
 
     IEnumerator HealCooldown()
     {
-        healCooldownFrames = 60;
+        healCooldownFrames = 90;
         while (healCooldownFrames > 0)
         {
             yield return new WaitForSeconds(1);

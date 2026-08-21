@@ -254,7 +254,7 @@ Transform:
   m_GameObject: {fileID: 191578224}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.72, y: -3.63, z: 0}
+  m_LocalPosition: {x: 14.72, y: -3.54, z: 0}
   m_LocalScale: {x: 2.209262, y: 1.406936, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -436,7 +436,7 @@ Transform:
   m_GameObject: {fileID: 292168680}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -23.97, y: -3.63, z: 0}
+  m_LocalPosition: {x: -23.97, y: -3.54, z: 0}
   m_LocalScale: {x: 2.209262, y: 1.406936, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1062,7 +1062,7 @@ Transform:
   m_GameObject: {fileID: 445793253}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 28.3664, y: 3.7767, z: 0}
+  m_LocalPosition: {x: 28.3664, y: 3.65, z: 0}
   m_LocalScale: {x: 1.6324265, y: 1.5587, z: 1.5587}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2046,6 +2046,10 @@ PrefabInstance:
       propertyPath: colorList.Array.size
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7057356871965594064, guid: 0a8a65ca82bd2dd47bf2bb81988085b5, type: 3}
+      propertyPath: enemySpawnController
+      value: 
+      objectReference: {fileID: 6747522137512106142}
     - target: {fileID: 7057356871965594064, guid: 0a8a65ca82bd2dd47bf2bb81988085b5, type: 3}
       propertyPath: colorList.Array.data[3].a
       value: 1
@@ -5213,6 +5217,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2789904124875665207, guid: 91ef34c2ca0142a42aa223f203d4fc8a, type: 3}
+      propertyPath: repeatRate
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2789904124875665207, guid: 91ef34c2ca0142a42aa223f203d4fc8a, type: 3}
       propertyPath: bottomRight
       value: 
       objectReference: {fileID: 996064254}
@@ -5249,6 +5257,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91ef34c2ca0142a42aa223f203d4fc8a, type: 3}
+--- !u!114 &6747522137512106142 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2789904124875665207, guid: 91ef34c2ca0142a42aa223f203d4fc8a, type: 3}
+  m_PrefabInstance: {fileID: 6747522137512106141}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7631817172001920676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 407323a169ff64544abaed9de13a4a9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemySpawnController
 --- !u!114 &6908856826621738924 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 798126448622353287, guid: 2fc69afdadbd4b44bb13e913faf85731, type: 3}
