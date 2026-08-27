@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b53e1d8b5eb77458304e006464fc07, type: 3}
+  m_Name: PreTalkAnim
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneSteps
+  steps:
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: f735686a1ce55d7429876f746d6dab76, type: 2}
+      animID: 1
+  - animationChunks: []
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 88f9dceebeefd5f46a33f13974cf453a, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: 3c461511ae4b28d42ba88d4dba1c9adc, type: 2}
+      animID: 2
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: f735686a1ce55d7429876f746d6dab76, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: 4ad1ff90008054e419735b8b1847e49e, type: 2}
+      animID: 2
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 88f9dceebeefd5f46a33f13974cf453a, type: 2}
+      animID: 1

@@ -1027,7 +1027,16 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8040850585642869771, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 757190300}
+    - targetCorrespondingSourceObject: {fileID: 4508415023260366559, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 757190299}
+    - targetCorrespondingSourceObject: {fileID: 4726689463728598389, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 757190298}
   m_SourcePrefab: {fileID: 100100000, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
 --- !u!4 &757190291 stripped
 Transform:
@@ -1039,7 +1048,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1337050528512136201, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
   m_PrefabInstance: {fileID: 757190290}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 757190295}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
@@ -1050,7 +1059,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6452312423310553913, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
   m_PrefabInstance: {fileID: 757190290}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 757190296}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
@@ -1061,12 +1070,69 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2949467236622647599, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
   m_PrefabInstance: {fileID: 757190290}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 757190297}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dda7f49a3bbb3724cbad040088c15d9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SetTextPosition
+--- !u!1 &757190295 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4726689463728598389, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
+  m_PrefabInstance: {fileID: 757190290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &757190296 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4508415023260366559, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
+  m_PrefabInstance: {fileID: 757190290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &757190297 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8040850585642869771, guid: d40ad1642467dc2479b37bb6ab591f3c, type: 3}
+  m_PrefabInstance: {fileID: 757190290}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &757190298
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757190295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105bc20ebcf4fb94097716aaa0c42bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossHover
+  goUp: 0
+  hoverSpeed: 0.25
+--- !u!114 &757190299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757190296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105bc20ebcf4fb94097716aaa0c42bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossHover
+  goUp: 0
+  hoverSpeed: 0.25
+--- !u!114 &757190300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757190297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105bc20ebcf4fb94097716aaa0c42bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossHover
+  goUp: 0
+  hoverSpeed: 0.25
 --- !u!1001 &767349571
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1721,17 +1787,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eed2a614ede1d5f49ac9ad9dbd8799ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TakeToScene
---- !u!114 &887579998 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2759243007700296627, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
-  m_PrefabInstance: {fileID: 887579996}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
 --- !u!114 &887579999 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1897975630110910691, guid: 4b38e1bc664b1cd4e868c16d658c0cbf, type: 3}
@@ -2434,7 +2489,6 @@ MonoBehaviour:
   - {fileID: 887580001}
   - {fileID: 887580000}
   - {fileID: 887579999}
-  backgroundImage: {fileID: 887579998}
   toggleSettingsMenu: {fileID: 1174783454}
 --- !u!4 &1500744210
 Transform:
@@ -2721,6 +2775,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 306971068469780375, guid: db0588442ddf4e842a66669039ae07e9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1575423979}
+    - targetCorrespondingSourceObject: {fileID: 306971068469780375, guid: db0588442ddf4e842a66669039ae07e9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1575423982}
   m_SourcePrefab: {fileID: 100100000, guid: db0588442ddf4e842a66669039ae07e9, type: 3}
 --- !u!4 &1575423977 stripped
 Transform:
@@ -2787,6 +2844,20 @@ MonoBehaviour:
   animator: {fileID: 1575423980}
   translationDuration: 0.5
   charID: 7
+--- !u!114 &1575423982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1575423978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 105bc20ebcf4fb94097716aaa0c42bf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BossHover
+  goUp: 0
+  hoverSpeed: 0.25
 --- !u!1001 &1645010462
 PrefabInstance:
   m_ObjectHideFlags: 0

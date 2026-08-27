@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eb87bd1c28cd449acda7359981c29c, type: 3}
+  m_Name: Announcement
+  m_EditorClassIdentifier: Assembly-CSharp::ChunkDialogue
+  lines:
+  - text: So yes, we're being raided by Anarchon members...
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+    typeDelay: 1
+  - text: Nah gng we're cooked if that's true...
+    correctID: 13
+    speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
+    typeDelay: 1
+  - text: What even is this timeline?
+    correctID: 14
+    speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
+    typeDelay: 1
+  - text: "\u201CSomehow Palpatine returned\u201D ahh writing"
+    correctID: 15
+    speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
+    typeDelay: 1
+  - text: "Look, I and the others understand your concerns\u2026"
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+    typeDelay: 1
+  - text: "But our plan as of currently is to... fight back\u2026 "
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+    typeDelay: 1
+  - text: Somehow
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+    typeDelay: 1
+  - text: "The three people who go by \u201CHydrine\u201D \u201CAeri\u201D and \u201CAcyd\u201D
+      aren\u2019t present right now but should show up soon\u2026"
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+    typeDelay: 1
+  - text: Wait, what about them specifically?
+    correctID: 16
+    speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
+    typeDelay: 1
+  - text: "They\u2019re the ones who gave us the info about the raid. "
+    correctID: 8
+    speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
+    typeDelay: 1
+  - text: "And since they\u2019re Protagon members, they probably know a very good
+      deal of what's gonna happen."
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 1
+  - text: "More than us, I\u2019d even admit\u2026"
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 1
+  - text: " So they\u2019re our key out of this?"
+    correctID: 17
+    speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
+    typeDelay: 1
+  - text: "Eh, yeah\u2026"
+    correctID: 4
+    speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
+    typeDelay: 1

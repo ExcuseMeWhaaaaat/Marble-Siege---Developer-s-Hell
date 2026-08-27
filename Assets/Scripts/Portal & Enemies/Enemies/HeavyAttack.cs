@@ -14,7 +14,7 @@ public class HeavyAttack : MonoBehaviour
     void Start()
     {
         gameObject.SetActive(false);
-        InvokeRepeating(nameof(ActivateAttack),delay,cooldown);
+        InvokeRepeating(nameof(PlayAnim),delay,cooldown);
     }
 
     
@@ -22,7 +22,7 @@ public class HeavyAttack : MonoBehaviour
 
     private void ActivateAttack()
     {
-        PlayAnim();
+        
         gameObject.SetActive(true);
         StartCoroutine(UseBat());
     }
@@ -39,6 +39,7 @@ public class HeavyAttack : MonoBehaviour
         if (animator == null) return;
         if (string.IsNullOrEmpty(attackState)) return;
         animator.Play(attackState);
+        Invoke(nameof(ActivateAttack),1f);
         
     }
     

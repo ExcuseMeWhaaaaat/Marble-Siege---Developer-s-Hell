@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1eb87bd1c28cd449acda7359981c29c, type: 3}
+  m_Name: Talk
+  m_EditorClassIdentifier: Assembly-CSharp::ChunkDialogue
+  lines:
+  - text: Hey, so if you don't mind me asking...
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: Why did you leave us back there?
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: "When we fought Cosidian\u2026 you just... disappeared\u2026"
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: "Because there\u2019s no point when you shouldn\u2019t be here anyway\u2026"
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+    typeDelay: 1
+  - text: What do you mean?
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: "This place is literally being raided\u2026and we\u2019re in a situation
+      where people have to trust US\u2026"
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+    typeDelay: 1
+  - text: 'Well, I mean, people do trust us... '
+    correctID: 2
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+    typeDelay: 1
+  - text: "They trust YOU guys\u2026\r\n "
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+    typeDelay: 1
+  - text: "And what makes you think they won\u2019t trust you too? "
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: " Because I don\u2019t know if people are 100% sure I\u2019m no longer
+      associated with our former friends.  "
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+    typeDelay: 1
+  - text: ' But nobody raised any suspicion about you, right?'
+    correctID: 2
+    speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
+    typeDelay: 1
+  - text: " I mean\u2026 yeah\u2026"
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+    typeDelay: 1
+  - text: ' The server knows who Protagon is and what we do.'
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: "So if they see you genuinely helping fight Anarchon they\u2019ll probably
+      perceive you pretty well\u2026"
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: So, what do you say?
+    correctID: 1
+    speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
+    typeDelay: 1
+  - text: "\u2026\u2026\u2026\u2026\u2026"
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+    typeDelay: 1
+  - text: "Fine, I guess I can help\u2026"
+    correctID: 3
+    speak: {fileID: 11400000, guid: 10443583e9eddbb4f862c7d83b067b15, type: 2}
+    typeDelay: 1

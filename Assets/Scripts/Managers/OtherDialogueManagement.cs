@@ -35,7 +35,7 @@ public class DialogueManagement : MonoBehaviour
     public bool isTyping;
     public bool autoAdvance;
     public int messageIndex;
-    [SerializeField] int maxLines;
+    public int maxLines;
 
 
     [SerializeField] float delay;

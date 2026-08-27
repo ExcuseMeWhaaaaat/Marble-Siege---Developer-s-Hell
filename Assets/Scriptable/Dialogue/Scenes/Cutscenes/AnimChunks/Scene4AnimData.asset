@@ -1,0 +1,88 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6b53e1d8b5eb77458304e006464fc07, type: 3}
+  m_Name: Scene4AnimData
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneSteps
+  steps:
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: e5a204048af1d914190e15a46906392c, type: 2}
+      animID: 4
+    - animationState: {fileID: 7400000, guid: 2b01570aedfa9c54abb177a85a204f70, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: 0102cd5e638436843a3d570da34aaa15, type: 2}
+      animID: 5
+    - animationState: {fileID: 7400000, guid: fd43441ee6833f24a9ba75cc98feaca4, type: 2}
+      animID: 6
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: ac5a7405ac84e07489da6d245b669ab5, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: f83bad311423422418bdc97f9d1ab00c, type: 2}
+      animID: 9
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: c2896f1d0d565234790d259e04c9e18d, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: bd6d1741ea524df48929e76269915357, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: e79eb31f37e02ff4e81480f39d33d185, type: 2}
+      animID: 5
+    - animationState: {fileID: 7400000, guid: c14b84cc6d8c6eb4db35de6279e40fc6, type: 2}
+      animID: 6
+    - animationState: {fileID: 7400000, guid: 66e9b1f611a84ca47a12d7d8c884a2a7, type: 2}
+      animID: 10
+    - animationState: {fileID: 7400000, guid: 66c01de57320db4429eb5842e720983a, type: 2}
+      animID: 11
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 809ddd0ee9dc9d6469b2afbc584ab44d, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: 2b01570aedfa9c54abb177a85a204f70, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: 8bd1d0cd2ed14414d8a99341f21806e9, type: 2}
+      animID: 9
+    - animationState: {fileID: 7400000, guid: edf82cdbf3dda9b449431f2ff425d8d8, type: 2}
+      animID: 11
+    - animationState: {fileID: 7400000, guid: fd43441ee6833f24a9ba75cc98feaca4, type: 2}
+      animID: 6
+    - animationState: {fileID: 7400000, guid: 65a8a4a18b26f7448af06c3f2635af82, type: 2}
+      animID: 5
+    - animationState: {fileID: 7400000, guid: 66a1471d9276d734cb77da3f1b9e1077, type: 2}
+      animID: 10
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: a1e49f9da8b0a07429be82bf19730f9a, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: bd6d1741ea524df48929e76269915357, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: 3678e433babef6644bf0215490820115, type: 2}
+      animID: 9
+    - animationState: {fileID: 7400000, guid: e79eb31f37e02ff4e81480f39d33d185, type: 2}
+      animID: 5
+    - animationState: {fileID: 7400000, guid: 66e9b1f611a84ca47a12d7d8c884a2a7, type: 2}
+      animID: 10
+    - animationState: {fileID: 7400000, guid: 66c01de57320db4429eb5842e720983a, type: 2}
+      animID: 11
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: 69e8db48b6395974980b492705cb3882, type: 2}
+      animID: 1
+  - animationChunks:
+    - animationState: {fileID: 7400000, guid: ac5a7405ac84e07489da6d245b669ab5, type: 2}
+      animID: 1
+    - animationState: {fileID: 7400000, guid: 2b01570aedfa9c54abb177a85a204f70, type: 2}
+      animID: 2
+    - animationState: {fileID: 7400000, guid: f83bad311423422418bdc97f9d1ab00c, type: 2}
+      animID: 9
+    - animationState: {fileID: 7400000, guid: 65a8a4a18b26f7448af06c3f2635af82, type: 2}
+      animID: 5
+    - animationState: {fileID: 7400000, guid: edf82cdbf3dda9b449431f2ff425d8d8, type: 2}
+      animID: 11
+    - animationState: {fileID: 7400000, guid: 66a1471d9276d734cb77da3f1b9e1077, type: 2}
+      animID: 10
+    - animationState: {fileID: 7400000, guid: fd43441ee6833f24a9ba75cc98feaca4, type: 2}
+      animID: 6
