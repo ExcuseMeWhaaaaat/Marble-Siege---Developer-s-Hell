@@ -39,7 +39,7 @@ public class HeavyAttack : MonoBehaviour
         if (animator == null) return;
         if (string.IsNullOrEmpty(attackState)) return;
         animator.Play(attackState);
-        Invoke(nameof(ActivateAttack),1f);
+        Invoke(nameof(ActivateAttack),0.5f);
         
     }
     

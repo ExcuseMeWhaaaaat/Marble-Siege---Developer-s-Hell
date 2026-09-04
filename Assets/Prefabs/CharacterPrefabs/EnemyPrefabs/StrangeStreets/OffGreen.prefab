@@ -1010,6 +1010,10 @@ PrefabInstance:
       value: -1.4915158
       objectReference: {fileID: 0}
     - target: {fileID: 3661468227255792349, guid: 5c7ff79f4d796814bb8248d5eaa9f9c9, type: 3}
+      propertyPath: delay
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3661468227255792349, guid: 5c7ff79f4d796814bb8248d5eaa9f9c9, type: 3}
       propertyPath: animator
       value: 
       objectReference: {fileID: 6136672167682696929}
@@ -1023,7 +1027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3661468227255792349, guid: 5c7ff79f4d796814bb8248d5eaa9f9c9, type: 3}
       propertyPath: activeTime
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3661468227255792349, guid: 5c7ff79f4d796814bb8248d5eaa9f9c9, type: 3}
       propertyPath: attackState

@@ -24,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Boss Battles/FirstEncounterBattle.unity
     guid: 9e917214a10e7204081a55e5edcdd752
   - enabled: 1
-    path: Assets/Scenes/Battles/StrangeStreetsZone1.unity
+    path: Assets/Scenes/Battles/StrangeStreetsArea.unity
     guid: 158587cb9b9516648b8bebf3a94967ec
   - enabled: 1
     path: Assets/Scenes/Boss Battles/StrangeStreetsBoss.unity
@@ -41,5 +41,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Custscenes/Talk.unity
     guid: 3756eb3d73eb4a54f9c726a3e33d6554
+  - enabled: 1
+    path: Assets/Scenes/Menus/LevelMenu.unity
+    guid: e62e354d87fa52e4f9edfe707c30b9aa
+  - enabled: 1
+    path: Assets/Scenes/Custscenes/LevelCutscenes/StreetsCutscene.unity
+    guid: 7786d0750323d2240b2e28f3c3570225
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: ba0a6b6ee19553e4a9a96893d08a1ec6, type: 3}

@@ -125,6 +125,7 @@ public class EnemyHealth : MonoBehaviour
                     if (acidRb == null) return;
                     enemyHealth -= (int)acidRb.linearVelocity.magnitude;
                     SeeEnemyDefeat();
+                    Destroy(collision.gameObject);
                     break;
                 }
             case "Radiation":

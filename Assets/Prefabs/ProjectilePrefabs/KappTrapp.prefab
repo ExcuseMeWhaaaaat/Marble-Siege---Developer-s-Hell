@@ -108,7 +108,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 254d11b16e4021c4e8df73b1ac92fab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spinner
-  rotSpeed: 40
+  rotSpeed: 100
 --- !u!95 &4389755842789254640
 Animator:
   serializedVersion: 7

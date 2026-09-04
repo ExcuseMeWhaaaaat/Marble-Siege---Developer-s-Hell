@@ -17,12 +17,12 @@ MonoBehaviour:
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
     typeDelay: 1
-  - text: This place is often isolated from the rest of this server...
+  - text: This place is pretty far from most other parts on this server...
     correctID: 1
     speak: {fileID: 11400000, guid: a1eb5066007f0b34fbbbca8d77b047e1, type: 2}
     typeDelay: 1
-  - text: Does she come here because she secretly listens to OMFG music and doesn't
-      want to admit it?
+  - text: Do you think she come here because she secretly listens to OMFG songs and
+      won't admit it?
     correctID: 2
     speak: {fileID: 11400000, guid: 8b941eaeefd6c7445ab899bb478c0b17, type: 2}
     typeDelay: 1

@@ -17,15 +17,15 @@ MonoBehaviour:
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
-  - text: Nah gng we're cooked if that's true...
+  - text: Ah frick...
     correctID: 13
     speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
     typeDelay: 1
-  - text: What even is this timeline?
+  - text: What even is this timeline bro....
     correctID: 14
     speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
     typeDelay: 1
-  - text: "\u201CSomehow Palpatine returned\u201D ahh writing"
+  - text: Nah gng we're cooked if that's true...
     correctID: 15
     speak: {fileID: 11400000, guid: 3adff50d5f5b2574cbc96e1e08be9492, type: 2}
     typeDelay: 1
@@ -33,7 +33,7 @@ MonoBehaviour:
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
-  - text: "But our plan as of currently is to... fight back\u2026 "
+  - text: "So, our plan as of currently is to... fight back\u2026 "
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
@@ -41,8 +41,8 @@ MonoBehaviour:
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
-  - text: "The three people who go by \u201CHydrine\u201D \u201CAeri\u201D and \u201CAcyd\u201D
-      aren\u2019t present right now but should show up soon\u2026"
+  - text: "The three people who go by \u201CHydrine\u201D, \u201CAeri\u201D, and
+      \u201CAcyd\u201D aren\u2019t here right now but should show up soon\u2026"
     correctID: 8
     speak: {fileID: 11400000, guid: 120f42762d3f4ea4981d34094468ca07, type: 2}
     typeDelay: 1
@@ -59,7 +59,7 @@ MonoBehaviour:
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1
-  - text: "More than us, I\u2019d even admit\u2026"
+  - text: "Better than us, I\u2019d even admit\u2026"
     correctID: 4
     speak: {fileID: 11400000, guid: 75c0eb1ef0dab4d4ca5c75fc22c311e7, type: 2}
     typeDelay: 1

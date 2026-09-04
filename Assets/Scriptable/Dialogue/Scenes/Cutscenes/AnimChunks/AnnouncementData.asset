@@ -38,7 +38,7 @@ MonoBehaviour:
     - animationState: {fileID: 7400000, guid: 4ecc101c01d137047926b9b87e0c2918, type: 2}
       animID: 8
   - animationChunks:
-    - animationState: {fileID: 7400000, guid: d509979cd74901f439fc3ed2e8a4b857, type: 2}
+    - animationState: {fileID: 7400000, guid: 22c90eb9ddc67034d9f72c030841c8cf, type: 2}
       animID: 8
   - animationChunks:
     - animationState: {fileID: 7400000, guid: df64de7a9a9361649ac1e346b91ad098, type: 2}
@@ -46,4 +46,6 @@ MonoBehaviour:
   - animationChunks:
     - animationState: {fileID: 7400000, guid: 9bae79c977d863649b6a74476d1477bc, type: 2}
       animID: 12
+    - animationState: {fileID: 7400000, guid: d509979cd74901f439fc3ed2e8a4b857, type: 2}
+      animID: 8
   - animationChunks: []

@@ -28,7 +28,7 @@ public class StationaryAttack : BossAttack
     public void Warn()
     {
         int spawnIndex = Random.Range(0, warning.Count);
-        for (int i = 0; i < 5; i++)
+        for (int i = 0; i < 6; i++)
         {
             Instantiate(warning[spawnIndex], SpawnAtPos(), transform.rotation);
         }

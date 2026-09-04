@@ -28,4 +28,6 @@ public class AcidDrop : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
         
     }
+
+    
 }
